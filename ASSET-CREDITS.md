@@ -1,5 +1,7 @@
 # Speedrunner — added asset credits
 
+Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. Custom game direction, Harbor Ring, driving assistance, scenery, interface and deployment belong to this project. The underlying **OpenRally** engine is by **TensorDrift Studio and contributors**, under its preserved MIT license. Original Speedrunner signs, stage artwork and the modular Harbor Ring scenery were created for this game. Third-party models, textures and music retain their separate attribution below.
+
 ## Stradale GT visual model (CC BY 4.0)
 
 - Original: Ferrari 458 Italia by **vicent091036**, https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6
