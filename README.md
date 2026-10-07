@@ -1,6 +1,6 @@
-# Afterglow Rally
+# Speedrunner: Drift District
 
-Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Remix version 1.8.0.
+Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Speedrunner version 1.9.0.
 
 Drive freely, learn to drift, and join friends in shared rooms. WASD or arrows: drive. Space: handbrake. R: recover. Esc: pause. Touch and gamepad controls are supported. Choose Multiplayer and join the same room code; no account or installation is needed to play.
 
@@ -24,4 +24,4 @@ Archive SHA-256 hashes are verified before extraction. Lightweight assets are us
 
 OpenRally code and its supplied assets retain their MIT license. THIRD-PARTY-NOTICES.md contains dependency license notices. FFmpeg is used only during local asset preparation; its executable is not shipped.
 
-Added photographed PBR/HDR assets and driving-radio tracks are CC0. See [asset credits](ASSET-CREDITS.md). Version 1.8 improves handbrake recovery, brake priority, timestep-independent braking, and industrial arena detail.
+Version 1.9.0 introduces Speedrunner: Drift District: instant free driving, corrected steering and slide recovery, assisted sustained Space drifting, road markings and textured hills. Render pacing and resolution changes now absorb stalls gradually. Original OpenRally engine and licensed assets remain credited in [asset credits](ASSET-CREDITS.md).
