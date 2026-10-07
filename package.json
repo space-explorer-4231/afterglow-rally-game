@@ -1,0 +1,17 @@
+{
+  "name": "afterglow-rally-host",
+  "version": "1.7.0",
+  "private": true,
+  "description": "Multiplayer Afterglow Rally browser game",
+  "scripts": {
+    "build": "node unpack.cjs",
+    "start": "node OpenRally/server/dist/server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "ws": "8.22.0"
+  },
+  "type": "module"
+}
