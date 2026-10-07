@@ -1,4 +1,15 @@
-# Afterglow Rally — added CC0 assets
+# Speedrunner — added asset credits
+
+## Stradale GT visual model (CC BY 4.0)
+
+- Original: Ferrari 458 Italia by **vicent091036**, https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6
+- Downloaded from pinned Three.js r185: https://raw.githubusercontent.com/mrdoob/three.js/r185/examples/models/gltf/ferrari.glb
+- Author attribution: https://threejs.org/examples/webgl_materials_car.html
+- License: **CC BY 4.0**, https://creativecommons.org/licenses/by/4.0/
+- Three.js maintainers' license inventory: https://github.com/mrdoob/three.js/issues/23089
+- Adaptations: separated chassis and animated wheels; removed badge surfaces; orange clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry.
+- Derivatives: `models/vehicles/stradale-gt.glb`, `stradale-gt_opt.glb`, `stradale-gt-wheel.glb`. This model is licensed separately from the MIT engine and CC0 textures.
+- Original download and SHA-256 manifest are retained locally in `Game/research/graphics-1.10/`.
 
 ## Photographed PBR asphalt and HDR lighting
 
