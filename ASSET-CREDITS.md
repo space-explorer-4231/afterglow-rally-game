@@ -9,7 +9,7 @@ Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. C
 - Author attribution: https://threejs.org/examples/webgl_materials_car.html
 - License: **CC BY 4.0**, https://creativecommons.org/licenses/by/4.0/
 - Three.js maintainers' license inventory: https://github.com/mrdoob/three.js/issues/23089
-- Adaptations: separated chassis and animated wheels; removed badge surfaces; orange clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry.
+- Adaptations: separated chassis and animated wheels; removed badge surfaces; clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry. Version 1.12 adds an original teal / graphite touring livery and copper rims by this project. Earlier orange paint is retained in local backups.
 - Derivatives: `models/vehicles/stradale-gt.glb`, `stradale-gt_opt.glb`, `stradale-gt-wheel.glb`. This model is licensed separately from the MIT engine and CC0 textures.
 - Original download and SHA-256 manifest are retained locally in `Game/research/graphics-1.10/`.
 
@@ -23,6 +23,14 @@ Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. C
 - Rural Asphalt Road: Alexander Scholten / Poly Haven, https://polyhaven.com/a/rural_asphalt_road
   1K HDR image used for image-based lighting and vehicle reflections.
 - License: CC0-1.0, https://polyhaven.com/license
+
+## Urban material pack (1.12)
+
+- Concrete Wall 006: Charlotte Baglioni (photography), Dario Barresi (processing), Poly Haven, https://polyhaven.com/a/concrete_wall_006
+- Concrete Pavers 02: Poly Haven, https://polyhaven.com/a/concrete_pavers_02
+- License: CC0-1.0, https://polyhaven.com/license
+- OpenGL normals, diffuse and roughness maps resized to 512px desktop / 256px mobile WebP. Source checksums are verified before conversion. Original downloads and the optimized SHA-256 manifest are retained in `Game/research/graphics-1.12/`. Materials tile at two-metre scale on the Harbor Ring buildings and sidewalks.
+- N8AO ambient occlusion: N8 Programs, MIT, https://github.com/N8python/n8ao. Enabled on desktop High and Very High through the existing React Three postprocessing package. Dependency notices retain its license.
 
 ## Driving radio
 
