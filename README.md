@@ -1,6 +1,6 @@
 # Speedrunner: Drift District
 
-Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Speedrunner version 1.12.0.
+Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Speedrunner version 1.12.1.
 
 Drive freely, learn to drift, and join friends in shared rooms. WASD or arrows: drive. Space: handbrake. R: recover. Esc: pause. Touch and gamepad controls are supported. Choose Multiplayer and join the same room code; no account or installation is needed to play.
 
@@ -24,4 +24,4 @@ Archive SHA-256 hashes are verified before extraction. Lightweight assets are us
 
 OpenRally code and its supplied assets retain their MIT license. The added Stradale GT model is CC BY 4.0 by vicent091036; added photographed textures and driving-radio tracks are CC0. See ASSET-CREDITS.md for original sources, separate licenses and adaptation details. THIRD-PARTY-NOTICES.md contains dependency license notices. FFmpeg is used only during local asset preparation; its executable is not shipped.
 
-Version 1.12.0 features the signature teal/graphite Stradale GT from startup, a redesigned live 3D opening and a simple Start Driving button. Tire-limited slide assistance, grounded yaw control, photographed urban PBR surfaces and desktop High/Very High N8AO shading improve driving and scenery. Eight cars and six maps remain available. Speedrunner is developed by Mateusz Zalewski with AI-assisted development. Original OpenRally engine and separately licensed assets remain acknowledged in [asset credits](ASSET-CREDITS.md).
+Version 1.12.1 features the signature teal/graphite Stradale GT from startup, a redesigned live 3D opening and a simple Start Driving button. Tire-limited slide assistance, grounded yaw control, photographed urban PBR surfaces and desktop High/Very High N8AO shading improve driving and scenery. Eight cars and six maps remain available. Speedrunner is developed by Mateusz Zalewski with AI-assisted development. Original OpenRally engine and separately licensed assets remain acknowledged in [asset credits](ASSET-CREDITS.md).
