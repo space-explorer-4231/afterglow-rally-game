@@ -1,6 +1,6 @@
 {
   "name": "aeroline-host",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "private": true,
   "description": "Aeroline Open Road Club multiplayer driving game",
   "scripts": {
