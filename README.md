@@ -1,6 +1,6 @@
-# Speedrunner: Drift District
+# AEROLINE: Open Road Club
 
-Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Speedrunner version 1.14.1.
+Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Aeroline version 1.15.0.
 
 Drive freely, learn to drift, and join friends in shared rooms. WASD or arrows: drive. Space: handbrake. R: recover. Esc: pause. Touch and gamepad controls are supported. Choose Multiplayer and join the same room code; no account or installation is needed to play.
 
@@ -24,6 +24,4 @@ Archive SHA-256 hashes are verified before extraction. Lightweight assets are us
 
 OpenRally code and its supplied assets retain their MIT license. The added Stradale GT model is CC BY 4.0 by vicent091036; added photographed textures and driving-radio tracks are CC0. See ASSET-CREDITS.md for original sources, separate licenses and adaptation details. THIRD-PARTY-NOTICES.md contains dependency license notices. FFmpeg is used only during local asset preparation; its executable is not shipped.
 
-Version 1.14.1 replaces layered drift forces with a unified contact traction solver: kilogram chassis mass, axle load transfer, combined tire grip, FWD/RWD/AWD and stationary driven-wheel burnouts. A visible driving console and first-drive guide explain auto/manual transmission and keyboard/controller/touch controls. Desktop adds adaptive local car reflection probes, focused sun shadows, AO and bloom; Harbor Ring expands to 24 detailed buildings. A single capped tire-smoke field serves all players. Eight cars and six maps remain available. Developed by Mateusz Zalewski with AI assistance. Original OpenRally and licensed sources remain acknowledged in [asset credits](ASSET-CREDITS.md).
-
-Speed units: click KM/H or MPH in the driving console or gauge, press U, or use controller D-pad down. Your choice is saved; physics always uses SI units. 1.14.1 also coalesces startup progress updates and preserves driving focus after HUD clicks.
+Version 1.15.0 introduces AEROLINE / Open Road Club: a pearl-white and electric-blue identity, original coastal title/loading concept artwork, white glass menus and the Aero S1 livery. All six environments receive photographed CC0 gravel, snow or rock surface detail. Multiplayer now relays actual independent suspension hub positions and interpolates wheel spin across Euler boundaries. Desktop textures and title artwork use verified lossless WebP; model/HDR Brotli transport restores exact source bytes. Reduced-resolution mobile variants are explicit, and full-resolution originals remain available. Existing FWD/RWD/AWD, braking, burnouts, auto/manual controls, MPH/KMH, eight cars and six maps remain. Developed by Mateusz Zalewski with AI assistance. Source licenses are preserved in [asset credits](ASSET-CREDITS.md).

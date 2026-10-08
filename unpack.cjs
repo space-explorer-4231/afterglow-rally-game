@@ -16,4 +16,4 @@ for (const archive of manifest.archives) {
 for (const file of ['OpenRally/dist/index.html','OpenRally/server/dist/server.js']) {
   if(!fs.existsSync(path.join(root,file))) throw Error('Incomplete game build: '+file);
 }
-console.log('Afterglow Rally '+manifest.version+' ready.');
+console.log('AEROLINE '+manifest.version+' ready.');

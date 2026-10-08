@@ -1,8 +1,8 @@
 {
-  "name": "afterglow-rally-host",
-  "version": "1.14.1",
+  "name": "aeroline-host",
+  "version": "1.15.0",
   "private": true,
-  "description": "Multiplayer Afterglow Rally browser game",
+  "description": "Aeroline Open Road Club multiplayer driving game",
   "scripts": {
     "build": "node unpack.cjs",
     "start": "node OpenRally/server/dist/server.js"
