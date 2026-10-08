@@ -1,6 +1,6 @@
-# Speedrunner — added asset credits
+# AEROLINE — asset credits
 
-Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. Custom game direction, Harbor Ring, driving assistance, scenery, interface and deployment belong to this project. The underlying **OpenRally** engine is by **TensorDrift Studio and contributors**, under its preserved MIT license. Original Speedrunner signs, stage artwork and the modular Harbor Ring scenery were created for this game. Third-party models, textures and music retain their separate attribution below.
+Aeroline is developed by **Mateusz Zalewski** with AI-assisted development. Custom game direction, Harbor Ring, driving assistance, scenery, interface and deployment belong to this project. The underlying **OpenRally** engine is by **TensorDrift Studio and contributors**, under its preserved MIT license. Original Speedrunner signs, stage artwork and the modular Harbor Ring scenery were created for this game. Third-party models, textures and music retain their separate attribution below.
 
 ## Stradale GT visual model (CC BY 4.0)
 
@@ -43,3 +43,17 @@ Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. C
 The original downloads, SHA-256 hashes and source URLs are retained locally
 in Game/research/cc0-originals and Game/research/cc0-imports.json.
 The earlier Afterglow Drive and Redline Horizon original score is retained.
+
+## Aeroline original identity and livery (1.15)
+
+AEROLINE / Open Road Club, its blue-and-white SVG wordmark, Aero S1 pearl-white/electric-blue livery and interface are original contributions to this project. The Aero S1 retains the separately credited CC BY 4.0 Stradale geometry above; 1.15 changes paint and materials without modifying the compressed mesh bytes.
+
+The coastal title/loading illustration was generated for this game with OpenAI image generation. It is concept artwork, not a gameplay screenshot. The original master and prompt are retained in Game/assets/aeroline and Game/docs/AEROLINE-1.15.md.
+
+## Photographed terrain detail (1.15)
+
+- Sandy Gravel 02: Poly Haven, https://polyhaven.com/a/sandy_gravel_02
+- Snow 02: Poly Haven, https://polyhaven.com/a/snow_02
+- Rock Boulder Dry: Poly Haven, https://polyhaven.com/a/rock_boulder_dry
+- License: CC0-1.0, https://polyhaven.com/license
+- Original 1K diffuse, OpenGL normal and roughness maps are encoded as lossless WebP at their original dimensions. Mobile variants are resized to 512px, then losslessly encoded. Desktop normal relief and photographed roughness are combined with existing terrain blending; mobile omits the extra normal samples. Original downloads, verified checksums and source URLs remain in Game/research/aeroline-materials and aeroline-assets-1.15.json.
