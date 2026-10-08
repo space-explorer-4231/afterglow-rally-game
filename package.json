@@ -1,6 +1,6 @@
 {
   "name": "afterglow-rally-host",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "private": true,
   "description": "Multiplayer Afterglow Rally browser game",
   "scripts": {
