@@ -9,7 +9,7 @@ Speedrunner is developed by **Mateusz Zalewski** with AI-assisted development. C
 - Author attribution: https://threejs.org/examples/webgl_materials_car.html
 - License: **CC BY 4.0**, https://creativecommons.org/licenses/by/4.0/
 - Three.js maintainers' license inventory: https://github.com/mrdoob/three.js/issues/23089
-- Adaptations: separated chassis and animated wheels; removed badge surfaces; clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry. Version 1.12 adds an original teal / graphite touring livery and copper rims by this project. Earlier orange paint is retained in local backups.
+- Adaptations: separated chassis and animated wheels; removed badge surfaces; clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry. Version 1.12 adds an original teal / graphite touring livery and copper rims by this project. Version 1.12.1 refines the lightweight cockpit geometry and graphite/copper leather. Earlier orange paint is retained in local backups.
 - Derivatives: `models/vehicles/stradale-gt.glb`, `stradale-gt_opt.glb`, `stradale-gt-wheel.glb`. This model is licensed separately from the MIT engine and CC0 textures.
 - Original download and SHA-256 manifest are retained locally in `Game/research/graphics-1.10/`.
 
