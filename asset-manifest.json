@@ -1,5 +1,5 @@
 {
-  "version": "1.12.1",
+  "version": "1.13.0",
   "archives": [
     {
       "filename": "game-001.tar.gz",
@@ -65,6 +65,11 @@
       "filename": "game-013.tar.gz",
       "bytes": 1769475,
       "sha256": "cb5862d10b6a18986616a668698e1a0716f4f97638a5d51701ce305e8ccdfc75"
+    },
+    {
+      "filename": "game-014.tar.gz",
+      "bytes": 1823837,
+      "sha256": "41bc5df935ff4c2094d867fcf82097940b92f17056f9967830d71bc934567953"
     }
   ]
 }
