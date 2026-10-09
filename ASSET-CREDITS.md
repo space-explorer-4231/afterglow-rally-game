@@ -57,3 +57,18 @@ The coastal title/loading illustration was generated for this game with OpenAI i
 - Rock Boulder Dry: Poly Haven, https://polyhaven.com/a/rock_boulder_dry
 - License: CC0-1.0, https://polyhaven.com/license
 - Original 1K diffuse, OpenGL normal and roughness maps are encoded as lossless WebP at their original dimensions. Mobile variants are resized to 512px, then losslessly encoded. Desktop normal relief and photographed roughness are combined with existing terrain blending; mobile omits the extra normal samples. Original downloads, verified checksums and source URLs remain in Game/research/aeroline-materials and aeroline-assets-1.15.json.
+
+## Coastal district collection (1.17)
+
+Photographed CC0 geometry from Poly Haven:
+- Island Tree 02 — Rob Tuytel and Rico Cilliers, https://polyhaven.com/a/island_tree_02
+- Shrub 01 — authors retained in the source provenance manifest, https://polyhaven.com/a/shrub_01
+- Painted Wooden Bench — Kirill Sannikov, https://polyhaven.com/a/painted_wooden_bench
+- Street Lamp 01 — Josh Dean, https://polyhaven.com/a/street_lamp_01
+- Utility Box 02 — James Ray Cock, https://polyhaven.com/a/utility_box_02
+
+Photographed materials: Red Brick, White Stucco, Exterior Wall Cladding, Grass Ground and Rectangular Paving, https://polyhaven.com/ . Exact source URLs, author lists, download hashes and file sizes are retained in the bundled coastal asset provenance JSON and in Desktop/Game/research/graphics-1.17. License: CC0-1.0, https://polyhaven.com/license .
+
+The tree uses the artist's LOD1, with conservative planar cleanup. Near geometry retains every leaf. Eight transparent views rendered from that source supply the distant cylindrical impostor. Bench, lamp, cabinet and shrub derivatives use error-bounded Meshoptimizer simplification and quantized geometry. Color WebP encoding is perceptually lossy; normal and roughness WebP are lossless at the selected dimensions. Mobile maps are explicitly resized to 512 pixels. HTTP Brotli/gzip compression is lossless. Original masters remain preserved.
+
+The new coastal building families, shopfronts, balcony modules, streetscape layout and Harbor Coastal Market SVG are original project contributions by Mateusz Zalewski with AI assistance. Existing OpenRally and vehicle licenses remain applicable.

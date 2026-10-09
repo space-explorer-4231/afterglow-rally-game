@@ -1,5 +1,5 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0",
   "archives": [
     {
       "filename": "game-001.tar.gz",
@@ -105,6 +105,31 @@
       "filename": "game-021.tar.gz",
       "bytes": 516690,
       "sha256": "7f7ce115ceb6aeafb1639521c32bea12559c909c2a3cb713ce37698eecbe451c"
+    },
+    {
+      "filename": "game-022.tar.gz",
+      "bytes": 10823002,
+      "sha256": "84747b54017817cbcdae5d859971b6394ba2864902f596ef21f6003c29403d7e"
+    },
+    {
+      "filename": "game-023.tar.gz",
+      "bytes": 14021995,
+      "sha256": "86339a37650c93f35e3af077b898aff64aa9efa05f8e80467d2218a9bc1ba8f0"
+    },
+    {
+      "filename": "game-024.tar.gz",
+      "bytes": 9450981,
+      "sha256": "178adb95c07ac9161ff93bfe9b968691b191830a8f2b1613fcc6015628714de1"
+    },
+    {
+      "filename": "game-025.tar.gz",
+      "bytes": 16837235,
+      "sha256": "ce617be26a40f53a522b2df6b7a371382982d6a6d5b19903da6dd164af3b788a"
+    },
+    {
+      "filename": "game-026.tar.gz",
+      "bytes": 15387012,
+      "sha256": "84a959cf1de38220b194359d009f87bb68ea703e7d93f235c85f1952f4d53486"
     }
   ]
 }
