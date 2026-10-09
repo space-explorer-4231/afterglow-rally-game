@@ -72,3 +72,5 @@ Photographed materials: Red Brick, White Stucco, Exterior Wall Cladding, Grass G
 The tree uses the artist's LOD1, with conservative planar cleanup. Near geometry retains every leaf. Eight transparent views rendered from that source supply the distant cylindrical impostor. Bench, lamp, cabinet and shrub derivatives use error-bounded Meshoptimizer simplification and quantized geometry. Color WebP encoding is perceptually lossy; normal and roughness WebP are lossless at the selected dimensions. Mobile maps are explicitly resized to 512 pixels. HTTP Brotli/gzip compression is lossless. Original masters remain preserved.
 
 The new coastal building families, shopfronts, balcony modules, streetscape layout and Harbor Coastal Market SVG are original project contributions by Mateusz Zalewski with AI assistance. Existing OpenRally and vehicle licenses remain applicable.
+
+The shrub cutout in 1.17.1 combines the creator's CC0 diffuse and separate Alpha PNG from the same shrub_01 asset; the JPEG in the original glTF cannot carry opacity. Source files and verified hashes are preserved in the coastal provenance manifest.

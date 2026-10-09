@@ -24,8 +24,10 @@ npm start
 
 Open http://localhost:8791 . Render supplies PORT; HOST defaults to 0.0.0.0. The existing Render service deploys `dev`, builds with `npm ci --omit=dev --ignore-scripts && npm run build`, starts with `npm start`, and checks `/health`. Free instances can sleep and take about a minute to wake. Rooms reset when the relay restarts. No paid hosting change is included.
 
-SHA-256 validates all compiled archive layers. Source validation passes TypeScript and lint errors; 1,823 web/engine tests pass. Ten inherited signed-Android-export assertions fail because required APKs/Linux tools are absent. Those assertions were not weakened, and no Android APK is shipped. Actual local WebSocket room, host transfer, race vote and loading-gate checks pass. These tests do not establish ten-device GPU performance or perfect networking on every connection.
+SHA-256 validates all compiled archive layers. Source validation passes TypeScript and lint errors; 1,825 web/engine tests pass. Ten inherited signed-Android-export assertions fail because required APKs/Linux tools are absent. Those assertions were not weakened, and no Android APK is shipped. Actual local WebSocket room, host transfer, race vote and loading-gate checks pass. These tests do not establish ten-device GPU performance or perfect networking on every connection.
 
 ## Credits
 
 OpenRally retains MIT licensing. Stradale GT is CC BY 4.0 by vicent091036. Added photographed models, materials and credited radio tracks are CC0. See ASSET-CREDITS.md, the bundled coastal PROVENANCE.json and THIRD-PARTY-NOTICES.md. Portable Blender is used only during preparation and is not shipped.
+
+Patch 1.17.1 restores the shrub creator’s separate alpha mask; desktop and mobile foliage retain real leaf gaps instead of opaque cards. Both exports have automated coverage/opacity checks.
