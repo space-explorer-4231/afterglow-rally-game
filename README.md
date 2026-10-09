@@ -1,14 +1,18 @@
-# AEROLINE: Open Road Club
+# AEROLINE 1.16 — Open Road Club
 
-Multiplayer browser driving game based on the MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Aeroline version 1.15.1.
+Developed by **Mateusz Zalewski** with AI assistance, building on MIT-licensed [OpenRally](https://github.com/TensorDriftStudio/OpenRally). Play at https://afterglow-rally-game.onrender.com/ .
 
-Drive freely, learn to drift, and join friends in shared rooms. WASD or arrows: drive. Space: handbrake. R: recover. Esc: pause. Touch and gamepad controls are supported. Choose Multiplayer and join the same room code; no account or installation is needed to play.
+Drive freely, learn to drift, and join friends without an account or installation. Eight cars and six maps. WASD/arrows drive; S/Down brakes then reverses; Space handbrake; R recover; Esc pause. V switches FWD/RWD/AWD; M automatic/manual; E/Q manual shifts; U KM/H/MPH; H driving guide. Touch and gamepad controls remain supported.
 
-## Hosting package
+In **Multiplayer → Create Room → Time Attack**, everyone waits on the starting grid. The host selects **Start Race** after all maps load. With at least three connected players, a strict majority may vote to start: 2 of 3, 3 of 4, 6 of 10. Each player has one retractable vote. A server-owned three-second countdown shares one GO timestamp. Late arrivals watch the race until the host selects **Return Everyone to Grid**. Free Roam remains immediate; Gymkhana Blitz and Tag retain their arena round rules.
 
-This repository contains the compiled browser assets and multiplayer server needed to run the game. The complete editable development project is kept in the creator's local Game folder.
+Harbor Ring gains clearer blue-white road shoulders, darker asphalt, pearl/slate facades and angle-dependent glass tint. Detailed window/slab instances use spatial bounds so the renderer can cull distant groups. Photographed PBR materials, HDR reflections and selectable desktop effects remain. Medium and above use the full-detail starter car; Low, mobile and remote cars use lighter geometry. Mobile reduced textures are explicit; Brotli restores original asset bytes.
 
-Install Node.js 24+, then run:
+## Hosting
+
+This repository contains compiled browser assets and the multiplayer relay. The editable source, assets, originals, research and test runner are stored in the creator's Desktop/Game folder.
+
+Node.js 24+:
 
 ```sh
 npm ci --omit=dev --ignore-scripts
@@ -16,14 +20,10 @@ npm run build
 npm start
 ```
 
-Open http://localhost:8791. A hosting platform supplies PORT; HOST defaults to 0.0.0.0. Render: use dev, Node, Free compute, build command npm ci --omit=dev --ignore-scripts && npm run build, start command npm start, and health check /health. Free instances sleep after inactivity and take time to wake. Rooms reset on server restarts.
+Open http://localhost:8791 . Render supplies PORT; HOST defaults to 0.0.0.0. Existing Render service uses branch `dev`, build `npm ci --omit=dev --ignore-scripts && npm run build`, start `npm start`, health `/health`. The free instance can sleep and take roughly a minute to wake. Rooms reset when the server restarts. No hosting plan is changed.
 
-Archive SHA-256 hashes are verified before extraction. Lightweight assets are used by default; original full-detail car models remain available in Very High graphics quality. Music uses compressed MP3 copies. Multiplayer relays player snapshots; driving simulation runs on each device.
+SHA-256 hashes verify layered archives before extraction. Vehicle physics run on each player's device; the relay distributes snapshots and owns the Time Attack start gate. The 100-session test uses ten actual Rapier tire/suspension fixtures per session and ten connected WebSocket clients with sampled motion replay. It is not a browser/GPU benchmark, collision pileup test or guarantee of perfect behavior on every network.
 
-## Licenses
+## Credits
 
-OpenRally code and its supplied assets retain their MIT license. The added Stradale GT model is CC BY 4.0 by vicent091036; added photographed textures and driving-radio tracks are CC0. See ASSET-CREDITS.md for original sources, separate licenses and adaptation details. THIRD-PARTY-NOTICES.md contains dependency license notices. FFmpeg is used only during local asset preparation; its executable is not shipped.
-
-Version 1.15.1 introduces AEROLINE / Open Road Club: a pearl-white and electric-blue identity, original coastal title/loading concept artwork, white glass menus and the Aero S1 livery. All six environments receive photographed CC0 gravel, snow or rock surface detail. Multiplayer now relays actual independent suspension hub positions and interpolates wheel spin across Euler boundaries. Desktop textures and title artwork use verified lossless WebP; model/HDR Brotli transport restores exact source bytes. Reduced-resolution mobile variants are explicit, and full-resolution originals remain available. Existing FWD/RWD/AWD, braking, burnouts, auto/manual controls, MPH/KMH, eight cars and six maps remain. Developed by Mateusz Zalewski with AI assistance. Source licenses are preserved in [asset credits](ASSET-CREDITS.md).
-
-Desktop Medium and above use the full-detail starter body; Low, phones and remote-player LOD remain lighter. Version 1.15.1 also fixes horizontal menu overflow and completes the blue menu accents.
+OpenRally code and supplied assets retain their MIT license. Stradale GT is CC BY 4.0 by vicent091036. Added photographed materials and driving-radio tracks are CC0. See ASSET-CREDITS.md and THIRD-PARTY-NOTICES.md for sources, adaptation details and dependency licenses. FFmpeg is used during local preparation and is not shipped.
