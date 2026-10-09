@@ -11,6 +11,7 @@ Aeroline is developed by **Mateusz Zalewski** with AI-assisted development. Cust
 - Three.js maintainers' license inventory: https://github.com/mrdoob/three.js/issues/23089
 - Adaptations: separated chassis and animated wheels; removed badge surfaces; clearcoat, tinted glass, rubber/metal finishes; simplified and Draco-compressed geometry. Version 1.12 adds an original teal / graphite touring livery and copper rims by this project. Version 1.12.1 refines the lightweight cockpit geometry and graphite/copper leather. Earlier orange paint is retained in local backups.
 - Derivatives: `models/vehicles/stradale-gt.glb`, `stradale-gt_opt.glb`, `stradale-gt-wheel.glb`. This model is licensed separately from the MIT engine and CC0 textures.
+- Version 1.18 adds `models/vehicles/aero-parked.glb`, an assembled static derivative with all four measured wheels, simplified geometry, opaque parked glazing and original color variations. It reuses the same CC BY 4.0 source, attribution and license; it is not a new playable vehicle or a simulated traffic driver. Original playable models are unchanged.
 - Original download and SHA-256 manifest are retained locally in `Game/research/graphics-1.10/`.
 
 ## Photographed PBR asphalt and HDR lighting
