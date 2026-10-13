@@ -1,6 +1,6 @@
 # Aeroline: Open Road Club
 
-Version 1.23.0 — Driving stability and thruster NOS update. Multiplayer driving game based on MIT-licensed OpenRally.
+Version 1.24.0 — Personal best ghost and checkpoint pace update. Multiplayer driving game based on MIT-licensed OpenRally.
 
 Drive with WASD/arrows, Space handbrake, hold Shift for NOS, press R twice within two seconds to recover, Esc pause. Controller: triggers/stick to drive, X/Square handbrake, hold L3 for NOS, Y/Triangle recovery. Phones have a hold-to-use NOS button. Friends join Multiplayer with a room code, without accounts.
 
@@ -20,11 +20,11 @@ Fourteen vehicles include the detailed BMW M3 Aero Drift and five rebalanced Spe
 
 ## Hosting
 
-Compiled client and relay server. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys branch dev with health path /health. Free instances sleep and may take time to wake. Rooms reset on server restart. Client protocol 1.23 requires this server. Archives are SHA-256 checked before extraction. Editable source stays on the creator's desktop.
+Compiled client and relay server. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys branch dev with health path /health. Free instances sleep and may take time to wake. Rooms reset on server restart. Client protocol 1.24 requires this server. Archives are SHA-256 checked before extraction. Editable source stays on the creator's desktop.
 
 ## Validation
 
-1,976 automated tests pass; ten pre-existing Android APK export tests fail. Strict client types and client/server production builds pass. The handling matrix covers all fourteen cars, eight ABS/TCS/ESP combinations and 30/60/120 Hz (336 configurations), plus mirrored road corners and BMW gentle steering. Real Rapier tests at 30/60/120 Hz verify sustained BMW slides with net speed gain, steering authority, recovery and boost acceleration on all fourteen cars (42 car/rate combinations). Fuel exhaustion, partial steps, input blending, double-R latching, persistent badge tiers and teleport rejection are covered. Multiplayer checks include NOS on/off delivery, host transfer, reconnect churn, race loading/votes/countdown, and 24 simulated players in two rooms with a receiver paused for 45 seconds. Packaged current files are checked byte-for-byte. These checks do not measure device rendering performance; hands-on phone and controller driving remains necessary.
+2,028 automated tests pass; ten pre-existing Android APK export tests fail. Strict client types and client/server production builds pass. Fifty-two new tests cover replay math, persistence, batching/resource disposal and real race-store lifecycle, including faster/slower laps, checkpoints, pauses, resets, teleports, spectators and quota denial. The handling matrix covers all fourteen cars, eight ABS/TCS/ESP combinations and 30/60/120 Hz (336 configurations), plus mirrored road corners and BMW gentle steering. Real Rapier tests at 30/60/120 Hz verify sustained BMW slides with net speed gain, steering authority, recovery and boost acceleration on all fourteen cars (42 car/rate combinations). Fuel exhaustion, partial steps, input blending, double-R latching, persistent badge tiers and teleport rejection are covered. Multiplayer checks include NOS on/off delivery, host transfer, reconnect churn, race loading/votes/countdown, and 24 simulated players in two rooms with a receiver paused for 45 seconds. Packaged current files are checked byte-for-byte. These checks do not measure device rendering performance; hands-on phone and controller driving remains necessary.
 
 ## Licenses
 
