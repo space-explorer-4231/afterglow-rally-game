@@ -1,25 +1,33 @@
 # Aeroline: Open Road Club
 
-Version 1.21.1. Multiplayer driving game based on MIT-licensed OpenRally.
+Version 1.22.0 — Road Mastery and NOS update. Multiplayer driving game based on MIT-licensed OpenRally.
 
-WASD/arrows to drive, Space handbrake, press R twice within two seconds to recover, Esc pause. Touch and gamepad supported. Friends join Multiplayer with the same room code without accounts.
+Drive with WASD/arrows, Space handbrake, hold Shift for NOS, press R twice within two seconds to recover, Esc pause. Controller: triggers/stick to drive, X/Square handbrake, hold L3 for NOS, Y/Triangle recovery. Phones have a hold-to-use NOS button. Friends join Multiplayer with a room code, without accounts.
 
-The BMW now has exclusive RWD Drift Boost and 360-degree recovery. Hold throttle while sliding to gain speed. Over-rotation continues into one controlled full turn, then recovers along the original travel direction. Bounded ground-only impulses preserve driver braking priority; the assist does not run in reverse, in the air, or during a parked burnout. Its short garage description and driving hint explain the feature.
+## New in this update
 
-The fleet includes a detailed BMW M3 Aero Drift, rebuilds the five Speed Fleet bodies and shared forged wheels, and gives all fourteen vehicles distinct live grip, brake, steering and stability profiles. Fast SUVs, trucks and the van pay for speed with weight, longer stopping distances and slower steering response. The BMW balances road grip with progressive RWD drift breakaway.
+Road Mastery expands free-roam goals into nine permanent personal badges per car and district. Explorer milestones: 1/5/15 km. Corner artist: 100/500/1,500 m of controlled drifts. Boost pilot: 2/5/10 seconds of moving NOS use. Bronze, silver and gold badges raise the driver rank from New arrival to District legend. Progress saves on the current device and browser. Pauses, spectating, airborne driving, reverse, stationary wheelspin and teleports do not earn progress. The card is passive and untimed; vehicles stay available to everyone. Progress is personal, not a shared or cheat-proof competition.
 
-Drift Club adds optional 90-second free-roam heats. Controlled slides at 30–220 km/h and 12–65 degrees build multipliers; direction links earn bonuses. Straighten for 1.5 seconds to bank. Spins, rollovers, resets and long airtime lose the unbanked chain. Medals and per-car/per-map personal bests persist locally. Room scoreboards share each driver's personal heat score; starts are independent. These friendly client-reported scores are not cheat-proof.
+Every car starts a drive or a new race with two five-second NOS tanks. Hold the button while accelerating forward; release to save fuel. NOS raises available wheel torque and the speed ceiling, with a bounded fuel-limited arcade acceleration impulse. Braking, reverse, handbrake, burnout, airborne and excessive-slip states inhibit boost and preserve fuel. Pausing does not use fuel. Free-roam recovery does not refill NOS. Remote exhaust effects use the synchronized active flag.
+
+The BMW has wider speed-sensitive steering and controlled throttle-powered RWD slides. Extra drift power acts through driven tires. Progressive countersteering and yaw damping aid recovery. The previous automatic 360-degree routine and tangential drift thrust are removed: the driver steers the slide. A short garage description explains the handling.
+
+Double-R recovery now persists across multiple physics steps until the render step consumes it. A held controller recovery button fires once until released. Touch NOS releases on cancel, lost pointer capture, hidden page or window blur.
+
+## Existing game
+
+Fourteen vehicles include the detailed BMW M3 Aero Drift and five rebalanced Speed Fleet bodies. Faster SUVs, trucks and the van trade speed for weight, stopping distance and steering response. Drift Club offers optional 90-second heats, banked combos, medals and saved personal bests. Room scoreboards show independently started personal heat scores.
 
 ## Hosting
 
-Compiled client and relay server. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys branch dev with health path /health. Free instances sleep and can take time to wake. Rooms reset on server restart. Client protocol 1.21 requires this server. Archives are SHA-256 checked before extraction.
+Compiled client and relay server. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys branch dev with health path /health. Free instances sleep and may take time to wake. Rooms reset on server restart. Client protocol 1.22 requires this server. Archives are SHA-256 checked before extraction. Editable source stays on the creator's desktop.
 
 ## Validation
 
-1,905 automated tests passed; ten pre-existing Android APK export tests fail. Client/server production builds passed. Real Rapier BMW grip/drift/recovery checks at 30/60/120 Hz passed, including measured speed gain during slides and completed 360-degree recoveries in both directions. Heavy fleet braking tradeoffs and fourteen-car reverse bounds passed. In 1.21.0, relay stress with 24 simulated players in two concurrent rooms, including a receiver paused for 45 seconds, passed and preserved Drift Club scores. Asset transport, host handoff, reconnect churn and race lifecycle checks passed. Exact built files are verified against the packaged deployment. These tests do not measure device rendering performance; studio previews are offline renders.
+1,932 automated tests pass; ten pre-existing Android APK export tests fail. Strict client types and client/server production builds pass. Real Rapier tests at 30/60/120 Hz verify sustained BMW slides with net speed gain, steering authority, recovery and boost acceleration on all fourteen cars (42 car/rate combinations). Fuel exhaustion, partial steps, input blending, double-R latching, persistent badge tiers and teleport rejection are covered. Multiplayer checks include NOS on/off delivery, host transfer, reconnect churn, race loading/votes/countdown, and 24 simulated players in two rooms with a receiver paused for 45 seconds. Packaged current files are checked byte-for-byte. These checks do not measure device rendering performance; hands-on phone and controller driving remains necessary.
 
 ## Licenses
 
-OpenRally and original fleet/forged wheel meshes: MIT. BMW body adapted from 2001 BMW M3 GTR by Dave Love SketchFab (Tyler_Dave), CC BY 4.0: https://sketchfab.com/3d-models/2001-bmw-m3-gtr-6bb4d180cd0d454ba62fbfae24fc5155 . License: https://creativecommons.org/licenses/by/4.0/ . Duplicate mesh passes and static wheel assemblies removed, transforms normalized. BMW does not sponsor or endorse the game. Full attribution ships in ASSET-CREDITS.md, BMW-M3-LICENSE.txt and THIRD-PARTY-NOTICES.md. Source masters and editable implementation remain on the creator's desktop.
+OpenRally and original fleet/forged wheel meshes: MIT. BMW body adapted from 2001 BMW M3 GTR by Dave Love SketchFab (Tyler_Dave), CC BY 4.0: https://sketchfab.com/3d-models/2001-bmw-m3-gtr-6bb4d180cd0d454ba62fbfae24fc5155 . License: https://creativecommons.org/licenses/by/4.0/ . Duplicate mesh passes and static wheel assemblies removed, transforms normalized. BMW does not sponsor or endorse the game. Full attribution ships in ASSET-CREDITS.md, BMW-M3-LICENSE.txt and THIRD-PARTY-NOTICES.md.
 
 Developed by Mateusz Zalewski with AI assistance.
