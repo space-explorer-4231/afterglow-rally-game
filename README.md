@@ -1,27 +1,24 @@
-# Aeroline 1.27.0
+# Aeroline 1.28.0 — Club Cup
 
-Opening the game required stage/mode/car setup, and multiplayer rounds stopped at results until the host intervened. This update makes Play launch a prepared easy drive, puts a preconfigured friend-race action before optional garage choices, and keeps races going in the same room.
+Multiplayer had isolated one-lap results but no shared goal between races. Time Attack rooms now run Club Cup: a three-race championship with server-owned points, a shared champion and an automatic fresh Cup after the results break. No new accounts or setup are required.
 
-Multiplayer creation/join now waits for acknowledged room membership before entering gameplay. Pending joins show connection feedback, duplicate launch clicks are ignored, server failures remain visible in the menu, and a one-minute timeout allows retry. Friend invite links retain direct joining. The starting grid adds a Copy invite link action with a selectable-link fallback.
+Finishing positions earn 12/10/8/7/6/5/4/3/2/1/1/1 points; DNF earns zero. Scores commit once per completed room round, survive host migration and retain departed drivers for the current Cup. Abandoned starts do not consume a race. Late arrivals can score the remaining races. Ties use wins, finishes, total finish time and session ID. History is bounded to three twelve-driver fields; aborted rosters cannot accumulate stored entries. All-DNF Cups have no champion.
 
-Server-owned Time Attack rematches show results for ten seconds, then reset and begin the next shared countdown automatically. Late arrivals must finish loading; host migration does not control the timer. Manual resets cancel automatic starts, and room cleanup clears timers. Hosts can also choose Race again now. Existing race timing, checkpoint order and DNF validation remain.
+The existing driving standings show Cup race number, personal points/position and the points gap to the leader. Results use a blue championship table with a visible personal summary, six-row pages, points gained and a champion title after race three. Paging and next-race actions retain keyboard/gamepad navigation; the lobby explains the goal. Protocol 1.28 adds runtime-validated Cup data to shared race results.
 
-NOS empty-to-full recharge is reduced from 30 to 12 released-button simulation seconds. The large driving guide no longer opens automatically; concise controls stay in the driving console and detailed help remains optional. Custom drive retains stage/car/mode selection.
+Validation: strict client/server TypeScript and production builds, zero lint errors with inherited warnings, 2,137 passing full-suite executions and ten inherited missing Android APK export failures. Twenty-seven passing executions repeat compiled server tests. New tests exercise scoring idempotency, abandoned races, late arrivals, bounded history, tie breaks, reset behavior, malformed packets and HUD states. Twelve actual WebSocket clients complete three races, agree on every point/champion, and enter a new Cup automatically. Two concurrent twelve-client rooms run for 90 seconds, including a receiver paused for 45 seconds. Four-client lifecycle checks include leave/jump DNF, late spectator, rejected guest reset and host handoff; existing asset/NOS/rejoin/voting checks pass. Public verification follows deployment.
 
-Validation: strict client types, zero lint errors (inherited warnings remain), production client/server builds, 2,099 passing automated test executions with ten inherited missing Android APK export failures. Nineteen executions repeat compiled server tests. New tests cover automatic rematches, late loading/departures, manual cancellation, cleanup, direct Play and the primary friend-race action. A separate virtual-clock test runs sixty rematches over twenty simulated minutes without timer buildup. Real twelve-client WebSocket testing verifies shared results, host handoff and an automatic second countdown/GO. Public checks are recorded in the verification report.
-
-This does not establish twenty minutes of human enjoyment, device FPS or phone/controller visual quality. A new friend playtest is still necessary. No paid hosting changes.
-
+Limitations: synthetic clients do not measure rendering FPS or human enjoyment. Relay stress cadence was around 47 ms median under concurrent checks, not a guaranteed 30 Hz. Real phone/laptop/controller playtesting remains necessary. Physics is still client-simulated; Cup scoring is not cheat-proof. No paid hosting changes.
 
 ## Play
 
-Play starts a prepared drive with automatic gears, AWD and ESP support. Multiplayer → Start a race room creates an Island race with an easy rally car. Copy the invite link for friends. The host starts the first race; subsequent races start automatically after the results. Free Roam and custom rooms remain available. No account or installation.
+Open Multiplayer → Start a race room, copy the invite link, and send it to friends. The host starts the first race; the server starts subsequent races automatically after ten-second results breaks. Three races decide the Cup champion, then a fresh Cup begins. No account or installation. Late arrivals can score the remaining races; leaving/rejoining creates a new score identity.
 
-WASD/arrows drive, Space handbrake, hold Shift NOS, double R recovery, Esc pause. Controller: triggers/stick drive, X/Square handbrake, L3 NOS, Y recovery. Phones use touch controls. Races: one lap, gates in order, first finish wins, thirty seconds for remaining drivers.
+WASD/arrows drive, Space handbrake, hold Shift NOS, double R recovery, Esc pause. Controller: triggers/stick drive, X/Square handbrake, L3 NOS, Y recovery. Phones use touch controls. Follow one lap of ordered gates; remaining drivers get thirty seconds after the first finish. NOS recharges in twelve released-button simulation seconds. ESP is enabled in the quick-start preset.
 
 ## Hosting
 
-Compiled client and relay. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys dev, health /health, protocol 1.27. Free instances may sleep; rooms reset on restart. Archives are SHA-256 checked. Editable source stays on the creator's desktop.
+Compiled client and relay. Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render deploys dev, health /health, protocol 1.28. Free instances may sleep; rooms/Cup points reset on restart. Archives are SHA-256 checked. Editable source stays on the creator's desktop.
 
 ## Licenses
 
