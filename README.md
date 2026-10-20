@@ -1,26 +1,24 @@
-# Aeroline 1.30.1 — Road Run
+# Aeroline 1.31.0 — UI, UX and driving audit
 
-Aeroline 1.30 addresses screenshot-reported contrast failures and unclear menu priority. Solo, Multiplayer and Car & Track are the large primary actions; Options/Credits are smaller. Explicit nested label colors fix dark text on green and white car names on cream, and car choices now expose their selected state. Keyboard/controller indices follow the visual order.
+Custom multiplayer room JOIN controls now have a reserved, always-visible action area shared with community rooms. Long metadata wraps and phone actions use their own row. Full/update/connecting states explain availability; repeated joins are guarded before changing maps. Live room refresh preserves focus by room identity. Native Enter/Space, sliders and handled track-card keys retain the intended action; Touch Screen joins the controller control-guide tab cycle. Mode/credits panels shrink and scroll. Room deletion uses inline confirmation with timeout/cancel.
 
-The five Speed Fleet bodies are replaced with adapted CC0 models: Innerscene's unbranded crossover/pickup/van and Spectral GT RS by JaronKBragg7337. Meridian is a lowered touring derivative. Sources, licenses, hashes and modifications ship in asset credits/manifest. Static wheel assemblies and decorative badges are removed; existing suspension-driven wheels remain. Ordinary/mobile variants are separately simplified to under 50k triangles each, batched by material and use reflective opaque glass to avoid per-car transmission passes. Handling and shared Cup scoring remain unchanged.
+Menus use neutral stone, ink text and restrained blue actions. In-map driving, Road Run, Drift Club, race and room tools share translucent charcoal instruments with smaller radii/thin borders/no heavy shadows. Idle readouts hide empty detail while preserving useful instructions and actions. Inset controller focus does not move geometry or force white labels. Tested menu/HUD text roles exceed 4.5:1 contrast, including HUD surfaces over white scenery.
 
-Ten loading illustrations rotate across transitions, retaining the original coast and all three 1.29 images. Six additional photographic-style original images cover canyon, snow, forest, night waterfront, storm coast and sunrise country roads. Only the selected background loads. These are illustrations, not exact gameplay representations. Harbor Ring has shorter blocks, warm terracotta/ochre/sage façades, varied awnings and warmer afternoon atmosphere; course and obstacle clearance remain intact.
+BMW recovery steering/yaw damping now honor ESP and the RWD role. NOS averages grounded contact normals instead of depending on the final wheel, and invalid/nonpositive time cannot apply forces or consume NOS. No speed/torque/grip buffs. Real Rapier numerical audit covers 14 cars × 8 assist masks × 30/60/120 solver Hz (336 combinations). Raw 30 Hz braking differs up to 6.74 m; shipping simulation stays fixed at 60 Hz.
 
-Version 1.30.1 also makes the existing start gantry visible in free roam so the challenge start line can be found. Road Run replaces the badge card with a passive four-sector loop challenge in free roam, including multiplayer free roam. It displays sector durations, elapsed time, on-road accuracy and a local setup-specific best. A complete ordered forward lap with at least 90% road accuracy may save a best; pause/hidden tab/recovery/reverse/jump/teleport discontinuities discard partial runs. This is local practice telemetry, not a server-authoritative competitive score. Accuracy measures the road corridor, not painted-lane recognition.
+Validation: strict client/server types and production builds pass. Full suite: 2,217 passing executions and ten unchanged inherited Android APK export failures. Lint has zero errors and existing warnings. Local two concurrent twelve-player rooms pass for 90 seconds, including a paused/resumed receiver. Four separate WebSocket clients complete three Cup races with identical points/champion and automatic cleared next Cup. Asset transport, NOS snapshots, host transfer and loading/voting/countdown/reset checks pass. All 315 current build files match the reconstructed bundle byte-for-byte.
 
-Validation: strict client/server types and production builds pass; lint has no errors. Full suite: 2,190 passing executions (27 compiled-server repeats) and ten unchanged inherited Android APK export failures. Tests cover challenge timing/discontinuities/records, ten real image files, full/optimized fleet budgets and normals, updated loading/entry copy and Harbor instancing/clearance/cleanup. Four local WebSocket clients complete three Cup races with identical points/champion and automatic cleared next Cup. Asset/Brotli/range/HDR/NOS snapshots, host transfer and loading/voting/countdown/reset checks pass.
-
-All current build files are compared byte-for-byte with the reconstructed deployment. Offline GLB projections inspect geometry only; browser PBR visuals, phone/controller interaction, FPS and human enjoyment remain unverified. The first procedural fleet iteration was discarded after silhouette inspection. No paid hosting change or contest submission. Public verification follows deployment.
+Source/SSR/numerical checks cannot establish final device layout, visual comfort or driving enjoyment. Real phone/laptop/controller testing remains necessary. No paid hosting change or contest submission.
 
 ## Play
 
-Solo jumps into driving. Multiplayer → Start a race room → Copy invite link. The host starts the first race; three races decide the Club Cup champion. Subsequent races/Cups start automatically. Car & Track customizes a solo drive. No account or installation.
+Solo jumps into driving. Multiplayer → Start a race room → Copy invite link. The host starts the first race; three races decide the Club Cup champion. Subsequent races/Cups start automatically. Car & Track customizes solo driving. No account or installation.
 
-WASD/arrows drive; Shift / L3 / touch NOS boosts, with twelve released-button active-driving seconds to refill. Space / X / Square handbrake; double R / Y recovery; Esc / Menu pause. Car preview: drag, right stick or Alt+arrows. Road Run starts near/crossing the start line in free roam.
+WASD/arrows drive; Shift / L3 / touch NOS boosts, with twelve released-button active-driving seconds to refill. Space / X / Square handbrake; double R / Y recovery; Esc / Menu pause. ESP defaults on. Car preview: drag, right stick or Alt+arrows. Road Run starts near/crossing the start line in free roam.
 
 ## Hosting
 
-Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render uses dev, health /health, protocol 1.30. Free instances may sleep; room/Cup state resets on service restart. Archives are SHA-256 verified. Editable source remains on the creator's desktop.
+Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render uses dev, health /health, protocol 1.31. Free instances may sleep; room/Cup state resets on service restart. Archives are SHA-256 verified. Editable source and three audit reports remain on the creator desktop.
 
 ## Licenses
 
