@@ -1,24 +1,22 @@
-# Aeroline 1.31.0 — UI, UX and driving audit
+# Aeroline 1.32.0 — Horizon Festival
 
-Custom multiplayer room JOIN controls now have a reserved, always-visible action area shared with community rooms. Long metadata wraps and phone actions use their own row. Full/update/connecting states explain availability; repeated joins are guarded before changing maps. Live room refresh preserves focus by room identity. Native Enter/Space, sliders and handled track-card keys retain the intended action; Touch Screen joins the controller control-guide tab cycle. Mode/credits panels shrink and scroll. Room deletion uses inline confirmation with timeout/cancel.
+Festival Radio streams ten official NCS recordings in the requested order, then repeats. Starts at the first genuine title/loading interaction, respects saved menu/game volumes, pauses on hidden tab/pause, and preserves position. One media element streams one song at a time; no Spotify account/player. Autoplay rejection retries on the next gesture; failed media skips with a bounded count. Recordings are 160kbps MP3 (~45MB total), fully decoded for integrity. Exact sources, original/delivery hashes, durations and credits ship in audio/festival. Project owner confirmed game-use authorization; no signed license was independently verified. Why We Lose is the official ~3:33 NCS download, rather than the ~3:17 Spotify edit shown in the reference.
 
-Menus use neutral stone, ink text and restrained blue actions. In-map driving, Road Run, Drift Club, race and room tools share translucent charcoal instruments with smaller radii/thin borders/no heavy shadows. Idle readouts hide empty detail while preserving useful instructions and actions. Inset controller focus does not move geometry or force white labels. Tested menu/HUD text roles exceed 4.5:1 contrast, including HUD surfaces over white scenery.
+All five driving HUD positions remain. Drift Club gets combo/countdown states; Road Run gets current/completed sector styling and trail progress; the drive console has a circular 0–100 NOS charge meter plus both tanks and explicit ready/active/charging/empty states. Minimap and speed/rev dial use light faces and warm/green accents. Menus/fields/room controls follow the same ivory, coral, leaf green and orange palette. Keyboard/controller/touch equivalents remain.
 
-BMW recovery steering/yaw damping now honor ESP and the RWD role. NOS averages grounded contact normals instead of depending on the final wheel, and invalid/nonpositive time cannot apply forces or consume NOS. No speed/torque/grip buffs. Real Rapier numerical audit covers 14 cars × 8 assist masks × 30/60/120 solver Hz (336 combinations). Raw 30 Hz braking differs up to 6.74 m; shipping simulation stays fixed at 60 Hz.
+All six maps receive three deterministic solar lookouts with PBR decks, planted beds, seating, supported footings and physical colliders outside the road corridor. Pass the amber minimap markers on the road to complete a local sightseeing trail, separate from Cup scoring. Two to five decorative aerial shuttles scale by quality and reuse precomputed paths/transforms. These are scenery, not racing NPCs. Harbor adds roof gardens, solar decks, sun fins, promenade pergolas/paths/seating using existing material batches. Mobile lighting retains biome variation. Maps remain stylized browser 3D; loading art is illustrative, not exact gameplay.
 
-Validation: strict client/server types and production builds pass. Full suite: 2,217 passing executions and ten unchanged inherited Android APK export failures. Lint has zero errors and existing warnings. Local two concurrent twelve-player rooms pass for 90 seconds, including a paused/resumed receiver. Four separate WebSocket clients complete three Cup races with identical points/champion and automatic cleared next Cup. Asset transport, NOS snapshots, host transfer and loading/voting/countdown/reset checks pass. All 315 current build files match the reconstructed bundle byte-for-byte.
-
-Source/SSR/numerical checks cannot establish final device layout, visual comfort or driving enjoyment. Real phone/laptop/controller testing remains necessary. No paid hosting change or contest submission.
+Validation: strict client/server types and production builds pass; full suite has 2,229 passing executions and ten unchanged inherited Android export failures. No new lint messages. Local 24-client/two-room 90-second stress, four-client three-race Cup, loading/voting/reset/host-handoff and assets/NOS synchronization checks pass. Local HTML plus41 assets (including all ten songs) match the build; twenty audio byte-range checks pass. Final deployment reconstruction is byte-compared. Real device rendering/listening/controls and FPS remain unverified; no measured 60FPS claim.
 
 ## Play
 
-Solo jumps into driving. Multiplayer → Start a race room → Copy invite link. The host starts the first race; three races decide the Club Cup champion. Subsequent races/Cups start automatically. Car & Track customizes solo driving. No account or installation.
+Solo starts a ready-to-drive car. Multiplayer → Start a race room → copy invite. Three races decide the Club Cup champion; next races/Cups start automatically. Car & Track customizes solo driving. No login or installation.
 
-WASD/arrows drive; Shift / L3 / touch NOS boosts, with twelve released-button active-driving seconds to refill. Space / X / Square handbrake; double R / Y recovery; Esc / Menu pause. ESP defaults on. Car preview: drag, right stick or Alt+arrows. Road Run starts near/crossing the start line in free roam.
+WASD/arrows drive; Shift/L3/touch NOS boosts with two five-second tanks, twelve released-button active-driving seconds to refill. Space/X/Square handbrake; double R/Y recovery; Esc/Menu pause; H/D-pad up guide. ESP defaults on. Four-sector Road Run and the amber lookout trail are local free-roam practice.
 
 ## Hosting
 
-Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render uses dev, health /health, protocol 1.31. Free instances may sleep; room/Cup state resets on service restart. Archives are SHA-256 verified. Editable source and three audit reports remain on the creator desktop.
+Node24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render uses dev, health /health, protocol1.32. Free instances may sleep; room/Cup state resets on restart. SHA256 archives verified. Editable source and original NCS downloads remain on the creator desktop. No paid hosting change or contest submission.
 
 ## Licenses
 
