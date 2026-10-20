@@ -1,4 +1,4 @@
-# Aeroline 1.30.0 — Road Run
+# Aeroline 1.30.1 — Road Run
 
 Aeroline 1.30 addresses screenshot-reported contrast failures and unclear menu priority. Solo, Multiplayer and Car & Track are the large primary actions; Options/Credits are smaller. Explicit nested label colors fix dark text on green and white car names on cream, and car choices now expose their selected state. Keyboard/controller indices follow the visual order.
 
@@ -6,7 +6,7 @@ The five Speed Fleet bodies are replaced with adapted CC0 models: Innerscene's u
 
 Ten loading illustrations rotate across transitions, retaining the original coast and all three 1.29 images. Six additional photographic-style original images cover canyon, snow, forest, night waterfront, storm coast and sunrise country roads. Only the selected background loads. These are illustrations, not exact gameplay representations. Harbor Ring has shorter blocks, warm terracotta/ochre/sage façades, varied awnings and warmer afternoon atmosphere; course and obstacle clearance remain intact.
 
-Road Run replaces the badge card with a passive four-sector loop challenge in free roam, including multiplayer free roam. It displays sector durations, elapsed time, on-road accuracy and a local setup-specific best. A complete ordered forward lap with at least 90% road accuracy may save a best; pause/hidden tab/recovery/reverse/jump/teleport discontinuities discard partial runs. This is local practice telemetry, not a server-authoritative competitive score. Accuracy measures the road corridor, not painted-lane recognition.
+Version 1.30.1 also makes the existing start gantry visible in free roam so the challenge start line can be found. Road Run replaces the badge card with a passive four-sector loop challenge in free roam, including multiplayer free roam. It displays sector durations, elapsed time, on-road accuracy and a local setup-specific best. A complete ordered forward lap with at least 90% road accuracy may save a best; pause/hidden tab/recovery/reverse/jump/teleport discontinuities discard partial runs. This is local practice telemetry, not a server-authoritative competitive score. Accuracy measures the road corridor, not painted-lane recognition.
 
 Validation: strict client/server types and production builds pass; lint has no errors. Full suite: 2,190 passing executions (27 compiled-server repeats) and ten unchanged inherited Android APK export failures. Tests cover challenge timing/discontinuities/records, ten real image files, full/optimized fleet budgets and normals, updated loading/entry copy and Harbor instancing/clearance/cleanup. Four local WebSocket clients complete three Cup races with identical points/champion and automatic cleared next Cup. Asset/Brotli/range/HDR/NOS snapshots, host transfer and loading/voting/countdown/reset checks pass.
 
@@ -27,3 +27,4 @@ Node 24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render u
 OpenRally and original fleet/forged wheel meshes: MIT. BMW body adapted from 2001 BMW M3 GTR by Dave Love SketchFab (Tyler_Dave), CC BY 4.0: https://sketchfab.com/3d-models/2001-bmw-m3-gtr-6bb4d180cd0d454ba62fbfae24fc5155 . License: https://creativecommons.org/licenses/by/4.0/ . Duplicate mesh passes and static wheel assemblies removed, transforms normalized. BMW does not sponsor or endorse the game. Full attribution ships in ASSET-CREDITS.md, BMW-M3-LICENSE.txt and THIRD-PARTY-NOTICES.md.
 
 Developed by Mateusz Zalewski with AI assistance.
+
