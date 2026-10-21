@@ -1,4 +1,4 @@
-# Aeroline 1.33.0
+# Aeroline 1.33.1
 
 A public browser driving game: solo practice or shared room-code racing, without player accounts or installation.
 
@@ -16,7 +16,7 @@ Harbor Ring gains connected paved urban blocks, service lanes, crossings, more p
 
 ## Validation
 
-Strict client types pass; full automated check: 2,240 passing executions, ten unchanged inherited Android export failures. New checks cover ordered NOS rewards, geographically nearest checkpoints, three-second recovery at 30/60/120Hz, repeated selection of all fourteen cars, and reverse launch with all assists on across fourteen cars and all three drive modes. All 42 combinations exceed 19km/h within two seconds and stay straight. Existing reverse ceiling checks at 30/60/120Hz pass. Production/server builds and live HTTP/WebSocket checks are recorded in the desktop verification files. No actual-device rendering, audible playback or measured FPS validation is claimed.
+Strict client types pass; full automated check: 2,243 passing executions, ten unchanged inherited Android export failures. New checks cover ordered NOS rewards, geographically nearest checkpoints, three-second recovery at 30/60/120Hz, repeated selection of all fourteen cars, and reverse launch with all assists on across fourteen cars and all three drive modes. All 42 combinations exceed 19km/h within two seconds and stay straight. Existing reverse ceiling checks at 30/60/120Hz pass. Production/server builds and live HTTP/WebSocket checks are recorded in the desktop verification files. Soundtrack lifecycle tests cover pause/background/loading continuity, settings mute/resume and blocked autoplay gesture retry; the unused controller dependency is removed. No new lint messages relative to1.32. No actual-device rendering, audible playback or measured FPS validation is claimed.
 
 ## Play and hosting
 
