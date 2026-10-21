@@ -1,22 +1,26 @@
-# Aeroline 1.32.0 — Horizon Festival
+# Aeroline 1.33.0
 
-Festival Radio streams ten official NCS recordings in the requested order, then repeats. Starts at the first genuine title/loading interaction, respects saved menu/game volumes, pauses on hidden tab/pause, and preserves position. One media element streams one song at a time; no Spotify account/player. Autoplay rejection retries on the next gesture; failed media skips with a bounded count. Recordings are 160kbps MP3 (~45MB total), fully decoded for integrity. Exact sources, original/delivery hashes, durations and credits ship in audio/festival. Project owner confirmed game-use authorization; no signed license was independently verified. Why We Lose is the official ~3:33 NCS download, rather than the ~3:17 Spotify edit shown in the reference.
+A public browser driving game: solo practice or shared room-code racing, without player accounts or installation.
 
-All five driving HUD positions remain. Drift Club gets combo/countdown states; Road Run gets current/completed sector styling and trail progress; the drive console has a circular 0–100 NOS charge meter plus both tanks and explicit ready/active/charging/empty states. Minimap and speed/rev dial use light faces and warm/green accents. Menus/fields/room controls follow the same ivory, coral, leaf green and orange palette. Keyboard/controller/touch equivalents remain.
+## This release
 
-All six maps receive three deterministic solar lookouts with PBR decks, planted beds, seating, supported footings and physical colliders outside the road corridor. Pass the amber minimap markers on the road to complete a local sightseeing trail, separate from Cup scoring. Two to five decorative aerial shuttles scale by quality and reuse precomputed paths/transforms. These are scenery, not racing NPCs. Harbor adds roof gardens, solar decks, sun fins, promenade pergolas/paths/seating using existing material batches. Mobile lighting retains biome variation. Maps remain stylized browser 3D; loading art is illustrative, not exact gameplay.
+Home now has two primary choices: green Solo and red Multiplayer. Solo opens track/mode/car selection; multiplayer exposes car selection and map choices before creating a room. Options and Credits remain secondary. The BMW M3 is the initial car and live menu showcase. Selecting or reselecting every car restores ESP, ABS and TCS; each can still be switched off deliberately.
 
-Validation: strict client/server types and production builds pass; full suite has 2,229 passing executions and ten unchanged inherited Android export failures. No new lint messages. Local 24-client/two-room 90-second stress, four-client three-race Cup, loading/voting/reset/host-handoff and assets/NOS synchronization checks pass. Local HTML plus41 assets (including all ten songs) match the build; twenty audio byte-range checks pass. Final deployment reconstruction is byte-compared. Real device rendering/listening/controls and FPS remain unverified; no measured 60FPS claim.
+Double R and pause-menu recovery use the geographically nearest checkpoint in every mode and impose a three-second physics-time lock with a visible countdown. Race progress is preserved; a recovered competitive lap remains invalidated. Recovery cannot itself collect a checkpoint/NOS reward.
 
-## Play
+Reverse wheel force is 2.5 times its previous setting; the 25km/h reverse speed ceiling remains. Ordered race gates and free-roam Road Run sectors replenish 35% NOS capacity; halfway and finish replenish to full capacity. Repeated/wrong gates do not grant rewards.
 
-Solo starts a ready-to-drive car. Multiplayer → Start a race room → copy invite. Three races decide the Club Cup champion; next races/Cups start automatically. Car & Track customizes solo driving. No login or installation.
+Festival Radio attempts playback immediately and retries after a gesture if the browser blocks autoplay. It continues through menus, loading, pause and background instead of intentionally muting. Existing menu/game music volume settings remain authoritative. The ten-song order, looping, files and credits are unchanged. Browser/OS audio restrictions may still require the first interaction.
 
-WASD/arrows drive; Shift/L3/touch NOS boosts with two five-second tanks, twelve released-button active-driving seconds to refill. Space/X/Square handbrake; double R/Y recovery; Esc/Menu pause; H/D-pad up guide. ESP defaults on. Four-sector Road Run and the amber lookout trail are local free-roam practice.
+Harbor Ring gains connected paved urban blocks, service lanes, crossings, more planted trees, muted facade materials and stepped rooflines with matching roof colliders. Two or three decorative quad-rotor drones circle precomputed routes with animated propellers. Geometry/texture resources are shared and disposed. Scenery remains stylized browser 3D rather than matching illustrative loading art exactly.
 
-## Hosting
+## Validation
 
-Node24+: npm ci --omit=dev --ignore-scripts, npm run build, npm start. Render uses dev, health /health, protocol1.32. Free instances may sleep; room/Cup state resets on restart. SHA256 archives verified. Editable source and original NCS downloads remain on the creator desktop. No paid hosting change or contest submission.
+Strict client types pass; full automated check: 2,240 passing executions, ten unchanged inherited Android export failures. New checks cover ordered NOS rewards, geographically nearest checkpoints, three-second recovery at 30/60/120Hz, repeated selection of all fourteen cars, and reverse launch with all assists on across fourteen cars and all three drive modes. All 42 combinations exceed 19km/h within two seconds and stay straight. Existing reverse ceiling checks at 30/60/120Hz pass. Production/server builds and live HTTP/WebSocket checks are recorded in the desktop verification files. No actual-device rendering, audible playback or measured FPS validation is claimed.
+
+## Play and hosting
+
+WASD/arrows drive; Shift/L3/touch NOS boosts; Space/X/Square handbrakes; double R/Y recovers; Esc/Menu pauses. Multiplayer races award Club Cup points across three races. Node24+, dev branch, health /health, protocol1.33. Render free instances may sleep; room state resets on service restart. No paid hosting change or contest submission.
 
 ## Licenses
 
