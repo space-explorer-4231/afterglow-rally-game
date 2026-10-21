@@ -1,8 +1,12 @@
-# Aeroline 1.34.0
+# Aeroline 1.34.1
 
 A public browser driving game: solo practice or shared room-code racing, without player accounts or installation.
 
-## This release
+## Loading hotfix
+
+Shader warm-up now has a 2.5-second fallback to normal on-demand rendering, and unrelated background downloads no longer hold a mounted scene in loading. Re-entering a settled car restores its physics readiness. The loader still waits for the local vehicle and terrain and covers two final frames.
+
+## Previous release
 
 Fifteen original loading illustrations shuffle every 7.7 seconds while preparation is underway; the original coastal artwork remains. Harbor Ring now has a detailed marina illustration in track selection. The loader covers asynchronous shader compilation and two final frames, and multiplayer readiness waits for physics, car visuals and renderer preparation. Repeated terrain compilation is reduced with a bounded cache. No artificial slideshow delay is added.
 
