@@ -1,28 +1,20 @@
-# Aeroline 1.34.2
+# Aeroline 1.35.0
 
-A public browser driving game: solo practice or shared room-code racing, without player accounts or installation.
+Public browser driving: solo practice and room-code multiplayer without accounts or installation.
 
-## Repeated menu-entry reset fix
+## Spin catch and Boost Hunt
 
-The vehicle hook previously treated every frame of menu loading as a new entry, repeatedly grounding the car and returning before scene readiness. Menu-entry reset now fires once per transition. Actual Rapier hook lifecycle tests cover fresh title entry and repeated gameplay/menu loading. Browser entry, throttle/NOS response and return to menu were checked locally before publication.
+A universal grounded spin catch uses corrective yaw torque when a slide approaches over-rotation. Normal steering, small drift angles, suspension, traction, braking and optional ESP steering remain. It does not snap vehicle pose or linear velocity, and does not override airborne or overturned-body physics.
 
-## Previous loading hotfix
+Boost Hunt is a local free-roam 90-second ring chase on all six maps. Chase amber road rings, collect 100 points times a combo up to five, and restore35% NOS on pickups (full NOS every fifth ring). Link rings within eight seconds. Three reusable visual rings guide the next targets without colliders or new asset downloads. Start/end and replay use the existing road HUD card. Pause/hidden tabs suspend the timer; recovery ends the current hunt. Local casual scores do not alter authoritative Cup results.
 
-Shader warm-up now has a 2.5-second fallback to normal on-demand rendering, and unrelated background downloads no longer hold a mounted scene in loading. Re-entering a settled car restores its physics readiness. The loader still waits for the local vehicle and terrain and covers two final frames.
+## Verification
 
-## Previous release
-
-Fifteen original loading illustrations shuffle every 7.7 seconds while preparation is underway; the original coastal artwork remains. Harbor Ring now has a detailed marina illustration in track selection. The loader covers asynchronous shader compilation and two final frames, and multiplayer readiness waits for physics, car visuals and renderer preparation. Repeated terrain compilation is reduced with a bounded cache. No artificial slideshow delay is added.
-
-Shift boosts with available NOS during sliding, jumps, braking, handbraking and reverse. Short keyboard taps are preserved between simulation frames. Race starts and recovery still lock movement. Club-class acceleration and speed are closer across fourteen cars while body, drivetrain and suspension differences remain; loose-surface rear support improves control with ESP. BMW retains its asphalt drift behavior.
-
-## Validation
-
-All fourteen cars ran on all six map terrains for sixty simulated seconds each using real Rapier and the production contact solver: 84 combinations, 5,040 simulated seconds, zero invalid physics or rollovers. Same-bot route-progress spread narrowed substantially, including Snow from 1.917 to 1.097 and Highlands from 1.253 to 1.104. These are simplified-chassis terrain simulations, not manual playtests or a guarantee of equal lap times. Snow/Highlands retain route-following limitations. Browser/device FPS and audible playback are unmeasured. Ten inherited Android APK export failures remain separate from the web release. Desktop verification files record full checks, production builds and HTTP/WebSocket results.
+Strict client types and production client/server builds pass. Full suite:2,282 pass and ten inherited Android APK export failures; no new lint messages. Physics checks cover fourteen cars in three drive modes, at30/60/120Hz, for severe slides in both directions, while existing drift checks remain. The84 car/map terrain simulations each run60 simulated seconds with no rollovers or invalid physics. Ten fresh browser game sessions use ten cars across six maps, closing the tab between sessions; test logs/screenshots record loading, controls, pause, Hunt and recovery smoke checks. They do not prove absence of every bug or establish real-device FPS.
 
 ## Play and hosting
 
-WASD/arrows drive; Shift/L3/touch NOS boosts; Space/X/Square handbrakes; double R/Y recovers; Esc/Menu pauses. Multiplayer races award Club Cup points across three races. Node24+, dev branch, health /health, protocol1.34. Render free instances may sleep; room state resets on service restart. No paid hosting change or contest submission.
+WASD/arrows drive; Shift/L3/touch NOS boosts; Space handbrakes; double R recovers; Esc pauses. Start Boost Hunt from the road card in Free Roam. Node24+, dev branch, /health, protocol1.35. Render free instances may sleep; deployment restarts room state. No paid hosting change or contest submission.
 
 ## Licenses
 
