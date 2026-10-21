@@ -1,8 +1,12 @@
-# Aeroline 1.34.1
+# Aeroline 1.34.2
 
 A public browser driving game: solo practice or shared room-code racing, without player accounts or installation.
 
-## Loading hotfix
+## Repeated menu-entry reset fix
+
+The vehicle hook previously treated every frame of menu loading as a new entry, repeatedly grounding the car and returning before scene readiness. Menu-entry reset now fires once per transition. Actual Rapier hook lifecycle tests cover fresh title entry and repeated gameplay/menu loading. Browser entry, throttle/NOS response and return to menu were checked locally before publication.
+
+## Previous loading hotfix
 
 Shader warm-up now has a 2.5-second fallback to normal on-demand rendering, and unrelated background downloads no longer hold a mounted scene in loading. Re-entering a settled car restores its physics readiness. The loader still waits for the local vehicle and terrain and covers two final frames.
 
