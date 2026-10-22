@@ -1,23 +1,30 @@
-# Aeroline 1.35.0
+# Aeroline 1.36.1
 
-Public browser driving: solo practice and room-code multiplayer without accounts or installation.
+Play at https://aeroline-road-club.aeroline-edge.workers.dev/ — solo practice and room-code multiplayer without player accounts or installation. The free Cloudflare deployment is live; Render is suspended after its free bandwidth allowance was exhausted. This repository retains the compatible optimized Node/Render build. No paid plan was enabled.
 
-## Spin catch and Boost Hunt
+## Clearer driving, fewer overlays
 
-A universal grounded spin catch uses corrective yaw torque when a slide approaches over-rotation. Normal steering, small drift angles, suspension, traction, braking and optional ESP steering remain. It does not snap vehicle pose or linear velocity, and does not override airborne or overturned-body physics.
+Quick Drive starts a prepared car in one click. Solo and Multiplayer remain prominent; advanced settings stay secondary. Normal driving shows speed, boost and navigation. Optional Boost Hunt and Drift Club activities move into Pause, and short contextual tips introduce controls one at a time. Empty ghost/debug/radio panels no longer crowd the road.
 
-Boost Hunt is a local free-roam 90-second ring chase on all six maps. Chase amber road rings, collect 100 points times a combo up to five, and restore35% NOS on pickups (full NOS every fifth ring). Link rings within eight seconds. Three reusable visual rings guide the next targets without colliders or new asset downloads. Start/end and replay use the existing road HUD card. Pause/hidden tabs suspend the timer; recovery ends the current hunt. Local casual scores do not alter authoritative Cup results.
+The garage fits the actual selected model in a lit showroom, provides rotation and loading feedback, and keeps Start reachable. Custom-room Join actions remain visible, keyboard/controller focus follows selection, and cream surfaces use readable dark text. Touch controls use the same warm green/amber palette.
+
+## Optional driver seat and weather
+
+Settings offers a generic driver-seat cockpit with windshield and side-window frames, steering wheel and live instruments. Follow camera remains default; the ordinary camera cycle excludes driver seat. Clear skies remain default; optional rain responds to camera movement and scales with graphics quality without changing competitive grip.
+
+Vegetation uses spatially bounded instance batches and a shared foliage texture sample. Close foliage fades near the camera; ordinary rolling tracks are lighter while sliding marks remain visible. Keyboard input resets on lost focus, and paused touch controls no longer cover menus.
 
 ## Verification
 
-Strict client types and production client/server builds pass. Full suite:2,282 pass and ten inherited Android APK export failures; no new lint messages. Physics checks cover fourteen cars in three drive modes, at30/60/120Hz, for severe slides in both directions, while existing drift checks remain. The84 car/map terrain simulations each run60 simulated seconds with no rollovers or invalid physics. Ten fresh browser game sessions use ten cars across six maps, closing the tab between sessions; test logs/screenshots record loading, controls, pause, Hunt and recovery smoke checks. They do not prove absence of every bug or establish real-device FPS.
+Strict types, targeted lint, regression tests, production client/server builds, local browser entry/cockpit/weather/touch/room tests and multiplayer protocol stress checks are recorded with the desktop source. Automated all-car/all-map physics simulation is separate from rendered driving coverage. The latest full run has 2,331 passing tests. Ten inherited Android APK export checks require unavailable packaging deliverables. Do not interpret this release as a guarantee of zero bugs or completed real-device certification.
 
-## Play and hosting
+## Controls and hosting
 
-WASD/arrows drive; Shift/L3/touch NOS boosts; Space handbrakes; double R recovers; Esc pauses. Start Boost Hunt from the road card in Free Roam. Node24+, dev branch, /health, protocol1.35. Render free instances may sleep; deployment restarts room state. No paid hosting change or contest submission.
+WASD/arrows drive; Shift/L3/touch NOS boosts while fuel remains; Space handbrakes; double R recovers to the nearest checkpoint with a three-second countdown; Esc pauses. Node 24+, dev branch, /health, protocol 1.36. Client telemetry and server snapshots use 20 Hz; presentation interpolates independently. Render free instances may sleep. No paid hosting change or contest submission.
 
 ## Licenses
 
 OpenRally and original fleet/forged wheel meshes: MIT. BMW body adapted from 2001 BMW M3 GTR by Dave Love SketchFab (Tyler_Dave), CC BY 4.0: https://sketchfab.com/3d-models/2001-bmw-m3-gtr-6bb4d180cd0d454ba62fbfae24fc5155 . License: https://creativecommons.org/licenses/by/4.0/ . Duplicate mesh passes and static wheel assemblies removed, transforms normalized. BMW does not sponsor or endorse the game. Full attribution ships in ASSET-CREDITS.md, BMW-M3-LICENSE.txt and THIRD-PARTY-NOTICES.md.
 
 Developed by Mateusz Zalewski with AI assistance.
+
