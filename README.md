@@ -1,14 +1,16 @@
 # Aeroline
 
+[**Open the interactive project page →**](https://space-explorer-4231.github.io/afterglow-rally-game/)
+
+[![Aeroline project homepage adapted from the Academic Project Page Template](docs/media/project-page-preview.png)](https://space-explorer-4231.github.io/afterglow-rally-game/)
+
 **A multiplayer browser driving game, built on MIT-licensed OpenRally, with assisted drifting, six maps and room-code races.**
 
 [**Play Aeroline →**](https://aeroline-road-club.aeroline-edge.workers.dev/) · [Report a bug](https://github.com/space-explorer-4231/afterglow-rally-game/issues/new?template=bug_report.yml) · [Suggest an idea](https://github.com/space-explorer-4231/afterglow-rally-game/issues/new?template=feature_request.yml) · [Contribute](CONTRIBUTING.md)
 
 [![Code license: MIT](https://img.shields.io/badge/code-MIT-2f6b53)](LICENSE) [![Source: TypeScript](https://img.shields.io/badge/source-TypeScript-3178c6)](source/src) [![Web checks](https://github.com/space-explorer-4231/afterglow-rally-game/actions/workflows/web-checks.yml/badge.svg?branch=dev)](https://github.com/space-explorer-4231/afterglow-rally-game/actions/workflows/web-checks.yml)
 
-![Aeroline coastal loading artwork](docs/media/aeroline-coast.webp)
-
-*Artwork from the in-game loading gallery. Screenshots below show actual gameplay.*
+*The project page uses the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template). Its artwork gallery distinguishes loading illustrations from actual gameplay.*
 
 ## Take the wheel
 
@@ -121,6 +123,8 @@ The recorded 1.38.2 full check had **2,378 passes and ten inherited Android-pack
 ## License and credits
 
 **Code is MIT licensed; assets are not all MIT.** Preserve OpenRally's original copyright and license. Aeroline's original code contributions are also MIT licensed.
+
+The template-based project website has its own [CC BY-SA attribution and license](docs/WEBSITE-LICENSE.md); it is separate from the game code license.
 
 Vehicles, textures and recordings retain separate terms. NCS recordings are not public-domain music; game-use permission does not grant blanket redistribution rights. Review or replace restricted media before redistributing a fork.
 
