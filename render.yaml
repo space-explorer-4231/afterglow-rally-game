@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: afterglow-rally-game
+    runtime: node
+    plan: free
+    branch: dev
+    buildCommand: npm ci --omit=dev --ignore-scripts && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_VERSION
+        value: 24.19.0

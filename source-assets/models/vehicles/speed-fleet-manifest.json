@@ -1,0 +1,143 @@
+[
+  {
+    "id": "meridian_rs",
+    "source": "voltline",
+    "front": -1,
+    "base": 2.92,
+    "track": 1.82,
+    "roof": 0.9,
+    "color": [
+      0.015,
+      0.22,
+      0.24,
+      1
+    ],
+    "url": "https://www.innerscene.com/tools/library/3d-parts/charcoal-five-door-crossover-suv-a1996830",
+    "bytes": 3157292,
+    "optimizedBytes": 1566392,
+    "optimizedTriangles": 39346,
+    "removed": 48,
+    "sha256": "4c64856d9de12cf713f59e4f5a0a5a1ec49baa3d5c8e0bc6ceb1dfedb7620db4",
+    "license": "CC0-1.0",
+    "bounds": {
+      "min": [
+        -1.2077927053162063,
+        -0.7774211534989313,
+        -2.3516576290130615
+      ],
+      "max": [
+        1.2110322700772997,
+        0.8999882659810025,
+        2.4583051204681396
+      ]
+    }
+  },
+  {
+    "id": "voltline_xr",
+    "source": "voltline",
+    "front": -1,
+    "base": 2.95,
+    "track": 1.88,
+    "roof": 1.2,
+    "color": [
+      0.12,
+      0.16,
+      0.15,
+      1
+    ],
+    "url": "https://www.innerscene.com/tools/library/3d-parts/charcoal-five-door-crossover-suv-a1996830",
+    "bytes": 3157284,
+    "optimizedBytes": 1577248,
+    "optimizedTriangles": 39766,
+    "removed": 48,
+    "sha256": "4c64856d9de12cf713f59e4f5a0a5a1ec49baa3d5c8e0bc6ceb1dfedb7620db4",
+    "license": "CC0-1.0",
+    "bounds": {
+      "min": [
+        -1.2509235280108058,
+        -0.8529835071753336,
+        -2.3741605281829834
+      ],
+      "max": [
+        1.2509234088015162,
+        1.2000167348841657,
+        2.4835615158081055
+      ]
+    }
+  },
+  {
+    "id": "ironclad_sprint",
+    "source": "ironclad",
+    "front": -1,
+    "base": 3.05,
+    "track": 1.94,
+    "roof": 1.1,
+    "color": [
+      0.42,
+      0.11,
+      0.035,
+      1
+    ],
+    "url": "https://www.innerscene.com/tools/library/3d-parts/crew-cab-pickup-with-open-bed-4f02e0cc",
+    "bytes": 3628600,
+    "optimizedBytes": 1840168,
+    "optimizedTriangles": 46421,
+    "removed": 48,
+    "sha256": "47aa7193686d426401766c89d3d4bcb78e5b880ab7b15d2050639ff9d14a00c4",
+    "license": "CC0-1.0",
+    "bounds": {
+      "min": [
+        -1.2714614642184114,
+        -0.8275980834605341,
+        -2.443559169769287
+      ],
+      "max": [
+        1.271461345009122,
+        1.1000203654835352,
+        2.39045786857605
+      ]
+    }
+  },
+  {
+    "id": "parcel_gt",
+    "source": "parcel",
+    "front": -1,
+    "base": 3,
+    "track": 1.88,
+    "roof": 1.55,
+    "color": [
+      0.67,
+      0.6,
+      0.42,
+      1
+    ],
+    "url": "https://www.innerscene.com/tools/library/3d-parts/high-roof-cargo-panel-van-c4d5145f",
+    "bytes": 3544232,
+    "optimizedBytes": 1875688,
+    "optimizedTriangles": 44344,
+    "removed": 48,
+    "sha256": "b0d26a40bdb39c67224259213faafef71f9396c0ba658a1bb68cc1626a34ef36",
+    "license": "CC0-1.0",
+    "bounds": {
+      "min": [
+        -1.358491317700593,
+        -0.7865643157438762,
+        -2.5172173976898193
+      ],
+      "max": [
+        1.358491317700593,
+        1.5500080375607428,
+        2.5148415565490723
+      ]
+    }
+  },
+  {
+    "id": "nightfall_v8",
+    "source": "Aeroline original closed coupe coachwork",
+    "generator": "scripts/build-aero-coachwork.mjs --nightfall-coupe",
+    "license": "MIT",
+    "bytes": 2022048,
+    "optimizedBytes": 1197816,
+    "meshCount": 6
+  }
+]

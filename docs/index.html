@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aeroline — Open Road Club</title>
+  <meta name="description" content="A browser driving club for friends. Explore six maps, choose from fourteen cars and race together with a room code. Built by Mateusz Zalewski with ChatGPT.">
+  <meta name="author" content="Mateusz Zalewski">
+  <meta name="theme-color" content="#fffdf8">
+  <meta property="og:title" content="Aeroline — Open Road Club">
+  <meta property="og:description" content="Good roads. Better company. A multiplayer driving game you can open in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://space-explorer-4231.github.io/afterglow-rally-game/media/aeroline-coast.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/template.css">
+  <link rel="stylesheet" href="static/css/aeroline.css">
+  <script src="static/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="project-nav" aria-label="Project navigation">
+    <a class="wordmark" href="#main-content"><img src="media/favicon.svg" width="24" height="24" alt=""> AEROLINE</a>
+    <details class="project-menu"><summary>Explore project <span aria-hidden="true">⌄</span></summary><div>
+      <a href="#overview">Overview</a><a href="#maps">Explore the maps</a><a href="#crew">The multiplayer flow</a><a href="#play">How to play</a><a href="#building">The build</a><a href="#questions">Questions</a><a href="https://github.com/space-explorer-4231/afterglow-rally-game/tree/main">Source on GitHub ↗</a>
+    </div></details>
+  </nav>
+  <main id="main-content">
+    <section class="hero project-hero">
+      <div class="hero-body"><div class="container is-max-desktop has-text-centered">
+        <p class="eyebrow">AN OPEN ROAD. A SHARED STARTING LINE.</p>
+        <h1 class="title is-1 publication-title">Aeroline <span>Open Road Club</span></h1>
+        <p class="project-subtitle">Good roads. Better company.</p>
+        <div class="publication-authors"><a href="https://github.com/space-explorer-4231">Mateusz Zalewski</a><span class="author-note">Built with ChatGPT assistance · Independent game project</span></div>
+        <div class="publication-links" aria-label="Project links">
+          <a class="button is-dark is-rounded play-action" href="https://aeroline-road-club.aeroline-edge.workers.dev/"><span aria-hidden="true">▶</span><span>Play the game</span></a>
+          <a class="button is-dark is-rounded" href="https://github.com/space-explorer-4231/afterglow-rally-game/tree/main"><span aria-hidden="true">&lt;/&gt;</span><span>Source code</span></a>
+          <a class="button is-dark is-rounded" href="https://app.joinhandshake.com/ai-showcase/projects/3664470"><span aria-hidden="true">↗</span><span>Showcase</span></a>
+        </div>
+        <p class="hero-facts">14 cars <span>·</span> 6 maps <span>·</span> Room-code multiplayer <span>·</span> No accounts</p>
+      </div></div>
+    </section>
+    <section class="hero teaser" aria-label="Aeroline visual showcase">
+      <div class="container is-max-desktop"><div class="hero-body">
+        <figure class="showcase-frame">
+          <img id="showcase-image" src="media/aeroline-coast.webp" width="1672" height="941" alt="Original loading artwork: a white roadster on a sunlit coastal road" fetchpriority="high">
+          <figcaption id="showcase-caption" aria-live="polite">The original loading artwork. A little inspiration before the drive.</figcaption>
+        </figure>
+        <div class="showcase-controls" role="group" aria-label="Choose a project image">
+          <button type="button" data-scene="art" aria-pressed="true">Loading artwork</button>
+          <button type="button" data-scene="drive" aria-pressed="false">Actual gameplay</button>
+          <button type="button" data-scene="crew" aria-pressed="false">Multiplayer grid</button>
+        </div>
+        <p class="visual-note">Illustration and gameplay are labeled separately. Select a view to explore.</p>
+      </div></div>
+    </section>
+    <section id="overview" class="section project-section soft-section"><div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">A driving club, one link away.</h2>
+      <div class="content overview-copy"><p>Aeroline brings friends together for a drive without an account or installation. Pick a car, share a room code and cruise—or line up for a three-race Club Cup. Follow the checkpoints, collect points and come back for the next round.</p><p>Built on the open-source OpenRally engine, it combines physical tire and suspension behavior with approachable driving assists. The aim is simple: less setup, more time on the road.</p></div>
+      <div class="feature-row"><div><strong>Drive your way</strong><p>Fourteen cars, tire choices and six varied maps.</p></div><div><strong>Bring your crew</strong><p>Shared starts, room codes and automatic next races.</p></div><div><strong>Make it your own</strong><p>Browse the source, report a bug or contribute a focused improvement.</p></div></div>
+    </div></section>
+    <section id="maps" class="section project-section"><div class="container is-max-desktop">
+      <p class="eyebrow has-text-centered">FIND YOUR NEXT ROAD</p><h2 class="title is-3 has-text-centered">Six places to take the long way.</h2>
+      <div class="map-selector" role="group" aria-label="Explore a map"><button data-map="island" aria-pressed="true">Island Circuit</button><button data-map="desert" aria-pressed="false">Desert Canyon</button><button data-map="snow" aria-pressed="false">Sweden Snow</button><button data-map="highland" aria-pressed="false">Highland Castle</button><button data-map="drift" aria-pressed="false">Drift District</button><button data-map="harbor" aria-pressed="false">Harbor Ring</button></div>
+      <div class="map-explorer"><img id="map-image" src="media/maps/island_circuit.jpg" width="1200" height="675" alt="Island Circuit map-selection artwork showing a coastal road" loading="lazy"><div class="map-copy" aria-live="polite"><p id="map-surface" class="eyebrow">MUD &amp; GRASS</p><h3 id="map-title">Island Circuit</h3><p id="map-description">Rolling coastal hills, muddy corners and ocean views. A scenic place to settle into the car before chasing a cleaner lap.</p><p class="map-prompt" id="map-prompt">Try it for: a relaxed drive and your first checkpoint run.</p></div></div>
+      <p class="visual-note">Map-selection artwork from the game. These illustrations are not rendered gameplay.</p>
+    </div></section>
+    <section id="crew" class="section project-section soft-section"><div class="container is-max-desktop">
+      <p class="eyebrow has-text-centered">THE SHARED STARTING LINE</p><h2 class="title is-3 has-text-centered">One room. Your whole crew.</h2><p class="section-intro">Explore the room flow before opening the game.</p>
+      <div class="room-walkthrough"><div class="flow-buttons" role="group" aria-label="Multiplayer walkthrough"><button data-flow="invite" aria-pressed="true"><span>01</span> Invite</button><button data-flow="ready" aria-pressed="false"><span>02</span> Ready</button><button data-flow="race" aria-pressed="false"><span>03</span> Race</button></div><div class="flow-stage" aria-live="polite"><div class="flow-visual" id="flow-visual" data-phase="invite"><span class="flow-driver">YOU</span><span class="flow-connector" aria-hidden="true">→</span><span class="flow-driver">ALEX</span><span class="flow-driver">SAM</span></div><h3 id="flow-title">Send a link. Meet on the grid.</h3><p id="flow-description">Create a room, then share its invite link or six-character code. Friends open the same game without signing up.</p><span id="flow-status" class="flow-status">INVITE YOUR FRIENDS</span></div></div>
+      <p class="visual-note">Interactive explanation only; this does not create or connect to a live game room.</p>
+    </div></section>
+    <section id="play" class="section project-section"><div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">From opening the link to the first turn.</h2>
+      <ol class="play-steps"><li><span>01</span><div><h3>Choose your drive</h3><p>Quick Drive starts a prepared car. Multiplayer lets you create a room or join by code.</p></div></li><li><span>02</span><div><h3>Invite a friend</h3><p>Share the invite link or six-character code. The host starts once everyone is ready.</p></div></li><li><span>03</span><div><h3>Find your line</h3><p>Cruise together, or race one lap at a time. Most points after three races wins the Cup.</p></div></li></ol>
+      <details class="controls-details"><summary>Keyboard controls</summary><dl><div><dt>WASD / arrows</dt><dd>Drive, brake and reverse</dd></div><div><dt>Hold Shift</dt><dd>Fuel-limited boost</dd></div><div><dt>Space</dt><dd>Handbrake while turning</dd></div><div><dt>C</dt><dd>Change camera</dd></div><div><dt>R twice</dt><dd>Recover at a checkpoint</dd></div><div><dt>Esc</dt><dd>Pause and settings</dd></div></dl><p>Slow down before tight turns. Countersteer to straighten a slide. Recovery can invalidate a competitive run.</p></details>
+      <div class="has-text-centered section-action"><a class="button is-dark is-rounded play-action" href="https://aeroline-road-club.aeroline-edge.workers.dev/">Open Aeroline <span aria-hidden="true">↗</span></a><p class="small-note">Desktop keyboard play is the best-tested experience. Mobile and controller testing continues.</p></div>
+    </div></section>
+    <section id="building" class="section project-section soft-section"><div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">From an idea to a shared world.</h2>
+      <div class="build-grid"><div class="content"><h3>Built through iteration</h3><p>I guided ChatGPT through requirements, implementation and repeated playtests with friends. Player feedback shaped the handling, boost, room flow and simpler driving UI. The difficult part was balancing multiplayer synchronization, graphics and usability.</p><p>The project was submitted to Handshake's Create a Multiplayer Game mission. The next priorities are broader device testing, steadier frame times and more consistent assets.</p></div><div><h3>The technology</h3><ul class="technology-list"><li><span>Client</span>TypeScript · React · Zustand</li><li><span>World</span>Three.js · React Three Fiber</li><li><span>Physics</span>Rapier tire and suspension simulation</li><li><span>Multiplayer</span>WebSockets · Node · Cloudflare</li></ul><a class="text-link" href="https://github.com/space-explorer-4231/afterglow-rally-game/tree/main/source">Explore the source <span aria-hidden="true">→</span></a></div></div>
+    </div></section>
+    <section id="journey" class="section project-section"><div class="container is-max-desktop"><p class="eyebrow has-text-centered">BEHIND THE BUILD</p><h2 class="title is-3 has-text-centered">Small feedback. Better decisions.</h2><div class="journey-grid"><article><span>01 / DEFINE</span><h3>Start with the experience.</h3><p>A public link, no accounts, friends on their own devices. Multiplayer was the reason to build—not a feature added at the end.</p></article><article><span>02 / PLAYTEST</span><h3>Watch what breaks.</h3><p>Friends tried the handling and room flow. Feedback exposed confusing menus, intrusive overlays and difficult slide recovery.</p></article><article><span>03 / REFINE</span><h3>Make the road clearer.</h3><p>Short control tips, simpler waiting screens and focused handling adjustments made the game easier to approach.</p></article><article><span>04 / SHARE</span><h3>Leave the source open.</h3><p>The repository includes editable code, tests, setup instructions and contribution guidance so the next improvement can come from someone else.</p></article></div></div></section>
+    <section id="questions" class="section project-section soft-section"><div class="container is-max-desktop"><div class="faq-heading"><h2 class="title is-3">A few useful answers.</h2><button type="button" id="expand-faq" aria-expanded="false">Expand all</button></div><div class="faq-list"><details><summary>Do my friends need an account or an installation?</summary><p>No. Open the public game, create a room and share the invite link or room code.</p></details><details><summary>Is this a realistic simulator or an arcade racer?</summary><p>It combines physical suspension and tire behavior with approachable driving assists. The emphasis is an enjoyable drive with friends rather than a professional simulation.</p></details><details><summary>Can I play on a phone or with a controller?</summary><p>Touch and controller controls are included. Desktop keyboard play is the most extensively tested; mobile layout, performance and physical-device testing remain active work.</p></details><details><summary>Is the artwork above what the game looks like?</summary><p>The coastal hero and map previews are loading or selection illustrations. Choose Actual gameplay or Multiplayer grid in the top gallery to see real screenshots.</p></details><details><summary>Can I build or modify Aeroline?</summary><p>Yes. The repository contains the editable source and local build instructions. Game code is MIT licensed; the website template and third-party assets have separate terms. Check their notices before distributing a fork.</p></details><details><summary>Does this new project page change the game?</summary><p>No. This is a separate portfolio and documentation site. The Play button opens the existing game; this page does not change its physics, cars, maps or multiplayer service.</p></details></div></div></section>
+    <section class="section project-section closing-section"><div class="container is-max-desktop has-text-centered"><p class="eyebrow">THE NEXT LAP</p><h2 class="title is-3">Help make the drive better.</h2><p>Try the game. Share a reproducible bug. Build something on top.</p><div class="publication-links"><a class="button is-dark is-rounded" href="https://github.com/space-explorer-4231/afterglow-rally-game/blob/main/CONTRIBUTING.md">Contribute</a><a class="button is-dark is-rounded" href="https://github.com/space-explorer-4231/afterglow-rally-game/issues/new?template=bug_report.yml">Report a bug</a></div><p class="small-note">Performance varies by device; this project does not promise a minimum frame rate on every system.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container is-max-desktop has-text-centered"><p>Aeroline by Mateusz Zalewski, with ChatGPT assistance.<br>Based on OpenRally by TensorDrift Studio and contributors.</p><p>Page adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> by Eliahu Horwitz, originally adapted from <a href="https://nerfies.github.io/">Nerfies</a>.<br>Website template and adaptation: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Game code: <a href="https://github.com/space-explorer-4231/afterglow-rally-game/blob/main/LICENSE">MIT</a>. Media retains <a href="https://github.com/space-explorer-4231/afterglow-rally-game/blob/main/docs/ASSET-LICENSING.md">separate licenses</a>.</p></div></footer>
+</body>
+</html>

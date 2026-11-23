@@ -1,0 +1,40 @@
+name: Report a bug
+description: Reproduce a driving, multiplayer or interface problem.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and what you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Select a car and map..."
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Car, map and game mode
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device, operating system and browser
+    validations:
+      required: true
+  - type: textarea
+    id: controls
+    attributes:
+      label: Controls, assists and graphics settings
+      description: Keyboard, controller or touch? Own-car stutter or remote-car jumps?
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, recording or error
+      description: Remove private information. Do not post credentials or private-room invites.

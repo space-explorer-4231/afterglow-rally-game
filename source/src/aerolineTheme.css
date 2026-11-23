@@ -1,0 +1,36 @@
+:root{--aero-blue:#1556df;--aero-ink:#09254a;--aero-white:#f6faff;--aero-line:#adcaff}
+.aeroline-title{background-image:linear-gradient(90deg,rgba(246,250,255,.97) 0%,rgba(246,250,255,.91) 29%,rgba(228,240,255,.2) 60%,transparent 100%),url('/images/aeroline/coastal-drive.webp')!important;background-position:center!important;background-size:cover!important;color:var(--aero-ink)!important}
+.aeroline-title h1{color:var(--aero-ink)!important;max-width:480px;font-weight:750!important;letter-spacing:-2px!important}
+.aeroline-title p{color:#385574!important;max-width:330px}
+.aeroline-title img{filter:none!important;max-width:390px}
+.aeroline-title span{color:var(--aero-ink)!important;text-shadow:none!important}
+.aeroline-title>div>div:last-child{background:#f5faffcc!important;border-color:#a9c7ee!important;border-radius:8px!important}
+.aeroline-loading{background-image:linear-gradient(90deg,rgba(241,248,255,.98),rgba(241,248,255,.92) 35%,rgba(222,238,255,.12) 75%),url('/images/aeroline/coastal-drive.webp')!important;justify-content:flex-start!important;color:var(--aero-ink)!important}
+.aeroline-loading>div{align-items:flex-start!important;text-align:left!important;gap:22px!important;width:min(430px,90vw);padding:4vw!important;box-sizing:content-box}
+.aeroline-loading img{filter:none!important;max-width:340px}
+.aeroline-loading span,.aeroline-loading p{color:var(--aero-ink)!important}
+.aeroline-loading>div>div{max-width:100%!important}
+.aeroline-loading>div>div:nth-child(2){background:#e1edffcc!important;border-color:#a9c7ee!important;flex-wrap:wrap}
+.aeroline-loading>div>div:last-child{background:#f5faffcc!important;border-color:#a9c7ee!important}
+.main-menu-scalable{margin-left:24px!important;width:calc(100% - 24px)!important}
+.main-menu-content{background:linear-gradient(145deg,rgba(249,252,255,.96),rgba(228,240,255,.94));border:1px solid #fff;border-radius:24px;padding:26px!important;box-sizing:border-box;max-width:450px!important;box-shadow:0 22px 65px #052c5140;color:var(--aero-ink)!important}
+.main-menu-content .menu-brand-header{border-bottom-color:#bacfed!important}
+.main-menu-content .menu-brand-logo{filter:none!important;width:min(260px,50vw)!important;max-height:65px!important}
+.main-menu-content .main-menu-nav-column{max-width:none!important}
+.main-menu-content .menu-action-button{background:#ffffffa8!important;border-radius:12px!important;border-color:#b8ceef!important;color:var(--aero-ink)!important;box-shadow:none!important;min-height:68px}
+.main-menu-content .menu-action-button:hover,.main-menu-content .menu-action-button:focus-visible{background:#d8e8ff!important;outline:2px solid var(--aero-blue);outline-offset:2px}
+.main-menu-content .menu-action-button span{color:var(--aero-ink)!important}
+.main-menu-content .menu-action-sublabel{color:#486886!important}
+.main-menu-content>div:first-child{color:var(--aero-blue)!important;font-size:10px!important}
+.main-menu-content .menu-brand-header span{color:var(--aero-blue)!important;background:#e3edff!important;border-color:#b4ccee!important}
+.main-menu-content .main-menu-nav-column>div:first-child span,.main-menu-content .main-menu-nav-column>div:last-child{color:#486886!important}
+.main-menu-content .district-drive-now{box-shadow:0 8px 24px #1556df35!important;border-radius:12px!important;color:white!important}
+.drive-console{background:linear-gradient(135deg,#0d2845ee,#09213aee);border-left-color:#62b9ff}
+.first-drive-guide{background:linear-gradient(145deg,#15385cf5,#071f3df5)}
+@media(max-width:700px){.aeroline-title{background-image:linear-gradient(90deg,rgba(246,250,255,.95),rgba(246,250,255,.74) 70%,rgba(246,250,255,.3)),url('/images/aeroline/coastal-drive.webp')!important;background-position:65% center!important}.aeroline-title h1{font-size:36px!important;max-width:280px}.main-menu-scalable{margin-left:0!important}.main-menu-content{padding:18px!important;width:100%!important}.aeroline-loading{background-position:65% center!important}.aeroline-loading>div{padding:18px!important;width:calc(100vw - 72px)}}
+@media(max-height:550px) and (orientation:landscape){.main-menu-content{max-width:400px!important;padding:12px 18px!important;gap:8px!important}.main-menu-content .menu-action-button{min-height:42px;padding:8px 12px!important}.main-menu-content .menu-brand-header{padding-bottom:6px!important}.main-menu-content .menu-brand-logo{max-height:34px!important}.main-menu-content .district-drive-now{min-height:44px!important;padding:10px!important}.main-menu-content .menu-action-sublabel{display:none}.aeroline-loading>div{gap:14px!important}.aeroline-title h1{font-size:38px!important}}
+
+.main-menu-content .menu-action-button[data-focused="true"],.main-menu-content .district-drive-now[data-focused="true"]{outline:2px solid var(--aero-blue);outline-offset:3px;border-color:var(--aero-blue)!important}
+.main-menu-content .menu-action-button[data-focused="true"]{background:#e0ecff!important}
+.overlay-menu-container{overflow-x:hidden!important}
+@media(max-width:700px){.main-menu-scalable{width:100%!important}}

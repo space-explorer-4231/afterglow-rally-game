@@ -1,0 +1,265 @@
+{
+  "version": "1.36.1",
+  "archives": [
+    {
+      "filename": "game-001.tar.gz",
+      "bytes": 12570236,
+      "sha256": "c88a816d371a813960135afcbd22aadae31a496cb47a5563a082804662a587f6"
+    },
+    {
+      "filename": "game-002.tar.gz",
+      "bytes": 16999749,
+      "sha256": "221cd203bc50b55ae2dcd3db64e81de1837a6e0d0e6bec021f47c17517470845"
+    },
+    {
+      "filename": "game-003.tar.gz",
+      "bytes": 15104153,
+      "sha256": "2a794e317705600e0572c1f86d9283d76918a20428f056a6b08bd432b925202c"
+    },
+    {
+      "filename": "game-004.tar.gz",
+      "bytes": 17433899,
+      "sha256": "bcbbb4f2f513562a9be9e9565061108fd169b5c0c032d47b87518281c05250be"
+    },
+    {
+      "filename": "game-005.tar.gz",
+      "bytes": 16941150,
+      "sha256": "21d55ad8eb63e8bb41ac82b5f2d328fe648838ca6ca201a6da72bfd2a8f396b6"
+    },
+    {
+      "filename": "game-006.tar.gz",
+      "bytes": 17703912,
+      "sha256": "145c3e126f2e3488a20ee5c490191a981f0c00905f77d2ff0adee88651de7f07"
+    },
+    {
+      "filename": "game-007.tar.gz",
+      "bytes": 12676182,
+      "sha256": "50e245e6ff8a5d7ed722eed47e4ec67cf2e3169a0ca51804694b1728c5d0fb84"
+    },
+    {
+      "filename": "game-008.tar.gz",
+      "bytes": 11865965,
+      "sha256": "2f9589e0dbe7a60b2fe2b2d03976a900f672bc1e453c82a45327662203c09fe9"
+    },
+    {
+      "filename": "game-009.tar.gz",
+      "bytes": 1559939,
+      "sha256": "8ea713ed6f67922f94fcdbfb30a0f72d6e77fb69c0e16e37953b40702980fbd9"
+    },
+    {
+      "filename": "game-010.tar.gz",
+      "bytes": 1772702,
+      "sha256": "1ba3753ffddd6bc6fd3c34060e8feba9d39ecdb63aebfc8a6046fc22861d08d4"
+    },
+    {
+      "filename": "game-011.tar.gz",
+      "bytes": 476240,
+      "sha256": "5bf81459f29bcde547741a7acb9beb9359741f6931b295f0729c1b5aa00c4720"
+    },
+    {
+      "filename": "game-012.tar.gz",
+      "bytes": 3490020,
+      "sha256": "2b4ea01f7e67e50cb758dba4862c1d53dbb7a1cec3bf4dc9cebe9c5980b98e62"
+    },
+    {
+      "filename": "game-013.tar.gz",
+      "bytes": 1769475,
+      "sha256": "cb5862d10b6a18986616a668698e1a0716f4f97638a5d51701ce305e8ccdfc75"
+    },
+    {
+      "filename": "game-014.tar.gz",
+      "bytes": 1823837,
+      "sha256": "41bc5df935ff4c2094d867fcf82097940b92f17056f9967830d71bc934567953"
+    },
+    {
+      "filename": "game-015.tar.gz",
+      "bytes": 477639,
+      "sha256": "e04e8eb9730eda42e6e2b4fac2e876cbc9349f81495eaf4f3b4fc38079063d03"
+    },
+    {
+      "filename": "game-016.tar.gz",
+      "bytes": 487221,
+      "sha256": "e082ac5f7946b571216a4945042c111fd1bb2bbf2174b9f506935a6302578d84"
+    },
+    {
+      "filename": "game-017.tar.gz",
+      "bytes": 479483,
+      "sha256": "cfdfa75b403db88297730672bb821592de1d4c610461efabc41e63e3ed22f831"
+    },
+    {
+      "filename": "game-018.tar.gz",
+      "bytes": 15571525,
+      "sha256": "cbec02b00ed936f788a01bbdb9fdadaac35aa6b1d9617f8a83f1e7626de46f82"
+    },
+    {
+      "filename": "game-019.tar.gz",
+      "bytes": 7818724,
+      "sha256": "0be24b4409ff604852f1b94ae4ec649f7e9c994eaec7a203bad921fd598e9efc"
+    },
+    {
+      "filename": "game-020.tar.gz",
+      "bytes": 493252,
+      "sha256": "3049476a4348372efb7abc302c1f828946df2c55915182269c85d56d1cae87a4"
+    },
+    {
+      "filename": "game-021.tar.gz",
+      "bytes": 516690,
+      "sha256": "7f7ce115ceb6aeafb1639521c32bea12559c909c2a3cb713ce37698eecbe451c"
+    },
+    {
+      "filename": "game-022.tar.gz",
+      "bytes": 10823002,
+      "sha256": "84747b54017817cbcdae5d859971b6394ba2864902f596ef21f6003c29403d7e"
+    },
+    {
+      "filename": "game-023.tar.gz",
+      "bytes": 14021995,
+      "sha256": "86339a37650c93f35e3af077b898aff64aa9efa05f8e80467d2218a9bc1ba8f0"
+    },
+    {
+      "filename": "game-024.tar.gz",
+      "bytes": 9450981,
+      "sha256": "178adb95c07ac9161ff93bfe9b968691b191830a8f2b1613fcc6015628714de1"
+    },
+    {
+      "filename": "game-025.tar.gz",
+      "bytes": 16837235,
+      "sha256": "ce617be26a40f53a522b2df6b7a371382982d6a6d5b19903da6dd164af3b788a"
+    },
+    {
+      "filename": "game-026.tar.gz",
+      "bytes": 15387012,
+      "sha256": "84a959cf1de38220b194359d009f87bb68ea703e7d93f235c85f1952f4d53486"
+    },
+    {
+      "filename": "game-027.tar.gz",
+      "bytes": 2839161,
+      "sha256": "62882bd92fd94e9c56563bf0458d81d643a356ffcbd4f8ccb424e2b3ea4141e6"
+    },
+    {
+      "filename": "game-028.tar.gz",
+      "bytes": 681731,
+      "sha256": "8883ac56dbad473bc453b37477a5c87ad7020dc7baee464bb12d923f087ac776"
+    },
+    {
+      "filename": "game-029.tar.gz",
+      "bytes": 500648,
+      "sha256": "05ca1b3f715f914b4e3053fec1c70cd9195b424df31d95eef8609ee2761597a2"
+    },
+    {
+      "filename": "game-030.tar.gz",
+      "bytes": 2535474,
+      "sha256": "22c07ae505296575e8d0713175753752a126ffd441b75683e90a53913d347338"
+    },
+    {
+      "filename": "game-031.tar.gz",
+      "bytes": 847221,
+      "sha256": "05c9c2ba4337deb84178cb44a9c2245bf29494bc6ada0f798dc8817dc3053d85"
+    },
+    {
+      "filename": "game-032.tar.gz",
+      "bytes": 12318090,
+      "sha256": "b573e0c76b0fb6c09161a57adf134b98fc9980d81a601385d8822d726da17b90"
+    },
+    {
+      "filename": "game-033.tar.gz",
+      "bytes": 522709,
+      "sha256": "a1f9e203638d1569a1e15e79ebf698b09b02725884e302eee82e91b3775320a5"
+    },
+    {
+      "filename": "game-034.tar.gz",
+      "bytes": 552031,
+      "sha256": "9480b510c79fe60e5845b776bcda7bd53f106be75d53c7afb290712fb1bb8c32"
+    },
+    {
+      "filename": "game-035.tar.gz",
+      "bytes": 528738,
+      "sha256": "9ac10388ff59c96ff5a27711ebb4daadd1c1899656c389183b8f3200a4751183"
+    },
+    {
+      "filename": "game-036.tar.gz",
+      "bytes": 555921,
+      "sha256": "3837a3fdb9358a292327dbacc3599b25bfc45ee044c7402453a235c986b7ca37"
+    },
+    {
+      "filename": "game-037.tar.gz",
+      "bytes": 582158,
+      "sha256": "8fa86f5e0289d74b19209be44a41295c40e5915184b4568b2dbbd7d247fb4312"
+    },
+    {
+      "filename": "game-038.tar.gz",
+      "bytes": 572503,
+      "sha256": "585ce43f93086c0c0ff0d721c89cc5a59b05558a06dcd3dd8e513e3510af1762"
+    },
+    {
+      "filename": "game-039.tar.gz",
+      "bytes": 560214,
+      "sha256": "e87175bb55ab835bbd4fc919a5aa42a24890ead721fd15fc1520d47ef7fc16a9"
+    },
+    {
+      "filename": "game-040.tar.gz",
+      "bytes": 587072,
+      "sha256": "7badf52f98c56df087c4680b2636e33854b6503708790dbaa71099c0b796fa25"
+    },
+    {
+      "filename": "game-041.tar.gz",
+      "bytes": 2925269,
+      "sha256": "94e583f9839093778f7172cad06a217ddd7ff5cc3b00a89afb7ba84fff924fe7"
+    },
+    {
+      "filename": "game-042.tar.gz",
+      "bytes": 23021777,
+      "sha256": "ca77e4977202d6f511c0d7d8a3a8ca225ff0dc709ffb7bad0c93ed0e3840a30e"
+    },
+    {
+      "filename": "game-043.tar.gz",
+      "bytes": 559861,
+      "sha256": "535e5e2cd37d7d727f6a1abd0551527c3df41c5791dff8bbc4692f7f029d7825"
+    },
+    {
+      "filename": "game-044.tar.gz",
+      "bytes": 599917,
+      "sha256": "1096fbe098eb2152b2809d5bc26fd3ad4a1124cdc0152c20df2831486673d2e5"
+    },
+    {
+      "filename": "game-045.tar.gz",
+      "bytes": 46723831,
+      "sha256": "de8d338ebdd3eb10d536b1fd74ba17ea872243fa347ca9b7032230dadd6c916d"
+    },
+    {
+      "filename": "game-046.tar.gz",
+      "bytes": 615873,
+      "sha256": "ebb4a13f6863b35bd9f7535212e32d919170fb458409c99efab3ac9336bd20c7"
+    },
+    {
+      "filename": "game-047.tar.gz",
+      "bytes": 574897,
+      "sha256": "0f11fc49f436c04e674175856943a52e05222a655bf66a40734b0efacbe71e7a"
+    },
+    {
+      "filename": "game-048.tar.gz",
+      "bytes": 1962133,
+      "sha256": "b46c47ee1f112e7a73b093c289eee7c1175a9491efc90dda56c851635174eb1b"
+    },
+    {
+      "filename": "game-049.tar.gz",
+      "bytes": 577240,
+      "sha256": "dab7bef43c3c79fdb7db9e091938720a5994843af49bfc214e3436b4fb94d79c"
+    },
+    {
+      "filename": "game-050.tar.gz",
+      "bytes": 577348,
+      "sha256": "f1e0c25af8d9fef8da6b4989199cdea5254233f401dde4e086ca1daaaa51d92e"
+    },
+    {
+      "filename": "game-051.tar.gz",
+      "bytes": 624333,
+      "sha256": "ae92142c94b3ce9b69614554c2d9d79e559361ea2f1952483acb80848cfcefff"
+    },
+    {
+      "filename": "game-052.tar.gz",
+      "bytes": 38204642,
+      "sha256": "12080de13feef6d613a78335826fda77f4f26e157f986fe328b5090adf1a5165"
+    }
+  ]
+}

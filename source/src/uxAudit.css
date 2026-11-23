@@ -1,0 +1,107 @@
+/* Interaction/layout guarantees. Palette is supplied by the shared Road Club theme. */
+.road-club :is(.mode-subview, .credits-subview) {
+  min-width: 0 !important;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  max-height: calc(100dvh - var(--sat, 0px) - var(--sab, 0px) - 108px) !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+.road-club :is(.mode-subview, .credits-subview, .multiplayer-subview, .settings-subview, .controls-subview) {
+  overflow-wrap: anywhere;
+  scroll-padding-block: 12px;
+}
+.road-club :is(button, [role="button"], input, select, summary, a) {
+  scroll-margin-block: 12px;
+}
+.road-club .club-multiplayer-header {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.road-club .club-multiplayer-header h2 { min-width: 0; }
+.road-club .club-multiplayer-header > div { flex-wrap: wrap; }
+.road-club .club-driver-profile { flex-wrap: wrap; gap: 10px !important; }
+.road-club .club-multiplayer-grid > div { min-width: 0; }
+.road-club .club-room-track { min-width: 0 !important; }
+.road-club .club-room-list { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.road-club .club-room-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(116px, auto) !important;
+  gap: 12px !important;
+  align-items: start !important;
+  border: 1px solid var(--club-line);
+  border-radius: 12px;
+  padding: 12px !important;
+  min-width: 0;
+  overflow: visible !important;
+}
+.road-club .club-room-destination { grid-column: 1 / -1; }
+.road-club .club-room-details { min-width: 0; }
+.road-club .club-room-details h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.3; }
+.road-club .club-room-details p { margin: 4px 0; font-size: 12px; line-height: 1.5; }
+.road-club .club-room-code strong { font-family: ui-monospace, monospace; letter-spacing: .08em; }
+.road-club .club-room-confirmation { grid-column: 1 / -1; font-size: 12px; margin: 0; }
+.road-club .club-room-actions {
+  min-width: 116px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: start;
+}
+.road-club .club-room-actions button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 116px;
+  min-height: 46px;
+  padding: 10px 14px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  transform: none !important;
+  white-space: normal;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+.road-club .club-room-actions .club-room-join {
+  background: var(--club-sea) !important;
+  color: #fff !important;
+  border: 1px solid var(--club-sea) !important;
+}
+.road-club button:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+.road-club .club-room-actions .club-room-join:disabled {
+  background: var(--club-disabled-surface, #dce2ea) !important;
+  color: var(--club-disabled-ink, #42536a) !important;
+  border-color: var(--club-disabled-line, #b8c4d3) !important;
+}
+/* Native fields and unavailable actions follow the warm festival palette too. */
+.road-club :is(input,select,textarea){accent-color:#467b43;color:#343d31!important;background-color:#fffdf6!important;border-color:#bec5a7!important}
+.road-club .club-room-actions .club-room-join:disabled{background:#e7e5d6!important;color:#5b624b!important;border-color:#b9bea6!important}
+.festival-music-credits{font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+.road-club .mode-stage-row { flex-wrap: wrap; }
+.road-club .mode-grid > div { min-width: 0; }
+.road-club .credits-subview a { overflow-wrap: anywhere; }
+.road-club .controls-guide-tabs { flex-wrap: wrap; }
+.road-club .controls-guide-tabs > button { flex: 1 1 120px !important; }
+@media (max-width: 760px) {
+  .road-club .club-room-card { grid-template-columns: minmax(0, 1fr) !important; }
+  .road-club .club-room-actions { grid-column: 1 / -1; width: 100%; flex-direction: row; flex-wrap: wrap; }
+  .road-club .club-room-actions button { flex: 1 1 116px; }
+  .road-club .mode-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  .road-club .club-multiplayer-header h2 { width: 100%; font-size: 20px !important; }
+}
+@media (max-height: 550px) and (orientation: landscape) {
+  .road-club :is(.mode-subview, .credits-subview) {
+    max-height: calc(100dvh - var(--sat, 0px) - var(--sab, 0px) - 76px) !important;
+  }
+  .road-club .mode-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}

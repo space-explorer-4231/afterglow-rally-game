@@ -1,0 +1,2 @@
+# Runtime asset checksums cover bytes, including text notice line endings.
+source-assets/** -text
