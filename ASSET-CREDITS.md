@@ -75,3 +75,65 @@ The tree uses the artist's LOD1, with conservative planar cleanup. Near geometry
 The new coastal building families, shopfronts, balcony modules, streetscape layout and Harbor Coastal Market SVG are original project contributions by Mateusz Zalewski with AI assistance. Existing OpenRally and vehicle licenses remain applicable.
 
 The shrub cutout in 1.17.1 combines the creator's CC0 diffuse and separate Alpha PNG from the same shrub_01 asset; the JPEG in the original glTF cannot carry opacity. Source files and verified hashes are preserved in the coastal provenance manifest.
+
+## BMW M3 Aero Drift (1.21)
+2001 BMW M3 GTR by Dave Love SketchFab (Tyler_Dave), https://sketchfab.com/3d-models/2001-bmw-m3-gtr-6bb4d180cd0d454ba62fbfae24fc5155 . Licensed CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Adapted with duplicate mesh passes removed, static wheel/tire assemblies removed, preserved interior/livery and normalized gameplay transforms. New original Aero forged wheels. Original GLB retained in asset-sources/bmw-m3-gtr.glb. Source mirror: https://github.com/SulemanAsif0911/BMW-M3-History/blob/main/m3-gtr-e46-2001.glb . BMW does not sponsor or endorse this game.
+
+The five rebuilt Speed Fleet coachworks and shared Aero forged wheels are original MIT project assets. Rebuild with scripts/build-aero-coachwork.mjs; BMW adaptation uses scripts/adapt-bmw-drift.py.
+
+## Road Club presentation (1.29)
+Original AI-generated coastal, alpine and harbor loading artwork: public/images/aeroline/club-coast.webp, club-alpine.webp and club-harbor.webp. Generated and refined for this project using OpenAI image generation; vehicle emblems removed. These are illustrative loading backgrounds, not gameplay screenshots or representations of exact playable vehicles/courses. Actual in-game models supply the interactive car preview; checkpoint data supplies the route diagrams.
+
+Coastline Drive: original 112 BPM procedural instrumental composed and synthesized in src/utils/audio/clubScore.ts. Original melody, bass, chord voicings and synthesized percussion; no external music recordings or samples. Reactive driving/NOS layers and a local 88 Club variation. Prior recordings and their credits are preserved but do not play in the default menu/driving mix.
+
+## Road Fleet and ten-image gallery (1.30)
+Innerscene original unbranded models, CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/):
+- Charcoal five-door crossover SUV: https://www.innerscene.com/tools/library/3d-parts/charcoal-five-door-crossover-suv-a1996830 . Adapted as Voltline XR and a lowered touring-wagon derivative, Meridian RS.
+- Crew-cab pickup with open bed: https://www.innerscene.com/tools/library/3d-parts/crew-cab-pickup-with-open-bed-4f02e0cc . Adapted as Ironclad Sprint.
+- High-roof cargo panel van: https://www.innerscene.com/tools/library/3d-parts/high-roof-cargo-panel-van-c4d5145f . Adapted as Parcel GT.
+Nightfall V8 body: Spectral GT RS by JaronKBragg7337, CC0-1.0: https://github.com/JaronKBragg7337/spectral-gt-rs .
+Adaptations: axle/chassis fitting, fixed-body mesh batching, removed static wheel assemblies and decorative badges, paint changes, removed animations, error-bounded geometry simplification and quantized optimized versions. Shared original MIT Aero forged wheels animate through the game suspension. Source downloads and license evidence remain in asset-sources/road-fleet-1.30; hashes and URLs are in models/vehicles/speed-fleet-manifest.json. scripts/adapt-road-fleet.mjs rebuilds the current bodies. Historical coachwork credit above describes the older meshes, now replaced.
+
+Six additional original AI-generated loading illustrations: club-canyon.webp, club-snow.webp, club-forest.webp, club-night.webp, club-storm.webp, club-sunrise.webp. Built-in OpenAI image generation; no outside photographs or music samples. Photographic automotive action scenes on canyon, snow, autumn forest, blue-hour waterfront, post-storm coast and sunrise country roads; fictional unbranded cars, no lettering, dark lower road area for UI. Prompts and source master paths are preserved in docs/ROAD_RUN_UPDATE.md. Ten-image rotation preserves coastal-drive.webp and all three 1.29 illustrations. These images are concept illustrations and do not depict exact in-game cars or maps.
+
+
+## Festival Radio (1.32)
+
+Music provided by NoCopyrightSounds. Recordings supplied through the official NCS catalog; the project owner confirmed game-use authorization on October 20, 2026. Exact recording sources and SHA-256 hashes are in audio/festival/manifest.json.
+
+Music provided by NoCopyrightSounds. Artist and recording credits:
+
+1. On & On — Cartoon, Jéja, Daniel Levi
+Free download/stream and credit source: https://ncs.io/OnandOn
+
+2. Cradles — Sub Urban
+Free download/stream and credit source: https://ncs.io/Cradles
+
+3. Royalty — Egzod, Maestro Chives, Neoni
+Free download/stream and credit source: https://ncs.io/Royalty
+
+4. Mortals (Slowed) — Warriyo, Slowed Sounds
+Free download/stream and credit source: https://ncs.io/Mortals_Slowed
+
+5. Why We Lose — Cartoon, Jéja, Coleman Trapp
+Free download/stream and credit source: https://ncs.io/WhyWeLose
+
+6. Waiting — Syn Cole, KAZHI
+Free download/stream and credit source: https://ncs.io/s_waiting
+
+7. Like A Melody — Cartoon, JOZELS, KAZHI
+Free download/stream and credit source: https://ncs.io/LikeAMelody
+
+8. Fearless (Slowed) — Lost Sky, Slowed Sounds
+Free download/stream and credit source: https://ncs.io/Fearless_SL
+
+9. Shine (Slowed) — Spektrem, Slowed Sounds
+Free download/stream and credit source: https://ncs.io/Shine_SL
+
+10. Fight In Me — Egzod, Lost Sky, Alaina Cross
+Free download/stream and credit source: https://ncs.io/FightInMe
+
+NCS usage information: https://ncs.io/usage-policy
+
+## Aeroline 1.34 artwork
+Five original AI-generated racing illustrations were created with OpenAI image generation for Aeroline: Marina boulevard, Castle chase, Canyon pursuit, Winter duel, and Harbor meet. Marina boulevard also supplies the Harbor Ring selection thumbnail. These are illustrative promotional/loading images, not screenshots of rendered gameplay. Source PNGs are preserved in ../asset-sources/art-1.34.0; scripts/import134Art.cjs reproduces the optimized WebP assets.

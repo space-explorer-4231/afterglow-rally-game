@@ -1,0 +1,131 @@
+:root{--club-paper:#fffdf6;--club-ink:#343d31;--club-muted:#606957;--club-coral:#98492f;--club-sea:#216047;--club-action:var(--club-sea);--club-line:#d4d6bd}
+/* Road Club: scenery above, the complete menu dock below. */
+.road-club.club-home{justify-content:flex-end!important;background:linear-gradient(0deg,#121c20bb,transparent 48%)!important;padding:22px!important;overflow:hidden!important}
+.club-home .main-menu-scalable{margin:0!important;width:100%!important;max-width:1100px!important;transform:none!important}
+.club-home .main-menu-content{width:100%!important;max-width:1000px!important;padding:18px 22px!important;border-radius:20px!important;background:#fffdf6f5!important;border:1px solid #ffffff!important;box-shadow:0 15px 45px #10192335!important;gap:10px!important;color:var(--club-ink)!important}
+.club-home-caption{display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:12px;color:var(--club-muted)}
+.club-home-caption img{width:150px;height:30px;object-fit:contain;filter:grayscale(1)}
+.club-home .main-menu-nav-column{max-width:none!important;display:grid!important;grid-template-columns:1fr 220px;gap:12px!important;align-items:stretch}
+.club-home .menu-action-grid{display:grid!important;grid-template-columns:1.2fr 1.2fr .8fr .8fr;gap:8px!important}
+.club-home .menu-action-button{min-height:62px!important;padding:12px 14px!important;background:transparent!important;border:1px solid var(--club-line)!important;border-radius:12px!important;box-shadow:none!important;transform:none!important}
+.club-home .menu-action-button:first-child{background:var(--club-sea)!important;color:white!important;border-color:var(--club-sea)!important}
+.club-home .menu-action-button:first-child span{color:white!important}.club-home .menu-action-button span{color:var(--club-ink)!important}
+.club-home .menu-action-sublabel{display:none!important}.club-home .menu-action-button [style*="monospace"],.club-home .menu-action-button>span{display:none!important}
+.club-home .menu-action-button[data-focused="true"],.road-club button:focus-visible,.road-club [data-gamepad-focused="true"],.road-club [data-focused="true"]{outline:3px solid #a8660c!important;outline-offset:3px;box-shadow:none!important}
+.club-home .district-drive-now{min-height:62px;padding:12px;border-radius:12px;background:#f1eddf!important;border:1px solid var(--club-line)!important;color:var(--club-ink)!important;font-size:12px!important;box-shadow:none!important;cursor:pointer;font-weight:750}
+/* Shared menus: neutral stone surfaces, ink text and restrained blue selection. */
+.road-club:not(.club-home){background:linear-gradient(120deg,#504b34e8,#7b7756d9)!important;backdrop-filter:blur(7px)!important}
+.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview){background:var(--club-paper)!important;color:var(--club-ink)!important;border:1px solid #d5dce5!important;border-radius:22px!important;padding:24px!important;box-sizing:border-box!important;box-shadow:0 20px 70px #0b171b45!important;min-width:0!important;max-width:1100px!important}
+.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview) :is(span,p,h2,h3,strong,label){color:var(--club-ink)!important;text-shadow:none!important}
+.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview) button{background:#f1eddf!important;color:var(--club-ink)!important;border:1px solid #c4ccd8!important;border-radius:10px!important;box-shadow:none!important;min-height:44px;transition:background .15s ease,outline .15s ease!important}
+.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview) button:hover{background:#e4efcb!important}
+.road-club :is(button[aria-pressed="true"],.club-car-choice[aria-pressed="true"],.track-card-compact[aria-pressed="true"]){background:#e4efcb!important;border-color:var(--club-sea)!important}
+.road-club .multiplayer-subview>button:first-of-type{background:var(--club-sea)!important;color:white!important;min-height:54px;font-size:15px!important}
+.road-club .multiplayer-subview>p{font-size:13px!important;max-width:72ch;line-height:1.5}
+.road-club .club-multiplayer-grid>div{background:#f4f0e5!important;border:1px solid var(--club-line)!important;border-radius:16px!important}
+.club-vehicle-preview{height:240px;position:relative;margin:0 0 12px;background:radial-gradient(ellipse at 50% 60%,#f7f9fc,#c6d2df);border-radius:14px;overflow:hidden;touch-action:pan-y}
+.club-vehicle-preview canvas{touch-action:pan-y!important}.club-vehicle-preview figcaption{position:absolute;left:14px;right:14px;bottom:12px;display:flex;flex-direction:column;gap:4px;pointer-events:none;color:#343d31;font-size:14px;text-shadow:0 1px 5px #fffdf6}
+.club-vehicle-preview figcaption span{font-size:10px}.road-club .club-car-list{max-height:205px!important;scrollbar-color:#6d819b #f1eddf;scrollbar-width:thin}.road-club .club-car-choice{min-height:54px}
+.road-club .club-room-track{position:relative;overflow:hidden;padding:0 0 12px!important;gap:8px!important;min-width:140px}.club-room-track>span{padding:0 10px}.club-room-track-image{width:100%;height:92px;object-fit:cover;display:block}
+.club-track-map{width:66px;height:66px;color:var(--club-sea);background:#fffdf6ef;padding:6px;border-radius:10px;box-sizing:border-box;flex-shrink:0}
+.club-room-track .club-track-map{position:absolute;right:6px;top:8px;width:60px;height:60px}
+.road-club .track-grid-layout{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important}
+.road-club .track-card-compact{position:relative;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;padding:10px!important;background:#f4f0e5!important;border:1px solid var(--club-line)!important;border-radius:14px!important;cursor:pointer}
+.road-club .track-thumb-compact{width:100%!important;height:130px!important;box-shadow:none!important}.road-club .track-card-compact>.club-track-map{position:absolute;top:18px;right:18px}
+.road-club .track-card-compact:hover,.road-club .track-card-compact:focus-visible{outline:3px solid #a8660c;outline-offset:2px}.road-club .track-desc-compact{display:block!important}
+.road-club .pause-card-compact{max-width:520px!important}.road-club .pause-action-button{min-height:56px}.road-club .pause-action-button:first-child{border-left:5px solid var(--club-sea)!important}
+.road-club .pause-banner-card :is(span,strong){color:#fffdf6!important;text-shadow:0 1px 5px #000}
+.road-club .pause-action-list [style*="monospace"]{display:none!important}
+/* Shared starting grid and Cup results speak the same visual language. */
+.race-grid{background:var(--club-paper)!important;color:var(--club-ink)!important;border-color:#d5dce5!important;border-radius:20px!important;padding:22px!important;box-shadow:0 20px 65px #19262142!important}
+.race-grid h2{color:var(--club-ink);font-size:27px}.race-grid p{color:#606957;font-size:13px}.race-grid-eyebrow{color:var(--club-sea)!important}.race-grid button{min-height:44px;border-radius:10px;padding:10px 14px;border:1px solid #bdcbdc;background:#e3edcf;color:#213c5d;cursor:pointer;font:700 12px system-ui}
+.race-grid .race-start{background:var(--club-sea)!important;color:white!important;border-color:var(--club-sea)!important}.race-grid .race-start:disabled{opacity:.45}.race-grid-room span,.race-grid-invite{color:var(--club-sea)!important}.race-grid-actions{gap:8px;margin-top:10px}.race-grid-invite{min-height:30px}.race-grid-small,.race-grid-hint{color:#606957!important}.race-grid-drivers li{border-color:#d5dce5}
+.race-cup{background:linear-gradient(135deg,#253b55,#15263c)!important;border-color:#5f7691!important}.race-cup .race-grid-small{color:#cad8ea!important}.race-cup .race-grid-drivers li{border-color:#ffffff20}.race-live{background:#fffdf6eb!important;color:#23354b!important;border-color:#bdcbdc!important}.race-live strong{color:#216047!important}.race-live small{color:#606957!important}
+.club-grid-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.club-grid-summary div{padding:12px 5px;background:#f1eddf;border-radius:12px;text-align:center;font-size:11px;color:#606957}.club-grid-summary strong{display:block;font-size:22px;color:#216047;margin-bottom:3px}
+/* Full-screen original loading art; the art stays visible above the lower text strip. */
+.aeroline-loading{background-image:linear-gradient(0deg,#102021d9,transparent 65%),var(--club-loading-art,url('/images/aeroline/coastal-drive.webp'))!important;background-size:cover!important;background-position:center!important;align-items:flex-end!important;justify-content:flex-start!important;padding:36px!important}
+.aeroline-loading>div{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;align-items:flex-start!important;padding:0!important;max-width:620px!important;gap:12px!important;color:#fffdf6!important}
+.aeroline-loading p,.aeroline-loading span{color:#fffdf6!important}.aeroline-loading img{width:180px!important;filter:brightness(0) invert(1)!important}.aeroline-loading>div>div:last-child{background:transparent!important;border:0!important}
+.aeroline-title{background-image:linear-gradient(0deg,#142127e6,transparent 70%),url('/images/aeroline/club-coast.webp')!important;background-position:center!important;align-items:flex-end!important;justify-content:flex-start!important;padding:40px!important}
+.aeroline-title>div{background:transparent!important;padding:0!important;box-shadow:none!important;border:0!important;backdrop-filter:none!important;color:#fffdf6!important}.aeroline-title h1{color:#fffdf6!important;font-size:clamp(25px,3vw,42px)!important}.aeroline-title p{color:#fffdf6!important}.aeroline-title img{width:200px!important;filter:brightness(0) invert(1)!important}.aeroline-title>div>div:last-child{background:transparent!important}
+@media(max-width:760px){.club-home .main-menu-nav-column{grid-template-columns:1fr!important}.club-home .main-menu-content{padding:13px!important}.club-home .menu-action-grid{grid-template-columns:1fr 1fr;gap:7px!important}.club-home .menu-action-button{min-height:44px!important;padding:9px 12px!important}.club-home .district-drive-now{min-height:44px!important}.club-home-caption{font-size:10px}.club-home-caption img{width:120px;height:25px}.road-club:not(.club-home){padding:12px!important}.road-club .club-multiplayer-grid{grid-template-columns:1fr!important}.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview){padding:16px!important}.road-club .track-grid-layout{grid-template-columns:repeat(2,minmax(0,1fr))!important}.club-vehicle-preview{height:210px}.aeroline-loading{padding:22px!important}.aeroline-title{padding:24px!important}.race-grid{max-height:calc(100dvh - 50px)!important;top:50%!important}.club-grid-summary strong{font-size:18px}}
+@media(max-height:550px) and (orientation:landscape){.club-home .main-menu-content{padding:10px 14px!important}.club-home .main-menu-nav-column{grid-template-columns:1fr 180px!important}.club-home .menu-action-grid{grid-template-columns:repeat(4,1fr)!important}.club-home .menu-action-button,.club-home .district-drive-now{min-height:44px!important;padding:8px!important}.club-home-caption img{height:20px;width:110px}.club-home-caption{font-size:10px}.road-club :is(.multiplayer-subview,.track-subview,.garage-subview){padding:12px!important}.club-vehicle-preview{height:170px}.aeroline-title h1{font-size:28px!important}}
+@media(prefers-reduced-motion:reduce){.road-club *{transition:none!important;animation:none!important}}
+.road-club>.menu-scalable-container:not(.main-menu-scalable):not(.pause-card-compact){max-height:calc(100dvh - 32px)!important;width:100%;transform:none!important;overflow:visible!important;margin:auto!important}.road-club :is(.multiplayer-subview,.track-subview,.garage-subview){max-height:calc(100dvh - 56px)!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-color:#6d819b #f1eddf;scrollbar-width:thin}.club-race-help{margin:8px 0 14px;font-size:12px;color:#606957}.club-race-help summary{cursor:pointer;min-height:32px;display:flex;align-items:center;gap:6px;color:#216047;font-weight:750}.club-race-help summary::before{content:'+';font-size:20px}.club-race-help[open] summary::before{content:'−'}.club-race-help p{margin:5px 0;font-size:12px}.club-race-help summary:focus-visible{outline:3px solid #a8660c;outline-offset:2px}.aeroline-loading .club-loading-tip{font-size:15px!important;opacity:.85}.road-club .garage-preview-box{background:#c6d2df!important;border-color:#bac8d8!important}
+.club-vehicle-preview:focus-visible{outline:3px solid #a8660c;outline-offset:3px}.aeroline-title span{color:#fffdf6!important}.road-club .club-home-caption>span{color:#606957!important}
+.road-club :is(.multiplayer-subview,.garage-subview,.pause-card-compact,.settings-subview,.controls-subview,.mode-subview,.credits-subview) div[style*="background:"]{background:#f1eddf!important;border-color:#c4ccd8!important}.road-club .garage-preview-box div[style*="background:"]{background:transparent!important}.road-club .pause-banner-card[style*="background"]{background-color:#24374e!important;background-image:inherit}.road-club .club-car-choice[aria-pressed="true"]{border-left:5px solid #216047!important}.road-club .club-room-track[aria-pressed="true"]{outline:2px solid #216047!important}.road-club .track-card-compact[aria-pressed="true"]{border:2px solid #216047!important}
+.road-club.club-home{padding:calc(16px + var(--sat,0px)) calc(22px + var(--sar,0px)) calc(16px + var(--sab,0px)) calc(22px + var(--sal,0px))!important}.road-club:not(.club-home){padding:calc(12px + var(--sat,0px)) calc(12px + var(--sar,0px)) calc(12px + var(--sab,0px)) calc(12px + var(--sal,0px))!important}
+.road-club .club-room-card{display:grid!important;grid-template-columns:minmax(0,1fr) auto;overflow:hidden;padding:10px!important;align-items:center!important}.road-club .club-room-destination{grid-column:1/-1;position:relative;height:130px;overflow:hidden;border-radius:10px;background:#c6d2df!important}.club-room-destination>img{width:100%;height:100%;object-fit:cover;display:block}.club-room-destination>.club-track-map{position:absolute;top:10px;right:10px}.road-club .club-room-destination>span{position:absolute;left:0;right:0;bottom:0;padding:18px 12px 10px;background:linear-gradient(transparent,#112b23bd);color:#fffdf6!important;font-size:15px;font-weight:800}.road-club .club-room-card>button{background:#216047!important;color:#fffdf6!important}
+.multiplayer-session-pill{background:#fffdf6f2!important;border:1px solid #bdcbdc!important;box-shadow:0 4px 20px #14251f30!important;color:#243c58!important}.multiplayer-session-pill :is(span,strong){color:#243c58!important}.multiplayer-session-pill .session-mode,.multiplayer-session-pill .session-host{background:#e3edcf!important;border-color:#acbed3!important}.multiplayer-session-tools{background:#fffdf6!important;border:1px solid #bdcbdc;color:#243c58!important}.multiplayer-session-tools button{background:#e3edcf!important;color:#243c58!important;border:1px solid #9db2ca!important;min-height:38px}.multiplayer-session-tools :is(p,strong,span){color:#243c58!important}
+/* One scrollable choice panel; the fixed outer overlay never adds a second scrollbar. */
+.road-club:not(.club-home){overflow-y:hidden!important}.road-club :is(.multiplayer-subview,.track-subview,.garage-subview,.settings-subview,.controls-subview,.mode-subview,.credits-subview){max-height:calc(100dvh - var(--sat,0px) - var(--sab,0px) - 108px)!important}
+
+/* Road Club 1.30: explicit colors beat legacy nested inline labels. */
+.club-home .main-menu-nav-column{display:grid!important;grid-template-columns:1.25fr 1.25fr 1.15fr .65fr .65fr!important;gap:10px!important}
+.club-home .menu-action-grid{display:contents!important}
+.club-home .menu-action-button:nth-child(1){grid-column:1;grid-row:1;background:#216047!important;border-color:#216047!important}
+.club-home .menu-action-button:nth-child(2){grid-column:2;grid-row:1;background:#98492f!important;border-color:#98492f!important}
+.club-home .district-drive-now{grid-column:3;grid-row:1;background:#e3edcf!important;border-color:#a4b9d1!important;font-size:15px!important;min-height:76px!important}
+.club-home .menu-action-button:nth-child(4){grid-column:4;grid-row:1}
+.club-home .menu-action-button:nth-child(5){grid-column:5;grid-row:1}
+.road-club.club-home .menu-action-button :is(span,div){color:#343d31!important}
+.road-club.club-home .menu-action-button:nth-child(-n+2) :is(span,div){color:#ffffff!important}
+.club-home .menu-action-button:nth-child(-n+2){min-height:76px!important;font-size:17px!important}
+.club-home .menu-action-button:nth-child(n+3){align-self:center;min-height:44px!important;padding:9px!important;border-color:transparent!important;opacity:.85}
+.club-home .menu-action-button:nth-child(n+3) span{font-size:11px!important}
+.road-club :is(.multiplayer-subview,.garage-subview,.settings-subview,.track-subview,.controls-subview) :is(div,span,p,small,strong,label){color:#343d31!important}
+.road-club .club-car-choice :is(div,span){color:#343d31!important;background:transparent!important}
+.road-club .club-car-choice[aria-pressed="true"]{background:#e3edcf!important;border-color:#216047!important}
+.road-club .club-car-choice[aria-pressed="true"] :is(div,span){color:#27583c!important}
+.road-club .multiplayer-subview>button:first-of-type,.road-club .multiplayer-subview>button:first-of-type :is(span,div){background:#216047!important;color:#fff!important}
+.road-club .club-room-card>button,.road-club .club-room-card>button :is(span,div){background:#216047!important;color:#fff!important}
+.road-club .club-room-destination>span{color:#fff!important}
+.road-club .club-vehicle-preview figcaption,.road-club .club-vehicle-preview figcaption *{color:#343d31!important}
+.road-club [data-focused="true"],.road-club [data-gamepad-focused="true"],.road-club button:focus-visible{outline:3px solid #a8660c!important;outline-offset:3px!important}
+.road-club .club-car-choice:focus-visible{outline-offset:-3px!important}
+.road-club .multiplayer-subview h2{font-size:23px!important;line-height:1.4}
+@media(max-width:760px){.club-home .main-menu-nav-column{grid-template-columns:1fr 1fr 1fr!important;gap:7px!important}.club-home .menu-action-button:nth-child(n+3){grid-row:2!important;min-height:38px!important}.club-home .menu-action-button:nth-child(4){grid-column:1!important}.club-home .menu-action-button:nth-child(5){grid-column:2!important}.club-home .menu-action-button:nth-child(-n+2),.club-home .district-drive-now{min-height:56px!important;padding:9px!important}.club-home .menu-action-button:nth-child(-n+2) span,.club-home .district-drive-now{font-size:12px!important}}
+@media(max-height:550px) and (orientation:landscape){.club-home .main-menu-nav-column{grid-template-columns:1.2fr 1.2fr 1.1fr .6fr .6fr!important}.club-home .menu-action-button:nth-child(n+3){grid-row:1!important}.club-home .menu-action-button:nth-child(4){grid-column:4!important}.club-home .menu-action-button:nth-child(5){grid-column:5!important}.club-home .menu-action-button:nth-child(-n+2),.club-home .district-drive-now{min-height:48px!important}}
+/* Phone portrait keeps readable primary choices rather than squeezing three words into narrow cells. */
+@media(max-width:760px) and (orientation:portrait){.club-home .main-menu-nav-column{grid-template-columns:1fr 1fr!important}.club-home .district-drive-now{grid-column:1/-1!important;grid-row:2!important;min-height:46px!important;font-size:14px!important}.club-home .menu-action-button:nth-child(4),.club-home .menu-action-button:nth-child(5){grid-row:3!important}.club-home .menu-action-button:nth-child(4){grid-column:1!important}.club-home .menu-action-button:nth-child(5){grid-column:2!important}.club-home .menu-action-button:nth-child(-n+2) span{font-size:14px!important;letter-spacing:.4px!important}}
+/* Shared actions use one palette across native menu views and room cards. */
+.road-club :is(.mode-grid,.credits-subview){background:var(--club-paper)!important;color:var(--club-ink)!important;border-color:var(--club-line)!important}
+.road-club :is(.mode-grid,.credits-subview) :is(h2,h3,p,span,strong,div,small){color:var(--club-ink)!important}
+.road-club .credits-subview a{color:var(--club-sea)!important;text-decoration:underline}
+.road-club .mode-stage-row{background:#f1eddf!important;border-color:var(--club-line)!important}
+.road-club .club-driver-profile{background:#f1eddf!important;border-color:var(--club-line)!important}
+.road-club .club-room-join{background:var(--club-action)!important;color:#fff!important;border-color:var(--club-action)!important}
+.road-club .club-room-join:disabled{background:#dce2ea!important;color:#42536a!important;border-color:#b8c4d3!important;opacity:1!important}
+.club-home .main-menu-content{background:#fffdf6ef!important;border-radius:10px!important;border-color:#ffffff99!important;box-shadow:0 6px 24px #10192333!important}
+.club-home .menu-action-button,.club-home .district-drive-now{border-radius:6px!important}
+.club-track-map{background:#fffdf6d9;border-radius:4px;box-shadow:none}
+.road-club .mode-grid>div{background:#f4f0e5!important;border:1px solid var(--club-line)!important;border-radius:10px!important;box-shadow:none!important}
+.road-club .mode-grid>div:hover{background:#e3edcf!important}
+.road-club .mode-grid>div[data-focused="true"]{outline:3px solid #a8660c!important;outline-offset:2px}
+.road-club .mode-grid>div>div[style*="background"]{background:transparent!important}
+/* Inset controller focus never changes geometry or slips outside a scroll viewport. */
+.road-club [data-focused="true"],.road-club [data-gamepad-focused="true"],.road-club button:focus-visible{outline-offset:-3px!important;transform:none!important}
+
+/* Two primary modes; car and track selection lives inside each flow. */
+.menu-action-grid{display:grid!important;grid-template-columns:1.4fr 1.4fr .7fr .7fr!important}
+.menu-action-grid>.menu-action-button:nth-child(1){background:#226449!important;color:#fff!important}
+.menu-action-grid>.menu-action-button:nth-child(2){background:#b83e39!important;color:#fff!important}
+.menu-action-grid>.menu-action-button:nth-child(n+3){background:#eee8dc!important;color:#514b42!important;grid-column:auto!important;grid-row:auto!important}
+.menu-action-grid>.menu-action-button:nth-child(-n+2) span{color:#fff!important}
+@media(max-width:700px){.menu-action-grid{grid-template-columns:1fr 1fr!important}}
+
+.club-home .main-menu-nav-column{grid-template-columns:1.4fr 1.4fr .65fr .65fr!important}
+.club-home .menu-action-grid{display:contents!important}
+.club-home .menu-action-button:nth-child(n){grid-column:auto!important;grid-row:auto!important}
+.club-home .menu-action-button:nth-child(1){background:#226449!important;border-color:#226449!important}
+.club-home .menu-action-button:nth-child(2){background:#b83e39!important;border-color:#b83e39!important}
+.club-home .menu-action-button:nth-child(-n+2) span{color:#fff!important}
+@media(max-width:760px) and (orientation:portrait){.club-home .main-menu-nav-column{grid-template-columns:1fr 1fr!important}}
+.club-home .menu-action-button[data-quick-drive]{order:-1;display:flex!important;flex-direction:column;justify-content:center;gap:5px;background:#e1aa48!important;color:#302a19!important;border-color:#bd842b!important;min-height:76px!important;opacity:1!important}.club-home .menu-action-button[data-quick-drive] strong{font-size:16px}.club-home .menu-action-button[data-quick-drive] small{font-size:10px}.club-home .main-menu-nav-column{grid-template-columns:1.3fr 1.1fr 1.2fr .65fr .65fr!important}@media(max-width:760px){.club-home .main-menu-nav-column{grid-template-columns:1fr 1fr!important}.club-home .menu-action-button[data-quick-drive]{grid-column:1/-1!important;min-height:54px!important}}
+.road-club.club-home .menu-action-button[data-entry="solo"]{background:#216047!important;min-height:76px!important;opacity:1!important}.road-club.club-home .menu-action-button[data-entry="multiplayer"]{background:#98492f!important;min-height:76px!important;opacity:1!important}.road-club.club-home .menu-action-button[data-entry] :is(span,div){color:white!important}.road-club.club-home .menu-action-button[data-entry] .menu-action-sublabel{display:none!important}
+
+/* All paper dialogs use dark headings; photographic stage banners retain light captions. */
+.road-club :is(.pause-card-compact,.activities-subview,.multiplayer-subview,.track-subview,.garage-subview,.settings-subview,.controls-subview,.mode-subview,.credits-subview) :is(h1,h2,h3,h4){color:#304335!important;text-shadow:none!important}
+.road-club .menu-navigation-footer{background:#f1eddf!important;color:#3f4e3d!important;border-color:#c4cdb8!important}
+.road-club .menu-navigation-footer :is(span,strong){color:#3f4e3d!important;text-shadow:none!important}
+.road-club .menu-navigation-footer .menu-controller-glyph{color:#fff!important}

@@ -1,0 +1,258 @@
+/* One layout owner for HUD spacing; decorative component styles remain local. */
+#hud{--hud-surface:#102838f5;--hud-text:#eff7fc;--hud-muted:#bed2df;--hud-accent:#8bedd6;--hud-timer-top:calc(14px + var(--sat,0px))}
+#hud .drive-console{top:auto;bottom:calc(66px + var(--sab,0px));left:calc(18px + var(--sal,0px));width:290px;box-sizing:border-box;background:var(--hud-surface);border-left-color:var(--hud-accent);z-index:40}
+#hud .drive-console-label,#hud .drive-status{color:#a1e6db}
+#hud .drive-mode-row button{min-height:44px;color:var(--hud-text);background:#214353;border-color:#8bc5d14d}
+#hud .drive-mode-row button:focus{outline:3px solid #b8f6e7;outline-offset:2px}
+#hud .drift-club{top:calc(20px + var(--sat,0px));left:calc(18px + var(--sal,0px));width:290px;max-height:calc(100dvh - 340px - var(--sat,0px) - var(--sab,0px));background:var(--hud-surface)}
+#hud .road-mastery,#hud .ghost-pace,#hud .race-live{background:var(--hud-surface);color:var(--hud-text);border-color:#79bfce55}
+#hud .race-live-self{display:none}
+#hud .race-live{top:calc(62px + var(--sat,0px))}
+#hud .race-grid{top:50%;max-height:calc(100dvh - 120px - var(--sat,0px) - var(--sab,0px));width:min(480px,calc(100vw - 24px - var(--sal,0px) - var(--sar,0px)));background:#102838fa;color:var(--hud-text);border-color:#79bfce66;box-shadow:0 18px 64px #0008}
+#hud .race-grid p,#hud .race-grid-small,#hud .race-grid-hint{color:var(--hud-muted)}
+#hud .race-grid-eyebrow,#hud .race-grid-room span,#hud .race-grid-invite{color:#a1e6db}
+#hud .race-grid-room,#hud .race-grid-drivers li{border-color:#84bfce30}
+#hud .race-grid-drivers li>span:first-child{min-width:0;overflow-wrap:anywhere}
+#hud .race-grid-drivers li>strong,#hud .race-grid-drivers li>span:last-child{flex-shrink:0}
+#hud .race-grid .driver-ready{color:#225d39;font-size:11px;font-weight:800}
+#hud .race-grid .driver-loading{color:#785019;font-size:11px;font-weight:750}
+#hud .race-grid-drivers li>span:first-child{color:#343d31}
+#hud .race-grid .race-start{background:#8bedd6;color:#102838;border-color:#8bedd6}
+#hud .race-grid .race-vote{background:#214353;color:#eff7fc;border-color:#8bc5d14d}
+#hud .race-grid button:focus,#hud .race-grid a:focus{outline-color:#b8f6e7}
+#hud[data-race-panel="true"]~[data-testid="touch-controls-overlay"]>div:not(.touch-utility-bar){display:none}
+@media(max-width:1100px){#hud .drive-console,#hud .drift-club{width:250px;padding:12px}}
+@media(max-height:600px) and (orientation:landscape){
+  #hud{--hud-timer-top:calc(14px + var(--sat,0px))}
+  #hud .drive-console{left:50%;transform:translateX(-50%);top:auto;bottom:calc(66px + var(--sab,0px));width:220px;padding:6px 8px}
+  #hud .drive-console>.drive-console-label,#hud .drive-status,#hud .drive-mode-description{display:none}
+  #hud .drive-mode-row{margin:0;gap:5px}#hud .drive-mode-row button{padding:5px 2px;font-size:11px}
+  #hud .nitro-status{margin-top:4px;padding-top:4px;font-size:9px}#hud .nitro-status small{display:none}#hud .nitro-tanks{margin-top:3px}#hud .nitro-tanks progress{height:4px}
+  #hud .road-mastery{top:calc(8px + var(--sat,0px));width:220px;padding:6px 9px}
+  #hud .road-mastery__goals,#hud .road-mastery__notice{display:none}#hud .road-mastery__rank{margin:3px 0 0;font-size:11px}
+  #hud .drift-club{left:50%;transform:translateX(-50%);top:calc(58px + var(--sat,0px));width:220px;max-height:112px;padding:7px 9px}
+  #hud .drift-club__note,#hud .drift-club__ranking,#hud .drift-club #render-fps{display:none}#hud .drift-club__score{margin:4px 0}#hud .drift-club__score strong{font-size:22px}#hud .drift-club button{min-height:44px;padding:7px}
+  #hud .race-live,#hud .ghost-pace-mobile{top:calc(62px + var(--sat,0px));width:260px}
+  #hud .race-live .race-live-row:nth-of-type(n+5){display:none}#hud .ghost-pace__rules{display:none}
+}
+@media(max-height:600px) and (orientation:landscape) and (max-width:740px){
+  #hud{--hud-map-size:100px;--hud-map-top:calc(64px + var(--sat,0px));--hud-gauge-transform:scale(0.45);--hud-timer-top:calc(64px + var(--sat,0px))}
+  #hud .timing-mobile{padding:3px 7px}#hud{--hud-timing-gap:4px}#hud .timing-strip-inner>span:first-child{display:none}
+  #hud .race-live,#hud .ghost-pace-mobile{top:calc(108px + var(--sat,0px));width:220px;max-height:72px;overflow:hidden}
+  #hud .race-live .race-live-row{display:none}#hud .race-live .race-live-self{display:flex}
+  #hud .road-mastery{top:calc(64px + var(--sat,0px));width:220px}
+  #hud .drift-club{top:calc(108px + var(--sat,0px));max-height:72px;display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}
+  #hud .drift-club__eyebrow{grid-column:1;font-size:7px;letter-spacing:.5px}#hud .drift-club__score{grid-column:1;margin:0}#hud .drift-club button,#hud .drift-club__chain{grid-column:2;grid-row:1/span 2;font-size:10px}#hud .drift-club details{display:none}
+}
+@media(max-width:960px) and (orientation:portrait){
+  #hud{--hud-map-size:100px;--hud-map-top:calc(64px + var(--sat,0px));--hud-gauge-transform:scale(0.50);--hud-timer-top:calc(168px + var(--sat,0px))}
+  #hud .timing-mobile{width:calc(100vw - 24px - var(--sal,0px) - var(--sar,0px));box-sizing:border-box;padding:4px 8px}
+  #hud .timing-strip-inner{justify-content:space-between}#hud .timing-strip-inner>span:first-child{display:none}
+  #hud .race-live,#hud .ghost-pace-mobile{top:calc(208px + var(--sat,0px));left:12px;right:12px;transform:none;width:auto;max-height:80px;overflow:hidden;box-sizing:border-box}
+  #hud .race-live .race-live-row{display:none}#hud .race-live .race-live-self{display:flex}#hud .ghost-pace__rules{display:none}
+  #hud .drive-console{top:auto;bottom:calc(190px + var(--sab,0px));left:12px;transform:none;width:calc(100vw - 24px - var(--sal,0px) - var(--sar,0px));padding:7px 10px}
+  #hud .drive-console>.drive-console-label,#hud .drive-status,#hud .drive-mode-description{display:none}#hud .drive-mode-row{margin:0}#hud .drive-mode-row button{padding:5px 3px;min-height:44px;font-size:12px}
+  #hud .nitro-status{margin-top:4px;padding-top:4px;font-size:9px}#hud .nitro-status small{display:none}#hud .nitro-tanks{margin-top:3px}#hud .nitro-tanks progress{height:4px}
+  #hud .road-mastery{top:calc(168px + var(--sat,0px));left:12px;right:auto;transform:none;width:min(200px,calc(100vw - 206px));min-width:100px;padding:8px}
+  #hud .road-mastery__goals,#hud .road-mastery__notice{display:none}#hud .road-mastery__rank{font-size:11px;margin:4px 0 0}
+  #hud .drift-club{top:calc(168px + var(--sat,0px));left:auto;right:12px;transform:none;width:170px;max-height:112px;padding:8px 10px}
+  #hud .drift-club__score{margin:4px 0}#hud .drift-club__score strong{font-size:20px}#hud .drift-club__note,#hud .drift-club__ranking,#hud .drift-club #render-fps{display:none}#hud .drift-club button{min-height:44px;padding:7px;font-size:11px}
+  #hud .drift-club details{display:none}
+}
+@media(max-width:360px) and (orientation:portrait){#hud .timing-strip-inner{font-size:10px}#hud .road-mastery{min-width:0}}
+#hud .district-radio{max-width:calc(50vw - 340px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#hud .multiplayer-session-hud{flex-direction:var(--hud-session-direction,column-reverse);max-width:calc(100vw - 24px - var(--sal,0px) - var(--sar,0px))}
+#hud .multiplayer-session-tools{max-width:min(320px,calc(100vw - 52px));box-sizing:border-box;overflow-wrap:anywhere}
+#hud .multiplayer-session-pill{min-height:44px;box-sizing:border-box;max-width:100%;overflow:hidden}
+#hud .multiplayer-session-pill:focus,#hud .multiplayer-session-hud button:focus,#hud .multiplayer-session-hud a:focus{outline:3px solid #b8f6e7;outline-offset:2px}
+#hud .multiplayer-session-hud button{min-width:44px;min-height:44px}
+@media(max-width:960px),(max-height:600px){#hud .district-radio{display:none}#hud .multiplayer-session-pill .session-level,#hud .multiplayer-session-pill .session-mode,#hud .multiplayer-session-pill .session-host{display:none}}
+@media(max-height:600px) and (orientation:landscape){#hud .nitro-status{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:5px;padding-top:2px;margin-top:2px;font-size:8px}#hud .nitro-status>div:first-child{min-width:0;overflow:hidden;white-space:nowrap}#hud .nitro-tanks{margin-top:0}}
+@media(max-height:600px) and (orientation:landscape) and (max-width:740px){#hud .race-live{top:calc(108px + var(--sat,0px))}}
+@media(max-width:960px) and (orientation:portrait){#hud{--hud-timing-gap:4px}#hud .race-live{top:calc(208px + var(--sat,0px))}}
+
+@media(max-height:300px) and (orientation:landscape){#hud .drive-console .drive-mode-row{display:none}#hud .drive-console .nitro-status{margin:0;padding:0;border:0}}
+
+#hud .race-live strong,#hud .race-live-self{font-size:12px}
+
+@media(min-width:961px){#hud.hud-online #rally-cluster{margin-bottom:44px}}
+@media(max-width:1200px){#hud .multiplayer-session-pill .session-level,#hud .multiplayer-session-pill .session-mode,#hud .multiplayer-session-pill .session-host{display:none}}
+
+#hud .session-room-code{display:none;font:700 10px monospace;color:#a1e6db}
+@media(max-width:960px) and (orientation:portrait){
+#hud{--hud-session-top:calc(14px + var(--sat,0px));--hud-session-bottom:auto;--hud-session-left:auto;--hud-session-right:calc(12px + var(--sar,0px));--hud-session-transform:none;--hud-session-align:flex-end;--hud-session-direction:column;--hud-map-top:calc(124px + var(--sat,0px));--hud-timer-top:calc(70px + var(--sat,0px));--hud-timer-left:auto;--hud-timer-right:calc(12px + var(--sar,0px));--hud-timer-transform:none}
+#hud #rally-cluster{margin-top:56px}#hud .multiplayer-session-hud{width:150px}#hud .session-room-code{display:block}#hud .session-name,#hud .session-drivers,#hud .session-ping{display:none}
+#hud .timing-mobile{width:156px;--hud-timer-font-size:14px}#hud .timing-personal-best{display:none}
+#hud .race-live{top:calc(236px + var(--sat,0px));width:min(170px,calc(50vw - 20px));left:12px;right:auto;padding:7px 9px;max-height:64px}
+#hud .ghost-pace-mobile{top:calc(236px + var(--sat,0px));left:auto;right:12px;width:min(170px,calc(50vw - 20px))}
+#hud .road-mastery,#hud .drift-club{top:calc(236px + var(--sat,0px))}#hud .drift-club{max-height:104px}
+.touch-utility-bar{--touch-utility-display:grid;--touch-utility-gap:8px;grid-template-columns:54px 54px}
+}
+@media(max-width:960px) and (orientation:portrait) and (max-height:650px){#hud .drive-mode-row{display:none}#hud .drive-console .nitro-status{margin:0;padding:0;border:0}}
+/* Instrument language: quiet edges, stable text contrast and scenery visible around every readout. */
+#hud{--hud-surface:rgba(14,23,34,.88);--hud-text:#f3f6fa;--hud-muted:#c2cddd;--hud-accent:#9bc5ff}
+#hud :is(.drive-console,.drift-club,.road-run,.race-live,.ghost-pace,.multiplayer-session-pill,.multiplayer-session-tools){background:var(--hud-surface)!important;color:var(--hud-text)!important;border:1px solid #ffffff26!important;border-radius:6px!important;box-shadow:none!important;backdrop-filter:none!important}
+#hud :is(.drive-console,.drift-club,.road-run){border-top:2px solid #9bc5ff88!important;border-left:1px solid #ffffff26!important}
+#hud :is(.drive-console-label,.drive-status,.drift-club__eyebrow,.drift-club__chain,.road-run-time,.race-live strong,.race-live-self,.session-room-code){color:var(--hud-accent)!important}
+#hud :is(.drive-mode-description,.nitro-status,.nitro-status small,.drift-club__note,.drift-club summary,.drift-club__ranking small,.road-run-heading>span,.road-run-time small,.road-run-splits b,.road-run-help,.race-live small){color:var(--hud-muted)!important}
+#hud :is(.multiplayer-session-pill,.multiplayer-session-tools) :is(span,strong,p){color:var(--hud-text)!important}
+#hud :is(.drive-mode-row button,.drift-club button,.multiplayer-session-tools button){background:#25394f!important;color:var(--hud-text)!important;border:1px solid #7d97b455!important;border-radius:4px!important;min-height:44px}
+#hud :is(.drive-mode-row button,.drift-club button,.multiplayer-session-tools button):hover{background:#345374!important}
+#hud :is(button,summary,a):focus-visible{outline:3px solid #f2c66d!important;outline-offset:2px!important}
+#hud .multiplayer-session-pill :is(.session-mode,.session-host){background:#25394f!important;border-color:#7d97b455!important}
+#hud .road-run{padding:9px 12px;width:260px;box-sizing:border-box}
+#hud .road-run-time{font-size:24px;margin:2px 0}
+#hud .road-run-splits>span{background:#ffffff0c;border-radius:2px;padding:4px;color:var(--hud-text)}
+#hud .road-run[data-run-active="false"] .road-run-splits,#hud .road-run[data-run-active="false"] .road-run-help{display:none}
+#hud .road-run[data-run-active="false"] .road-run-time{font-size:20px}
+#hud .drift-club{padding:10px 12px}
+#hud .drift-club__eyebrow{letter-spacing:1px}
+#hud .drift-club[data-heat-phase="ready"] .drift-club__score{display:none}
+#hud .drift-club[data-heat-phase="ready"] button{margin-top:7px}
+#hud .drift-club #render-fps{font-size:9px;opacity:.8;margin:5px 0 0}
+#hud .drive-console{padding:10px 12px}
+#hud .drive-mode-row{margin-top:6px}
+#hud .drive-mode-description{font-size:9px;line-height:1.4}
+#hud .nitro-tanks progress,#hud .drift-club progress{accent-color:var(--hud-accent)}
+#hud .race-grid{background:#111e2ff5!important;color:var(--hud-text)!important;border:1px solid #8da8c355!important;border-radius:10px!important;box-shadow:0 12px 36px #0005!important}
+#hud .race-grid :is(h2,strong){color:var(--hud-text)!important}
+#hud .race-grid :is(p,.race-grid-small,.race-grid-hint){color:var(--hud-muted)!important}
+#hud .race-grid :is(.race-grid-eyebrow,.race-grid-room span,.race-grid-invite){color:var(--hud-accent)!important}
+#hud .race-grid button{background:#25394f!important;color:var(--hud-text)!important;border:1px solid #7d97b455!important;border-radius:5px!important}
+#hud .race-grid .race-start{background:#9bc5ff!important;color:#12253c!important;border-color:#9bc5ff!important}
+#hud .race-grid .race-start:disabled{opacity:1;background:#2b3a4b!important;color:#bac7d7!important}
+#hud .club-grid-summary div{background:#ffffff0a;color:var(--hud-muted)}
+#hud .club-grid-summary strong{color:var(--hud-accent)!important}
+#hud .first-drive-guide{background:#111e2ff5;border-color:#8da8c355;border-radius:10px;box-shadow:0 12px 36px #0005;backdrop-filter:none}
+#hud .drive-guide-close{background:#9bc5ff;color:#12253c}
+@media(max-width:960px) and (orientation:portrait){#hud .road-run{width:min(180px,calc(50vw - 20px));padding:7px 9px}#hud .road-run-time{font-size:20px}#hud .drift-club{padding:7px 9px}#hud .drift-club[data-heat-phase="ready"] button{margin-top:5px}}
+@media(max-height:600px) and (orientation:landscape){#hud .road-run{width:220px;padding:5px 9px}#hud .road-run-time,#hud .road-run[data-run-active="false"] .road-run-time{font-size:18px}#hud .drive-console{padding:6px 8px}#hud .drift-club{padding:7px 9px}}
+#hud .drift-club[data-heat-phase="ready"] .drift-club__note{font-size:10px;margin:4px 0}
+/* HUD surfaces retain contrast even when the scene behind them is sunlit white. */
+#hud .multiplayer-session-tools a{color:var(--hud-accent)!important;text-decoration:underline}
+#hud .first-drive-guide :is(p,dd,small){color:var(--hud-muted)}
+#hud .first-drive-guide dt{color:var(--hud-accent)}
+#hud .drive-quick-setup button{background:#25394f;color:var(--hud-text);border-color:#7d97b455}
+/* Horizon Festival instruments: warm surfaces, clear energy and scenery-first edges. */
+#hud{--hud-surface:rgba(255,251,239,.96);--hud-text:#343d31;--hud-muted:#606957;--hud-accent:#874227}
+#hud :is(.drive-console,.drift-club,.road-run,.race-live,.ghost-pace,.multiplayer-session-pill,.multiplayer-session-tools){background:var(--hud-surface)!important;border:1px solid #ddd9bd!important;border-radius:4px 16px 4px 16px!important;box-shadow:0 3px 12px #4c52261a!important}
+#hud :is(.drive-console,.drift-club,.road-run){border-top:3px solid #da8552!important;border-left:0!important}
+#hud :is(.drive-mode-row button,.drift-club button,.multiplayer-session-tools button){background:#e3edcf!important;color:#31462c!important;border:1px solid #bbcfa4!important;border-radius:5px 12px 5px 12px!important}
+#hud :is(.drive-mode-row button,.drift-club button,.multiplayer-session-tools button):hover{background:#c9e3ab!important}
+#hud :is(button,summary,a):focus-visible{outline-color:#9b4929!important}
+#hud .drive-mode-row button small{color:#53634a!important}
+#hud .drive-console-label{letter-spacing:1.2px;font-size:9px}
+#hud .drive-console{padding:8px 12px}
+#hud .drive-status{font-weight:700;font-size:10px}
+#hud .drift-club{background:linear-gradient(110deg,#fffbee,#f5ecd4)!important}
+#hud .festival-spark{color:#bd542c;font-size:18px;vertical-align:middle}
+#hud .drift-club__score strong{font-size:32px;letter-spacing:-1.5px;color:#a44924}
+#hud .drift-club__score>span{padding:5px 8px;border-radius:12px;background:#e5eccd;color:#394731}
+#hud .drift-club[data-combo="true"]{border-top-color:#44875d!important}
+#hud .drift-club[data-combo="true"] .drift-club__chain{background:#dcefc8;padding:6px 8px;border-radius:12px;color:#2b5d35!important;font-weight:750}
+#hud .drift-club progress{height:5px;accent-color:#ad6328}
+#hud .drift-club #render-fps{font-size:8px;opacity:.7}
+#hud .road-run{border-top-color:#81a46c!important}
+#hud .road-run-time{font-variant-numeric:tabular-nums;letter-spacing:-1px;color:#475e38!important}
+#hud .road-run-splits>span{border-bottom:3px solid #d7d9c7;background:#f1eedf;color:#515c40;border-radius:3px}
+#hud .road-run-splits>span[data-current="true"]{border-bottom-color:#d27a3d;background:#fff0d1}
+#hud .road-run-splits>span[data-complete="true"]{border-bottom-color:#64985a;background:#e5efce}
+#hud .festival-trail{display:grid;grid-template-columns:1fr auto;gap:3px 8px;border-top:1px solid #d8d8c0;padding-top:6px;margin-top:6px;font-size:9px;color:#606957}
+#hud .festival-trail strong{color:#6f491c;font-size:13px}
+#hud .festival-trail small{grid-column:1/-1;font-size:8px}
+#hud .nitro-status{display:flex!important;align-items:center;gap:8px;font-size:9px;color:#47583b!important;border-top:1px solid #d4d8bf;margin-top:7px;padding-top:6px}
+#hud .nitro-orbit{position:relative;width:64px;height:64px;flex:0 0 64px;color:#305a36}
+#hud .nitro-orbit svg{width:100%;height:100%;transform:rotate(-90deg)}
+#hud .nitro-orbit circle{fill:none;stroke-width:7;stroke-linecap:round}
+#hud .nitro-orbit-track{stroke:#d7dfc4}
+#hud .nitro-orbit-charge{stroke:#4f995d;transition:stroke-dashoffset .1s linear,stroke .15s}
+#hud .nitro-orbit strong{position:absolute;inset:16px 0 auto;text-align:center;font-size:21px;line-height:1}
+#hud .nitro-orbit>span{position:absolute;inset:39px 0 auto;text-align:center;font-weight:800;font-size:7px;letter-spacing:1px}
+#hud .nitro-readout{flex:1;min-width:0;line-height:1.5}
+#hud .nitro-readout>div:first-child{display:flex;flex-direction:column;gap:3px}
+#hud .nitro-status small{color:#676548!important}
+#hud .nitro-tanks{display:flex;gap:4px;margin-top:5px}
+#hud .nitro-tanks progress{accent-color:#589d60;height:10px;width:50%;border-radius:6px;overflow:hidden}
+#hud .nitro-status[data-boost="active"] .nitro-orbit-charge{stroke:#c76628}
+#hud .nitro-status[data-boost="active"] .nitro-orbit{color:#9b4822}
+#hud .nitro-status[data-boost="empty"] .nitro-orbit{color:#a54930}
+#hud .minimap-container{background:#fffaf0!important;border:3px solid #d7b16a!important;box-shadow:0 3px 14px #4b52282e!important}
+#hud .minimap-container>div{display:none}
+#hud .race-grid,#hud .first-drive-guide{background:#fffbeeF8!important;color:#343d31!important;border:1px solid #d8cfb2!important;box-shadow:0 12px 36px #423d282e!important}
+#hud .race-grid :is(h2,strong){color:#343d31!important}
+#hud .race-grid :is(p,.race-grid-small,.race-grid-hint){color:#606957!important}
+#hud .race-grid :is(.race-grid-eyebrow,.race-grid-room span,.race-grid-invite){color:#874227!important}
+#hud .race-grid button,#hud .drive-quick-setup button{background:#e3edcf!important;color:#31462c!important;border-color:#bbcfa4!important}
+#hud .race-grid .race-start,#hud .drive-guide-close{background:#8f452c!important;color:white!important;border-color:#8f452c!important}
+#hud .multiplayer-session-pill :is(.session-mode,.session-host){background:#e3edcf!important;border-color:#bbcfa4!important}
+@media(max-width:960px),(max-height:600px){#hud .nitro-orbit{width:46px;height:46px;flex-basis:46px}#hud .nitro-orbit strong{top:11px;font-size:16px}#hud .nitro-orbit>span{top:28px;font-size:6px}#hud .festival-trail small{display:none}#hud .festival-trail{margin-top:4px;padding-top:4px}#hud .drift-club__score strong{font-size:23px}}
+@media(prefers-reduced-motion:reduce){#hud .nitro-orbit-charge{transition:none}}
+@media(max-height:600px) and (orientation:landscape){#hud .road-run .festival-trail{display:none}#hud .nitro-status{margin-top:3px;padding-top:3px}#hud .nitro-readout small{display:none}}
+#hud .district-radio{color:#4c4935!important;background:#fffbeee8;padding:4px 8px;border-radius:8px;max-width:calc(50vw - 340px)}
+
+.recovery-countdown{position:absolute;top:27%;left:50%;transform:translateX(-50%);display:grid;justify-items:center;gap:5px;padding:18px 28px;background:#fff6e4e8;color:#28553f;border-radius:24px;border:2px solid #d98143;z-index:130;pointer-events:none}.recovery-countdown strong{font-size:64px;line-height:1}.recovery-countdown small{letter-spacing:.12em}
+/* Touch instruments stay at the edges; the road and pedal hit areas stay clear. */
+@media (orientation:landscape) {
+  #hud.hud-touch {--hud-map-size:88px;--hud-map-top:calc(60px + var(--sat,0px));--hud-gauge-transform:scale(.4)}
+  #hud.hud-touch #rally-cluster {left:calc(10px + var(--sal,0px))!important;top:calc(10px + var(--sat,0px))!important;margin:0!important}
+  #hud.hud-touch .drive-console {left:calc(12px + var(--sal,0px));top:calc(108px + var(--sat,0px));bottom:auto;transform:none;width:142px;padding:4px 7px}
+  #hud.hud-touch .drive-console :is(.drive-console-label,.drive-mode-row,.drive-status,.drive-mode-description) {display:none}
+  #hud.hud-touch .drive-console .nitro-status {border:0;margin:0;padding:0;gap:5px;font-size:8px}
+  #hud.hud-touch .nitro-orbit {width:32px;height:32px;flex-basis:32px}
+  #hud.hud-touch .nitro-orbit strong {top:7px;font-size:12px}
+  #hud.hud-touch .nitro-orbit>span {top:20px;font-size:5px}
+  #hud.hud-touch .nitro-tanks progress {height:5px}
+  #hud.hud-touch .nitro-readout small {display:none}
+  #hud.hud-touch .ghost-pace-mobile {top:calc(52px + var(--sat,0px));width:190px}
+  #hud.hud-touch .ghost-pace :is(small,.ghost-pace__rules) {display:none}
+  #hud.hud-touch .ghost-pace {padding:3px 7px}
+  #hud.hud-touch .road-run {width:220px;padding:4px 7px}
+  #hud.hud-touch .road-run :is(.festival-trail,.road-run-help) {display:none}
+}
+/* Scenery-first driving: one energy strip, one navigation instrument, no tools cards. */
+#hud .drive-console{left:24px!important;bottom:calc(28px + var(--sab,0px))!important;top:auto!important;right:auto!important;transform:none!important;width:190px!important;padding:7px 10px!important;max-height:none!important;overflow:visible!important;border:0!important;border-radius:12px!important;background:rgba(255,252,242,.88)!important;box-shadow:none!important;pointer-events:none}
+#hud .drive-console .nitro-status{margin:0!important;padding:0!important;border:0!important;gap:0!important}
+#hud .drive-console .nitro-orbit{display:none!important}
+#hud .drive-console .nitro-readout>div:first-child{flex-direction:row;justify-content:space-between;gap:5px}
+#hud .drive-console .nitro-readout{font-size:9px;font-weight:750}
+#hud .drive-console .nitro-readout small{display:none!important}
+#hud .drive-console .nitro-tanks{margin-top:4px}
+#hud .drive-console .nitro-tanks progress{height:5px}
+#hud .district-radio{display:none!important}
+#hud .ghost-pace{padding:5px 9px!important;font-size:10px!important;background:rgba(255,252,242,.82)!important;box-shadow:none!important}
+#hud .ghost-pace>div{display:none}
+#hud .ghost-pace small{display:none!important}
+#hud .ghost-pace p{margin:0!important}
+#hud .ghost-pace:not(:has(p)){display:none}
+#hud .driving-tip{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;max-width:calc(100vw - 480px);padding:2px 4px 2px 14px;background:rgba(255,252,242,.92);border-radius:24px;color:#344936;font:600 12px system-ui;box-shadow:0 2px 12px #0001;pointer-events:auto}
+#hud .driving-tip button{border:0;background:transparent;color:#50604a;min-width:44px;min-height:44px;font-size:23px;cursor:pointer}
+#hud .driving-tip button:focus-visible{outline:3px solid #98552a;border-radius:50%}
+#hud .simple-drive-guide{width:min(420px,calc(100vw - 32px));max-height:80dvh;overflow:auto;padding:20px!important}
+#hud .simple-drive-guide p{color:#46553d!important;font-size:14px;line-height:1.6;margin:12px 0}
+#hud .simple-drive-guide h2{margin:0;font-size:24px}
+#hud .simple-drive-guide small{color:#58644e!important}
+#hud .drift-club :is(details,.drift-club__ranking,#render-fps){display:none!important}
+#hud .drift-club{width:210px!important;padding:8px 12px!important;background:rgba(255,252,242,.88)!important;max-height:160px!important}
+#hud .active-road-challenge{width:230px!important;height:auto!important;display:block!important;background:rgba(255,252,242,.88)!important}
+@media(max-width:960px),(max-height:600px){#hud .driving-tip{top:calc(12px + var(--sat,0px));bottom:auto;max-width:calc(100vw - 260px);font-size:11px}#hud .drive-console{left:12px!important;bottom:calc(14px + var(--sab,0px))!important;width:165px!important}#hud .drift-club{width:180px!important;max-height:110px!important}}
+@media(orientation:landscape){#hud.hud-touch .drive-console{left:calc(12px + var(--sal,0px))!important;top:calc(104px + var(--sat,0px))!important;bottom:auto!important;width:145px!important;padding:4px 7px!important}}
+@media(max-width:960px) and (orientation:portrait){#hud .drive-console{left:12px!important;top:calc(168px + var(--sat,0px))!important;bottom:auto!important;width:145px!important}#hud .driving-tip{top:calc(220px + var(--sat,0px));max-width:calc(100vw - 48px);width:max-content;box-sizing:border-box}#hud .drift-club{top:calc(230px + var(--sat,0px))!important;left:12px!important;right:auto!important;transform:none!important}}
+
+/* Waiting grid: one compact action card; optional instructions stay folded. */
+#hud .race-grid.race-grid-compact{width:min(420px,calc(100vw - 24px));padding:18px!important;border-radius:16px!important}
+#hud .race-grid-compact .race-ready-header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#hud .race-grid-compact h2{margin:0 0 3px;font-size:23px}
+#hud .race-ready-code{font:800 17px ui-monospace,monospace;letter-spacing:2px;color:#874227;background:#eee8d8;padding:9px;border-radius:8px;white-space:nowrap}
+#hud .race-ready-invite{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0;font-size:12px;color:#606957}
+#hud .race-ready-invite>span:first-child{min-width:0;overflow-wrap:anywhere}
+#hud .race-ready-invite button{flex-shrink:0}
+#hud .race-ready-copy-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#hud .race-grid-compact .race-grid-drivers{margin:8px 0;max-height:160px}
+#hud .race-grid-compact>.race-grid-actions{margin-top:12px}
+#hud .race-grid-compact>.race-grid-actions button{flex:1}
+#hud .race-grid-compact .race-grid-hint{margin-top:8px;font-size:12px}
+#hud .race-grid-compact .club-race-help{margin:12px 0 0;border-top:1px solid #d8cfb2;padding-top:6px}
+#hud .race-grid-compact .club-race-help summary{font-size:12px}
+#hud .race-grid-compact :is(button,a,summary):focus-visible{outline:3px solid #a86614;outline-offset:3px}
+
+@media(min-width:961px) and (min-height:601px){#hud.hud-online .driving-tip{bottom:76px}}

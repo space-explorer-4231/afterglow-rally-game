@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Play Aeroline
+    url: https://aeroline-road-club.aeroline-edge.workers.dev/
+    about: Open the public game without creating a player account.
+  - name: Security reporting guidance
+    url: https://github.com/space-explorer-4231/afterglow-rally-game/blob/dev/SECURITY.md
+    about: Do not disclose vulnerabilities or credentials in a public issue.

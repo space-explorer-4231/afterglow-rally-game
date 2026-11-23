@@ -1,0 +1,9 @@
+/* Keep artwork dominant and progress readable on narrow or short screens. */
+#loading-screen.aeroline-loading{padding:calc(18px + var(--sat,0px)) calc(22px + var(--sar,0px)) calc(18px + var(--sab,0px)) calc(22px + var(--sal,0px))!important}
+#loading-screen.aeroline-loading>div{width:min(500px,100%);max-width:100%!important;gap:8px!important;text-align:left;box-sizing:border-box}
+#loading-screen.aeroline-loading img{width:140px!important;max-width:100%}
+#loading-screen .loading-stage-pill{flex-wrap:wrap;justify-content:flex-start;gap:5px;padding:5px 9px;max-width:100%;box-sizing:border-box;font-size:11px}
+#loading-screen .loading-progress-rail{width:min(260px,calc(100vw - 48px));max-width:100%;height:4px}
+#loading-screen.aeroline-loading .club-loading-tip{font-size:12px!important;margin:2px 0!important}
+#loading-screen.aeroline-loading p:not(.club-loading-tip){font-size:10px!important;line-height:1.5;letter-spacing:1.3px!important;margin:0}
+@media(max-height:450px) and (orientation:landscape){#loading-screen.aeroline-loading>div{gap:5px!important}#loading-screen.aeroline-loading img{width:110px!important}}

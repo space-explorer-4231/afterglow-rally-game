@@ -1,0 +1,961 @@
+{
+  "version": "1.38.2",
+  "files": [
+    {
+      "path": "aeroline-icon.svg",
+      "sha256": "f989fb3bcc733c417f4ad361f653201b8a827dc9039c784bf7554509ecbbd919"
+    },
+    {
+      "path": "aeroline-logo.svg",
+      "sha256": "f7fc3041afd193e3c53324d1eb44c57b8cdc583b68fd2170abc9c7db4bbbe32e"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "sha256": "5910505a10450856badd3e8bc61020ded1bea283f13283c9544576eb697e9052"
+    },
+    {
+      "path": "ASSET-CREDITS.md",
+      "sha256": "b81d408bdfa848a51d960eeaa38efb55382b82b8e2584c4f75271e49d8920108"
+    },
+    {
+      "path": "audio/festival/cradles.mp3",
+      "sha256": "a3536556d792fa129ec979f61725f41b924091d731919f1e94adaf2295d605b3"
+    },
+    {
+      "path": "audio/festival/CREDITS.txt",
+      "sha256": "7fb0974af442a1dfaf29ea5aac5e36c8f26cbdb35176f4e31554bde6f49cae3e"
+    },
+    {
+      "path": "audio/festival/fearless-slowed.mp3",
+      "sha256": "4615871b488a1037d1a916006dfeaada3826a4c3b26d632ec62f57a2f38171d7"
+    },
+    {
+      "path": "audio/festival/fight-in-me.mp3",
+      "sha256": "25e91b2ddcc5ddc3b8c267ca0279a7502f1f1b0626593c84fd2a350a5ba81a2e"
+    },
+    {
+      "path": "audio/festival/like-a-melody.mp3",
+      "sha256": "94fca53936f8568ba04553c77e941206026180b227ddc0fd5a7fcad8fc3d05ba"
+    },
+    {
+      "path": "audio/festival/manifest.json",
+      "sha256": "44a53c18152b5d9b14e0fff3ebd570766bc9f78db5348d17953092e1d43a802f"
+    },
+    {
+      "path": "audio/festival/mortals-slowed.mp3",
+      "sha256": "cf9f6bf71e5223beb918f2be7e8f2f00ee133e2319156860b60e60d15f710f74"
+    },
+    {
+      "path": "audio/festival/on-and-on.mp3",
+      "sha256": "c3f3d84fded63d923587310babb3a83afd2b53662a5400530f7790785e10dd6f"
+    },
+    {
+      "path": "audio/festival/royalty.mp3",
+      "sha256": "3eeb3ccdc7a1a3311eac08ba1cf30b724b52d59c4512afa66457554f0dabf09e"
+    },
+    {
+      "path": "audio/festival/shine-slowed.mp3",
+      "sha256": "28570aebb85a2b950f2946ce0393e21f98fc8d8b84aeea0cda3fadb3c27369b7"
+    },
+    {
+      "path": "audio/festival/waiting.mp3",
+      "sha256": "bb7ad18eb4263554b7d55fdbfa50becfa0546e2b2372f85bf911e775e296dd8b"
+    },
+    {
+      "path": "audio/festival/why-we-lose.mp3",
+      "sha256": "55d99e1e3800d45aec6036d4ab4d5d958ed66d6d2b7f9b2a6a92dcda6b03df72"
+    },
+    {
+      "path": "environments/rural-asphalt-road.hdr",
+      "sha256": "fe0d56709df60ac5c6bda1b5dac35ec0a381060b49d38b82e3ac8802609d1afd"
+    },
+    {
+      "path": "favicon-16x16.png",
+      "sha256": "cbc4497e6ba6c660d1dc8f35e864780b44106d7ab8f63e4e2f2b392b6ee2923b"
+    },
+    {
+      "path": "favicon-32x32.png",
+      "sha256": "1b47ff59c2ea7723150deb5b20423a9d2a667a4e09ac064c1823625f55fcfd72"
+    },
+    {
+      "path": "favicon.ico",
+      "sha256": "17ada936995a2a7d9477bab6b22c0072b47798adf428ec70575e9a071c6803e4"
+    },
+    {
+      "path": "favicon.png",
+      "sha256": "8b140914b99618d32e74969c320f33e328a23702551ade8efe331356e9e30ac7"
+    },
+    {
+      "path": "icons.svg",
+      "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a"
+    },
+    {
+      "path": "images/aeroline/club-alpine.webp",
+      "sha256": "0417ec72052c2fc23d3a58184a474a427f836a795ec9c1b53b496b029bfc8877"
+    },
+    {
+      "path": "images/aeroline/club-canyon.webp",
+      "sha256": "d6f67a0abc58abf67fdc7b20fe4dfa678c99f8588310a4eb4844a8cde7419cb3"
+    },
+    {
+      "path": "images/aeroline/club-coast.webp",
+      "sha256": "c0363023855447519867decca152963d191ba7cb3e30aa443cb9a732e91c1257"
+    },
+    {
+      "path": "images/aeroline/club-desert-pursuit.webp",
+      "sha256": "7fe17dcd2ac038363e246bef9692fdbe821938b93380b3e16fee42e26f2d8095"
+    },
+    {
+      "path": "images/aeroline/club-forest.webp",
+      "sha256": "34e5de98dfcf62fd0786b3dde95f5ab36273acf125f261da2d3eb5bf27855576"
+    },
+    {
+      "path": "images/aeroline/club-harbor-meet.webp",
+      "sha256": "b411eed9ab9ae8794d486d405e0531b602d017363becc9ab1c7cba5966ee6ba1"
+    },
+    {
+      "path": "images/aeroline/club-harbor.webp",
+      "sha256": "e6e7d4066051e8b2b7a9fe211d2626c286bf3f185eb271213c26d79720609841"
+    },
+    {
+      "path": "images/aeroline/club-highland-chase.webp",
+      "sha256": "f35842d9e2fe84aaecfa40f60276364515909502576bad959825d8c9896a3e07"
+    },
+    {
+      "path": "images/aeroline/club-marina.webp",
+      "sha256": "60a49aeea6608b3391ad64be598753815a85546662b410dcd9b395fab53780cc"
+    },
+    {
+      "path": "images/aeroline/club-night.webp",
+      "sha256": "0087c1d36939cdb875dd6e58ac11f1200b66d82a37e511d8e118a9d45198e53b"
+    },
+    {
+      "path": "images/aeroline/club-snow.webp",
+      "sha256": "6f862fd6e2cea77e7d4bed21ea792cd6a744e0edd20b27a73a9e4e490010fb13"
+    },
+    {
+      "path": "images/aeroline/club-storm.webp",
+      "sha256": "3ddbce3c17369f27746c166e40d8bc26071bca08b2dfe2153a43ffffa54f8719"
+    },
+    {
+      "path": "images/aeroline/club-sunrise.webp",
+      "sha256": "4877f116ea5443cf1f829422988bfc7a31c77a9f68df0d04e854b6fe6005ea65"
+    },
+    {
+      "path": "images/aeroline/club-winter-duel.webp",
+      "sha256": "bc061f09180ab1851998d6a32c40576ef9be8fa01168023a703837a04042869c"
+    },
+    {
+      "path": "images/aeroline/coastal-drive.webp",
+      "sha256": "40914c6de509bb30ba7884ab7e3dcde674dee896ff11067458aff01597c70133"
+    },
+    {
+      "path": "images/stages/apex_gymkhana.jpg",
+      "sha256": "7cdea256e1d09b659eac78e9ce929764b11a78d1b116521be38f95710d9c422e"
+    },
+    {
+      "path": "images/stages/desert_canyon.jpg",
+      "sha256": "e5912405838fe55187652df4ed179819283c9fe5b2b949e91ba9896c9935aab0"
+    },
+    {
+      "path": "images/stages/harbor-ring.svg",
+      "sha256": "e0aec9c2090fb49801127647458eb903ea733343d65f0b5e5df7bd6d088de6ec"
+    },
+    {
+      "path": "images/stages/harbor-ring.webp",
+      "sha256": "f7f966ee6a62f9a5b123d4a4a21ff54a49484e379b84fa1c2c97045d1c401380"
+    },
+    {
+      "path": "images/stages/highland_castle.jpg",
+      "sha256": "d2d797fbb7e28c11d2a081c4f950fea426497ceae3b0bd0d529d7b1896e49424"
+    },
+    {
+      "path": "images/stages/island_circuit.jpg",
+      "sha256": "4e0333df5b2698e60f856531d113e25637bcb8d4d3c78422a32c36870e4237c7"
+    },
+    {
+      "path": "images/stages/sweden_snow.jpg",
+      "sha256": "aa9cfd92e8a74fceaca5ff3c3126f2d4e755f47339073f5f882bdf8b2a0e8a56"
+    },
+    {
+      "path": "images/ui/coastal-market.svg",
+      "sha256": "5960702468a6c486c38bdd13b3f3207e39112892f51682db608b891aa4e15ced"
+    },
+    {
+      "path": "images/ui/harbor-sign.svg",
+      "sha256": "00c42c6fc960b63fc2cb4b39f3ca2c8b1c94b2dbac1a71abca5475cac665b7c6"
+    },
+    {
+      "path": "images/ui/openrally_crest.jpg",
+      "sha256": "fc31f39ecbf988492b93c8d71a6cf732b5b45d60161e9d1320db2573ec5ceb11"
+    },
+    {
+      "path": "images/ui/pit-sign.svg",
+      "sha256": "d112dc03c5af9a328521f1d1945adcc03e9c926bf4dde1b50630d5eceacaa0f9"
+    },
+    {
+      "path": "images/ui/rally_backdrop.jpg",
+      "sha256": "9907ff7c0669aed502f525082e2b1b5b711f61ac6822398e8bf3e85be5bc64cf"
+    },
+    {
+      "path": "images/ui/rally_finish_badge.jpg",
+      "sha256": "a9338b1ac7548124137a040820ae9491bd589316dfa6310b12918adb80348b4f"
+    },
+    {
+      "path": "images/ui/rally_stage_card_bg.jpg",
+      "sha256": "8346080cc2e2fa17d261824539b0cf3d369fa1f54316e0a29161112844301209"
+    },
+    {
+      "path": "models/coastal/island_tree_02-mobile.glb",
+      "sha256": "86c6b60f88b707c65fe7d98242841a8b4a982082cbce9242adf0d40024ce33ab"
+    },
+    {
+      "path": "models/coastal/island_tree_02.glb",
+      "sha256": "7fbb7956e7d47dbed96d6f9934637020dec57b48fb4b70b67cc88c53ec990b02"
+    },
+    {
+      "path": "models/coastal/painted_wooden_bench-mobile.glb",
+      "sha256": "5e941a7e0f98475bfc57dc27ad58f976b587a123d123be13e9d445fc6beca506"
+    },
+    {
+      "path": "models/coastal/painted_wooden_bench.glb",
+      "sha256": "7971746ee9b082f045813d60715a64e2df5e8ecae52d7216411a7cc5434859f0"
+    },
+    {
+      "path": "models/coastal/PROVENANCE.json",
+      "sha256": "0a8e9b61fe39f3a135b288486a9e4dd63306dc4e32810614278716966702aac0"
+    },
+    {
+      "path": "models/coastal/shrub_01-mobile.glb",
+      "sha256": "50e56e0a14f14fb71094c02c2ef7983d4ff5b8c37fa75fe56c055d0b5970d921"
+    },
+    {
+      "path": "models/coastal/shrub_01.glb",
+      "sha256": "c54ebc633aaf468dda26879a97950ed14ac446aa3c06074496fea797a9e265c1"
+    },
+    {
+      "path": "models/coastal/street_lamp_01-mobile.glb",
+      "sha256": "5a23d4ef876cefc77dcb34284d3f1f22746fa8e222a4fdcd7d272166c9dd0338"
+    },
+    {
+      "path": "models/coastal/street_lamp_01.glb",
+      "sha256": "dddc21f27bf64671002b3282628874adc85e2b0b0599f802705bd3083865a5dd"
+    },
+    {
+      "path": "models/coastal/utility_box_02-mobile.glb",
+      "sha256": "0d2d508685f957bd04d6d0d45c599abc4282c643b37cf323ea290de1bac39b1c"
+    },
+    {
+      "path": "models/coastal/utility_box_02.glb",
+      "sha256": "1507976529fe6887fbfcc7f77651d07ccc0f0d4b0920f59a4dd5144ce1e9cbc3"
+    },
+    {
+      "path": "models/vehicles/aero-parked.glb",
+      "sha256": "240371b45d97d28f983bb902e93f89dee16c1da94435bf3ff27ae981c6b9ecd4"
+    },
+    {
+      "path": "models/vehicles/aero_forged_wheel.glb",
+      "sha256": "96483030e69da66ec6f04d8dffba296ec0fb9deb74d8ddabb7098c463f5f04b3"
+    },
+    {
+      "path": "models/vehicles/BMW-M3-LICENSE.txt",
+      "sha256": "a1d55ef37fa888ee82c9fcc8c964a306e135cbe77de0617f20b6198c09c3004b"
+    },
+    {
+      "path": "models/vehicles/bmw_m3_drift.glb",
+      "sha256": "00e78c246cce4a83fc582127c6f39e92db17b0aa75338e66b489c564ded78d1b"
+    },
+    {
+      "path": "models/vehicles/car_bantam_turbo.glb",
+      "sha256": "4f9a8730f3b1a7fd9789475da66f7fe7c3ee5f99cba86aab980f5e9fc5469f1d"
+    },
+    {
+      "path": "models/vehicles/car_bantam_turbo_opt.glb",
+      "sha256": "a7b8c80b63f983cd30a0fdad568577fc9dfe27ee3d1d115a94b01d30e2e00432"
+    },
+    {
+      "path": "models/vehicles/car_kodiak_raid.glb",
+      "sha256": "f269cba0089768d2ecec4661cc924934444e35a6a82627d90ad682a8b842ae23"
+    },
+    {
+      "path": "models/vehicles/car_kodiak_raid_opt.glb",
+      "sha256": "fdb5eff26c95d3467260c820dcfdc9024b59cb25ece44582a6de76bd3d0ecb86"
+    },
+    {
+      "path": "models/vehicles/car_phantom_b.glb",
+      "sha256": "929f4de69cdf8574286c9a5804b69bb9e60a5627a9b261ae7b7185a419de18eb"
+    },
+    {
+      "path": "models/vehicles/car_phantom_b_opt.glb",
+      "sha256": "05a579c22fe047423fac36f8a18800a90876b18a84300d15546df1ae4cae10b0"
+    },
+    {
+      "path": "models/vehicles/car_shadowfire_rs.glb",
+      "sha256": "ff808fbc08955e0512a69fa68c19d733ed90134f4daf407cf6bd593bebffa47d"
+    },
+    {
+      "path": "models/vehicles/car_shadowfire_rs_opt.glb",
+      "sha256": "357d7af693d2a5379a52c77f3f9fea6ad4cbf6acf4043b3d536f344ac198b4e0"
+    },
+    {
+      "path": "models/vehicles/car_vanguard_gt.glb",
+      "sha256": "bd438e80bc2cf35e52d2b4920017cf5e1f7a6189027cc89c88f9b283c3d29fa6"
+    },
+    {
+      "path": "models/vehicles/car_vanguard_gt_opt.glb",
+      "sha256": "d604551e9f3995ebca7e5cf4a88b86f3119591c068623ba325c7d112f48ae167"
+    },
+    {
+      "path": "models/vehicles/car_vortex_b.glb",
+      "sha256": "4b5493e82cd30dab7a7547269cbeb352f9c1b86fd268f69f717374e9a2f26075"
+    },
+    {
+      "path": "models/vehicles/car_vortex_b_opt.glb",
+      "sha256": "2205325798dceb12e9c1856808381576d54942ff28b649ba074e21cc7388db1d"
+    },
+    {
+      "path": "models/vehicles/car_zephyr_wr4.glb",
+      "sha256": "0d64bdf53b98e0b72203773de1b59a88db6da526d8a81fbcea7e2b6e71a0f34a"
+    },
+    {
+      "path": "models/vehicles/car_zephyr_wr4_opt.glb",
+      "sha256": "3e222fe7f8deca81284b187be202f4e6dfd2b9ac1e23bbc73f443423eb79a4cb"
+    },
+    {
+      "path": "models/vehicles/ironclad_sprint.glb",
+      "sha256": "a2641316591df032f6f7b8cc8b5d7bb78fa2cb8e00a06dc95ec1f4aa5c9aa306"
+    },
+    {
+      "path": "models/vehicles/ironclad_sprint_opt.glb",
+      "sha256": "2d7e8ecf6d372b1679486a6c9e51a902721568c5705852a76a303fb767dcbfce"
+    },
+    {
+      "path": "models/vehicles/meridian_rs.glb",
+      "sha256": "0f720177643cd547faaea7d41482a1e0ab043581938f358f061e8c414caf83c1"
+    },
+    {
+      "path": "models/vehicles/meridian_rs_opt.glb",
+      "sha256": "c2b141e0498720c98c579e3040dbccd682d5de22c33030f838b3c85e268c940c"
+    },
+    {
+      "path": "models/vehicles/nightfall_v8.glb",
+      "sha256": "5364a606d1b7ce57fb83aa73066db566fcbb1bdcfb52949d4111a285ed2c3d05"
+    },
+    {
+      "path": "models/vehicles/nightfall_v8_opt.glb",
+      "sha256": "fbbfaaff11cadff1e67db5013e2f031dd7a26679a07ae501afc29aa91cf9bead"
+    },
+    {
+      "path": "models/vehicles/parcel_gt.glb",
+      "sha256": "cab05968ac0045405422a7cd596f9ac6f357fff877513a3f16f556b780320a26"
+    },
+    {
+      "path": "models/vehicles/parcel_gt_opt.glb",
+      "sha256": "c8f16f48186eab076a69d1d263088c6980b986a2f21daddcad0e717bc8085d95"
+    },
+    {
+      "path": "models/vehicles/SPEED-FLEET-LICENSE.txt",
+      "sha256": "563786826ef4610285da2238db8b832406e7a5fea12e908fac127f62d2b15c1b"
+    },
+    {
+      "path": "models/vehicles/speed-fleet-manifest.json",
+      "sha256": "18e1d3a71b0be8d161dd2227732887bbd7486924d97f10b5cc2ec50db12994fd"
+    },
+    {
+      "path": "models/vehicles/stradale-gt-wheel.glb",
+      "sha256": "00629f6906cded6494192c36fe9d0c2c32e487476e16d448409fcfc74c531866"
+    },
+    {
+      "path": "models/vehicles/stradale-gt.glb",
+      "sha256": "b5c975c2ef002e17e44e56e7e8164a9b4f88bef5c86900fb2c24d0d2c26f9121"
+    },
+    {
+      "path": "models/vehicles/stradale-gt_opt.glb",
+      "sha256": "9eb10d7a1f7ab03a4c3aad24981c747d99a300556667addd99274eca74acc928"
+    },
+    {
+      "path": "models/vehicles/STRADALE-LICENSE.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "models/vehicles/voltline_xr.glb",
+      "sha256": "864173eeeae416a109ed46029173bcee9f4038b077771c6ece7f4fb390de54ff"
+    },
+    {
+      "path": "models/vehicles/voltline_xr_opt.glb",
+      "sha256": "6b9c82f509dbf4c376adf744987be74d86dc0d30ba0d0561c29d4f4d7d270c60"
+    },
+    {
+      "path": "models/vehicles/wheel.glb",
+      "sha256": "1965e25385f542ae4aaff53c74bac600e745da5e994e4ec5cb799524c50be699"
+    },
+    {
+      "path": "models/vehicles/wheel_opt.glb",
+      "sha256": "3bcb77fd028950896eaf764a2a18bf1e3a2a2e5d4f4bb415e8f57a7e8c9df79c"
+    },
+    {
+      "path": "openrally_emblem.png",
+      "sha256": "89815148b1c4f0838352b17b1c4cd30d460560cba8eb2f32c420ebad48caf540"
+    },
+    {
+      "path": "openrally_logo.png",
+      "sha256": "3c77f76a529368254655ea38147801a440bf9d0c9e93c3a6316df02dc755ab53"
+    },
+    {
+      "path": "openrally_logo_dark.jpg",
+      "sha256": "d9775cd8519b4d53bb26a9bb37941b1f1d40d93d85cb5a6f1cc04c77cc674b1e"
+    },
+    {
+      "path": "openrally_logo_dark.png",
+      "sha256": "e48a5de0e6d2454d105a40d7a7f048b9ec5c8a4b9bb65a7dba169bb66acc00e9"
+    },
+    {
+      "path": "openrally_logo_darkmode.png",
+      "sha256": "e1cc6f057715b795abcc54d6d0cc8b3023845813d5e29f97419533fad07b76c5"
+    },
+    {
+      "path": "openrally_logo_transparent.png",
+      "sha256": "91515bb505164bfe0cfc6f6e2eb9790ccc7c7a2de1611a743c3cda28e971ab0c"
+    },
+    {
+      "path": "sounds/engine-loop.mp3",
+      "sha256": "53ed3f0ad60d9be5716b02a1d054dd514119d3fa57ecb756e8c82f3c0e667883"
+    },
+    {
+      "path": "sounds/freeroam-music.mp3",
+      "sha256": "ac32010d294e49efc60493d5e47b7e5d2060c34b8b8bcfb69d70984cf6f9400d"
+    },
+    {
+      "path": "sounds/menu-music.mp3",
+      "sha256": "0e47363bb73d40abff5e5b1779caaef8fa2b1ce4b2df5e762f36eadcec4731c6"
+    },
+    {
+      "path": "sounds/original/afterglow-drive.mp3",
+      "sha256": "9da989e15898290e253fe91d496054dc4ce1948b3c7baf40077dbbbec98bd34b"
+    },
+    {
+      "path": "sounds/original/CREDITS.txt",
+      "sha256": "570a9d7ffa6dee1b5ebf0cb43facb234e7709c90838342d4775e48548f4b1e2b"
+    },
+    {
+      "path": "sounds/original/redline-horizon.mp3",
+      "sha256": "8e3bc17d850a11078caaeb32f6505df2ff42d2347b82171b89452607660ec385"
+    },
+    {
+      "path": "sounds/radio/black-diamond-balanced.mp3",
+      "sha256": "136fa05a293855bf193991dbd514cd46ec55d409107ba1da771467c7cb9de999"
+    },
+    {
+      "path": "sounds/radio/final-hour-balanced.mp3",
+      "sha256": "7e892bd1072131d7c2b1dbff0596491fb4e34d56cd1b24a6f150fca44fec36f7"
+    },
+    {
+      "path": "sounds/sand-loop.mp3",
+      "sha256": "c7cc6bcc78e6c61ae079d7a3cbfd0f54215aa9d67126588164146082f80aae0a"
+    },
+    {
+      "path": "soundtrack.html",
+      "sha256": "c551963622f760e094f5c271c299009ef8896f29213f8c6a9107d51e98a90ec8"
+    },
+    {
+      "path": "speedrunner-logo.svg",
+      "sha256": "57713d820608143be5eea87a286298ef579d9f28d48ba7ffebdc95347a97eae0"
+    },
+    {
+      "path": "textures/coastal/coastal-tree-atlas.json",
+      "sha256": "397b5f1bc58eee8305f400f0e12807c3bf770167439cae5f124627410381eb2f"
+    },
+    {
+      "path": "textures/coastal/coastal-tree-atlas.webp",
+      "sha256": "c4639122e35973e3c759b23d13521bc336e6c99eac6651c5af2461a932c30a1b"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-color-mobile.webp",
+      "sha256": "eaa37044244339b70ed1f08233a3a7a55622a50ff19f449869e3d5b60ebbc632"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-color.webp",
+      "sha256": "edd272ed4bfb54473bdb8ae20bdb5b91d4efbc401330476ac8296fcaa75e488e"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-normal-mobile.webp",
+      "sha256": "3a3dbc5afd68465102c82033ba6ef77d34b125c26094f85b0ab3fce806018bc8"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-normal.webp",
+      "sha256": "ab4342ade5ead85c18093ba8b0ad1a71e72c76db505710c514dbcefd18d09be7"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-roughness-mobile.webp",
+      "sha256": "593824daf0b934e93ba2e960405de8ded146b6f74a439c7972ed9d54b465163a"
+    },
+    {
+      "path": "textures/coastal/exterior_wall_cladding-roughness.webp",
+      "sha256": "08127a1f67d4f4ab55967182d49b9e9452747af784a93f67b754122ab8b0ca0e"
+    },
+    {
+      "path": "textures/coastal/grass_ground-color-mobile.webp",
+      "sha256": "316ccc3ade0602bfdb4bca9cd8603e72ae679470c4f231901c29af96429cc20a"
+    },
+    {
+      "path": "textures/coastal/grass_ground-color.webp",
+      "sha256": "265bfa71e65adad6e8668ae3d57e2cd8524c3e70929026ad67156f7fc79ea9dc"
+    },
+    {
+      "path": "textures/coastal/grass_ground-normal-mobile.webp",
+      "sha256": "dfcf60c8ecbe24977124b092baa68c694830024c2207f9ce5835f5fac58b2b59"
+    },
+    {
+      "path": "textures/coastal/grass_ground-normal.webp",
+      "sha256": "839a54e2b2ba24adb4bf0a7b56ffd7cd71f5bc307b61538be1d775c95e56da19"
+    },
+    {
+      "path": "textures/coastal/grass_ground-roughness-mobile.webp",
+      "sha256": "704f271d2609668f0aced3da1f6eae5bb4122a7b73c73517fa5044986c212078"
+    },
+    {
+      "path": "textures/coastal/grass_ground-roughness.webp",
+      "sha256": "efb81f0ad46f6b2c37cb571190df9a5a42bf9cff5e412f4dbae5ebdbc874512d"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-color-mobile.webp",
+      "sha256": "1011d714da0c37ccf6210b3aa4b0567cad563b46807f2e2670a9a7f563f12445"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-color.webp",
+      "sha256": "73220cf906712aec7efa3cd4ec55b86b128928a0df198471039cc56c53fad569"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-normal-mobile.webp",
+      "sha256": "c6cbfc5a178e8c069f3f0e7f88c4724b2e9b2f7196233287970ae49c47e13472"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-normal.webp",
+      "sha256": "3dd5e24ed0d47e73bd7e147d4277b4aaae585688a641b2edb082ff9ef006dc52"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-roughness-mobile.webp",
+      "sha256": "af741a125343013c95959835e736fdf137633015c0d5d571d39c795ac43dd365"
+    },
+    {
+      "path": "textures/coastal/rectangular_paving-roughness.webp",
+      "sha256": "f7254fb06aa88515b75f5fc239a5cfd5e7164ff7fc5715880c109059f5f13624"
+    },
+    {
+      "path": "textures/coastal/red_brick-color-mobile.webp",
+      "sha256": "eee1e45856caf6bb2276a9ba1ce9a599fc33bb40a47359d955d33cdee3baccb7"
+    },
+    {
+      "path": "textures/coastal/red_brick-color.webp",
+      "sha256": "46bce929d3fae2f8cfa36f9b85f5fd10814d683f6f378656093859e9d277a234"
+    },
+    {
+      "path": "textures/coastal/red_brick-normal-mobile.webp",
+      "sha256": "c4b4fe09a060f27fd00aba2613e1be6ab69739fdbe65c29ebd2b261120cc9590"
+    },
+    {
+      "path": "textures/coastal/red_brick-normal.webp",
+      "sha256": "845da495cc98c3653fed4519a4f43deab18882a43c49bb8e7e3da1daf23a611d"
+    },
+    {
+      "path": "textures/coastal/red_brick-roughness-mobile.webp",
+      "sha256": "4256c10c9375a66d87c7f8281a5eb31a8ca03c0fb45c6bca7b0071b643cb3c46"
+    },
+    {
+      "path": "textures/coastal/red_brick-roughness.webp",
+      "sha256": "17b241dcae5a6d3c460d9bd17e3d235fff514b8bd754389c0cc46838146c3ff1"
+    },
+    {
+      "path": "textures/coastal/white_stucco-color-mobile.webp",
+      "sha256": "bf0650e3e8105ab3792f9c5122fea44a7383a3c69392f611aa91b846ae9a8b2c"
+    },
+    {
+      "path": "textures/coastal/white_stucco-color.webp",
+      "sha256": "8f1ff1f854d8c975ade656331b12641961503b35cfd1dec4da76e150f66097da"
+    },
+    {
+      "path": "textures/coastal/white_stucco-normal-mobile.webp",
+      "sha256": "a96ada419c8fdc28232584b856ad5ac99e21ab2d97ee18d8887b6c24b9bb8251"
+    },
+    {
+      "path": "textures/coastal/white_stucco-normal.webp",
+      "sha256": "dc1b5b9b6374ba690c9ed116a7edd1b103f86896b6dd2a5ad5857890462268f1"
+    },
+    {
+      "path": "textures/coastal/white_stucco-roughness-mobile.webp",
+      "sha256": "898b8dbc00f9eae68bf4df3eaf9698d2f11df1a111c2d1374afd841505181c0d"
+    },
+    {
+      "path": "textures/coastal/white_stucco-roughness.webp",
+      "sha256": "bb9a6d14bb82e4edf676869b91e5f7f354b6d132d18255fe9b6affd958874bff"
+    },
+    {
+      "path": "textures/foliage/birch_bark.jpg",
+      "sha256": "a60f70f8c6fd343293289a73d4aed5f5d4cd392d51f4935ec958825580556e0c"
+    },
+    {
+      "path": "textures/foliage/desert_acacia_branch.jpg",
+      "sha256": "feb1b2f2f4d65c3593058b56d6988700e5ad6eea07eef5afa34c9be3d394493f"
+    },
+    {
+      "path": "textures/foliage/desert_bark.jpg",
+      "sha256": "9b7155fd84c381aaa39379df7a0ac4bc2bb4b466f2df330cd5924e25342f9ab4"
+    },
+    {
+      "path": "textures/foliage/desert_tuft.jpg",
+      "sha256": "c98f8ab8de653d59c2ffbf681c3b9139d64263339940a6d2236db02555c2393a"
+    },
+    {
+      "path": "textures/foliage/grass_tuft.jpg",
+      "sha256": "723158d738f13cc63177c4a53150f674c926482bbcda9f5c581bcd98597ccf8a"
+    },
+    {
+      "path": "textures/foliage/leafy_branch.jpg",
+      "sha256": "6131a6e0c47c8cfea29b80f0c2015cda47a9a8e9535f4ae7bfb240ad0c94403c"
+    },
+    {
+      "path": "textures/foliage/pine_branch.jpg",
+      "sha256": "a79e7731d4e235431bf6ce90246d38998b90a6af6892edc9b764b8aff9fc98b5"
+    },
+    {
+      "path": "textures/foliage/pine_branch_snow.jpg",
+      "sha256": "ecb32aacc0af830831e9700420b7a3a6958bfe4f3eec66ebe2a135b2db7834bb"
+    },
+    {
+      "path": "textures/foliage/tree_bark.jpg",
+      "sha256": "e0b60b1d812652946279a4c82fdf205cc4c90b7f9d7eea7d6d6da842e1aecca8"
+    },
+    {
+      "path": "textures/foliage/wildflower_tuft.jpg",
+      "sha256": "32dd97a0c2a13cfee9daade658813184c43da5ca6acff209d523edb28c839cb3"
+    },
+    {
+      "path": "textures/pbr/asphalt-albedo-mobile.webp",
+      "sha256": "7628a2b555982d42a12c8812b8a20ea48ee4276afc23316f4f755f10a7fe7e52"
+    },
+    {
+      "path": "textures/pbr/asphalt-albedo.webp",
+      "sha256": "b577ded38f36b05bbe5eebf526b8b18835510c964ead55b0d77b204a07f0257c"
+    },
+    {
+      "path": "textures/pbr/asphalt-normal-mobile.webp",
+      "sha256": "fc13996464606734cb8f6afcabaeb3ab8801107b1cacba09d4ed8071a4f621b3"
+    },
+    {
+      "path": "textures/pbr/asphalt-normal.webp",
+      "sha256": "336b07e3583559836fd29e6bf7eeb3a1947500052ac5e7628578b068389dd4a4"
+    },
+    {
+      "path": "textures/pbr/asphalt-roughness-mobile.webp",
+      "sha256": "bf24c2ffd4ab71d84a4568c9d8b807c847ee72a3bc99a44db2c453ffae6c3926"
+    },
+    {
+      "path": "textures/pbr/asphalt-roughness.webp",
+      "sha256": "7b6b892cc3656a733e5b88a7ad87b5c6591ccf140bc14455ebce8839cae69458"
+    },
+    {
+      "path": "textures/pbr/gravel-albedo-mobile.webp",
+      "sha256": "cdbe7c7542ec0b22a0c683fc64d2803fd96d83c41d81630bd3074febdbf409d4"
+    },
+    {
+      "path": "textures/pbr/gravel-albedo.webp",
+      "sha256": "0584d402b8acb4bfec9d3545e4b5dd09a46ad0c285972ae00d4ce264c004b4ad"
+    },
+    {
+      "path": "textures/pbr/gravel-normal-mobile.webp",
+      "sha256": "54d862a7c9b833ccf09c8125059dd18374506def06cb8417a88d29d4dde8277e"
+    },
+    {
+      "path": "textures/pbr/gravel-normal.webp",
+      "sha256": "a45da5abaaea1295e3c8463763448549867b6d903fb99cbef4aba95d22f2b1f0"
+    },
+    {
+      "path": "textures/pbr/gravel-roughness-mobile.webp",
+      "sha256": "126fa67dfb486110372720eb3ec97d6b3f5b5fe293b68bd657d184d2daadae50"
+    },
+    {
+      "path": "textures/pbr/gravel-roughness.webp",
+      "sha256": "74cc121b3601ee9130075af0268317f9b788b1c5750064729e61036e953b4255"
+    },
+    {
+      "path": "textures/pbr/metal-albedo-mobile.webp",
+      "sha256": "716473b72e2555c9a0e4b713151f67ce2feae045bd267cd109a878182134f04d"
+    },
+    {
+      "path": "textures/pbr/metal-albedo.webp",
+      "sha256": "489f83e1c659c7fb0de599fb2711e656f3d0ba6da18bb00c65ae127f6efb2916"
+    },
+    {
+      "path": "textures/pbr/metal-metalness-mobile.webp",
+      "sha256": "407ebcd09fba863e64d1573932cdb068fd7d239eaa9a137a390fa864b3df7474"
+    },
+    {
+      "path": "textures/pbr/metal-metalness.webp",
+      "sha256": "573e218969794915defa9d0885aca936eb649c3c422857153e7a96d0162cc2b7"
+    },
+    {
+      "path": "textures/pbr/metal-normal-mobile.webp",
+      "sha256": "72d1e2368c6e5c8f68b78a907e7cb9dfae6bb1beacfbe33f3c63c37c1e8f5097"
+    },
+    {
+      "path": "textures/pbr/metal-normal.webp",
+      "sha256": "fde7a0ce9378787ba43263bd26a6ac4051de66d65706a7b972c821ae8fba4eb4"
+    },
+    {
+      "path": "textures/pbr/metal-roughness-mobile.webp",
+      "sha256": "e03f310d5775ece5b7e2d68d8ffcc6128d89532417bfa682a51f2496210f620a"
+    },
+    {
+      "path": "textures/pbr/metal-roughness.webp",
+      "sha256": "5a72c34a1f8c3675a4007f9a9b3813c25d70ab867e71afa9ec2fdd479056b0fa"
+    },
+    {
+      "path": "textures/pbr/rock-albedo-mobile.webp",
+      "sha256": "11c65f095e02addf0ce1d59bf3bebef08465f0a2cd2a6502c3db3e06992a534a"
+    },
+    {
+      "path": "textures/pbr/rock-albedo.webp",
+      "sha256": "6ad6ffd9659daad63148a436dff63c8e71f6b02b692164e8eb0e7d3687af510a"
+    },
+    {
+      "path": "textures/pbr/rock-normal-mobile.webp",
+      "sha256": "1840949a009ee91147941693e49fc0863586004d1f3e806506dcc98bd28f901c"
+    },
+    {
+      "path": "textures/pbr/rock-normal.webp",
+      "sha256": "45fc1d9c31ca06ecffec008c21e043f228a82f978a53116251943b9b3aea1f60"
+    },
+    {
+      "path": "textures/pbr/rock-roughness-mobile.webp",
+      "sha256": "6ec5174912c495d04c63e67fa6dfbda537a2b0765ea84cbedd913d912dec7cec"
+    },
+    {
+      "path": "textures/pbr/rock-roughness.webp",
+      "sha256": "307ef42a919d440f76c0dac34600d3fdd8eaa48786413da59852bd65e99e1698"
+    },
+    {
+      "path": "textures/pbr/snow-albedo-mobile.webp",
+      "sha256": "e44e82391e8ee0e40cbff7eec7eb178db516102e9175bc8d5cc21e06a4625c8b"
+    },
+    {
+      "path": "textures/pbr/snow-albedo.webp",
+      "sha256": "54c2ef3d5423baf8c562d3fa486234eba23c988c0723da265e56b32be2a70056"
+    },
+    {
+      "path": "textures/pbr/snow-normal-mobile.webp",
+      "sha256": "54b5269b129cf134678d99de01451cfd0b6b9f643eb85bafe9c2e6a374ef220d"
+    },
+    {
+      "path": "textures/pbr/snow-normal.webp",
+      "sha256": "d7dec87c5a1de677749531d72955927340d65c07eadf1fed5ff2bc2e4b33db8a"
+    },
+    {
+      "path": "textures/pbr/snow-roughness-mobile.webp",
+      "sha256": "65d16e0b10138aba5021252ed4c8e561772c6c0e2164856a7127c6c959415f86"
+    },
+    {
+      "path": "textures/pbr/snow-roughness.webp",
+      "sha256": "07ba31ce991c894bd13b2ea5c8bb5680ebf30e83a398ca7c7e2dc071483606fa"
+    },
+    {
+      "path": "textures/placeholder.png",
+      "sha256": "5a27dfd7b6a8cec9e48d5378d5db4d66dc4215f28cc24f99ab57326011385feb"
+    },
+    {
+      "path": "textures/props/british_drystone_wall.jpg",
+      "sha256": "5c497a7133f7a2aefa46153cbcc0f0f16e16fada9d00ce39d69a5ff6430081d3"
+    },
+    {
+      "path": "textures/props/cabin_door.jpg",
+      "sha256": "6d15be74122607de79d806f6dbfec9f7ec6b165ac9c028f8227135f25421af0b"
+    },
+    {
+      "path": "textures/props/cabin_red_wall.jpg",
+      "sha256": "af4e69180e9e653395de8d83012cd776018a9f7ca1ac14dbca8dea9b5603b714"
+    },
+    {
+      "path": "textures/props/cabin_roof.jpg",
+      "sha256": "f6b194afc277c7ca631d8ec52b6df6a46ce145d3cbc9986744b406603fc1a721"
+    },
+    {
+      "path": "textures/props/cabin_roof_snow.jpg",
+      "sha256": "e285bf93135f7d565f0b0fe0fa940931809da24f5252dee6032297139395cde2"
+    },
+    {
+      "path": "textures/props/cabin_timber_wall.jpg",
+      "sha256": "b7b20ca9c4be0208e174456522189192ca3c1e94131f8b31ca44887c3ec53016"
+    },
+    {
+      "path": "textures/props/cabin_window.jpg",
+      "sha256": "62da5f17b3b8f9246db0c821ada57c6573d2954e7e0836633bb08fe50f501b06"
+    },
+    {
+      "path": "textures/props/cabin_wood.jpg",
+      "sha256": "d3617adbc8922d31b7169a7d4506c46f173abf416e5cd5f9ce0a437437a3b1a4"
+    },
+    {
+      "path": "textures/props/castle_cobblestone.jpg",
+      "sha256": "32be74a9b521e9784e8063d7b4569a77f07657879f31b63a01e8800e2709476d"
+    },
+    {
+      "path": "textures/props/castle_stone_wall.jpg",
+      "sha256": "ba34de830acf0c45cafb83d17a89946724b1f4a2771f23f40940a093264c6271"
+    },
+    {
+      "path": "textures/props/celtic_standing_stone.jpg",
+      "sha256": "af2f71dae3c86ab7b9edd03d0911fcc3e644fc86c66c8fda10b7cf56a8201438"
+    },
+    {
+      "path": "textures/props/highland_cottage_thatch.jpg",
+      "sha256": "3f80303cb0e42b3c1d9d8fa39b4a23796f742e04dda5ef9088b6d77702d18b46"
+    },
+    {
+      "path": "textures/props/highland_cottage_wall.jpg",
+      "sha256": "39ca2c61952d1074cd9a8e26233847f506f67674df3bc1412039448f462cf010"
+    },
+    {
+      "path": "textures/props/jump_ramp_diffuse.png",
+      "sha256": "6431c3f1f43d27f257acd416d1b2cde68d2d73b65cf78ea35fd9d29c8346fdfd"
+    },
+    {
+      "path": "textures/props/rustic_fence.jpg",
+      "sha256": "4caf180e4788ad96dad22f86f680c06009254d11beada16adcb04fc47a2d4f2f"
+    },
+    {
+      "path": "textures/props/shipping_container_blue.jpg",
+      "sha256": "e5020a8fb7bf0aef717ddfd3b1fa1b94577c598d6599bf9d3f906a2c964b1b49"
+    },
+    {
+      "path": "textures/props/shipping_container_orange.jpg",
+      "sha256": "d26edbe0437e41a78659008dbe8ea0fbf564f598a707e04c5cea688b27f4eb25"
+    },
+    {
+      "path": "textures/props/shipping_container_red.jpg",
+      "sha256": "123c2568f9764830da511bde0dd1be9e0b32d917eeb5375eea6b6c696928b0f7"
+    },
+    {
+      "path": "textures/race/banner_sector.jpg",
+      "sha256": "d49efb45b5dfac25762112ea7007f1fae312993d636d46c3830633a04668c94a"
+    },
+    {
+      "path": "textures/race/banner_start_finish.jpg",
+      "sha256": "1d829308394beb1508d1062d22045dcbea8a46eb6c0eca4c71f0cc92ef4f3306"
+    },
+    {
+      "path": "textures/race/carbon_fiber.jpg",
+      "sha256": "63fef859d0de3ad7af766fd7636bdd8a59f553c82bd4424d7f8d11ecee9fc896"
+    },
+    {
+      "path": "textures/race/flag_sponsor.jpg",
+      "sha256": "d4c88008ab84861c27414318408476bf82901b9bc1917c87680458fe40514e49"
+    },
+    {
+      "path": "textures/race/gantry_header.jpg",
+      "sha256": "387cbd1a55f642d3f24540c2c69b9d4b1b560420b3ded26acc14a5df349e9b10"
+    },
+    {
+      "path": "textures/race/hazard_pad.jpg",
+      "sha256": "b38c7af2dc3a6efec8cc180022616dc1f1bd77b02ff2992f797caf2447d554a0"
+    },
+    {
+      "path": "textures/race/safety_barrier.jpg",
+      "sha256": "fef083f0c800125587b8a6b43a1a9717e6b980667ecbaac34a845e7371baf45b"
+    },
+    {
+      "path": "textures/race/sponsor_strip.jpg",
+      "sha256": "0f84c87776fdc1379a3a22114bfc379746888e1f3455c1d0f74d95cb78fa22f9"
+    },
+    {
+      "path": "textures/race/start_line.jpg",
+      "sha256": "68a2fe56df3ec55b110bad0bde07d5bc9e28608f37fe382595090116b0ff69fd"
+    },
+    {
+      "path": "textures/race/stunt_loop_tarmac.jpg",
+      "sha256": "ff7e2cd3cd7a7c02ffd0a210930ca55dac782e3e6bbdc8507b7895aa64eb3561"
+    },
+    {
+      "path": "textures/terrain/desert_sand.jpg",
+      "sha256": "0e2fee31dfe92eef5bcb525a7bf1e5522d40c09c69a47f475a38f6a350d69ab7"
+    },
+    {
+      "path": "textures/terrain/dirt_track.jpg",
+      "sha256": "3291ad5a2770885c04621e578d26c3299dc2373a6550869950696f78aaa8ac15"
+    },
+    {
+      "path": "textures/terrain/grass.jpg",
+      "sha256": "9595e08317c8825a6b69efd9900b94e0c3ca74cbba22882d307ddf8d2c05619f"
+    },
+    {
+      "path": "textures/terrain/highland_heather.jpg",
+      "sha256": "c54641db67d27aa25d55cab05941361dcf89d961bf0e3bf0e144d6938dacb75a"
+    },
+    {
+      "path": "textures/terrain/ice_lake.jpg",
+      "sha256": "9be3ec3b644bf448236aa10c379cc5ec77e9e0d8580c5ba46941077b5dc9287d"
+    },
+    {
+      "path": "textures/terrain/rock_cliff.jpg",
+      "sha256": "08ded34c8c918c5de54c3972b23960fb01e38bb0d75d61495e3592d6c0678f62"
+    },
+    {
+      "path": "textures/terrain/snow.jpg",
+      "sha256": "61de1180d251e753535b1c4fbf960b081b52fa05cf62cc6b8d72592414eb017d"
+    },
+    {
+      "path": "textures/terrain/snow_track.jpg",
+      "sha256": "7894e48a15c6148a17256b2f03e3f562c5f971b022599aed1fbf4c02939d8838"
+    },
+    {
+      "path": "textures/tire_track.png",
+      "sha256": "1fd72ec706cdabcdb792594e44678bc0dbd78cb994fbe6b3e358d970e164ab1f"
+    },
+    {
+      "path": "textures/urban/concrete-color-mobile.webp",
+      "sha256": "02dc9c2afc89f02b5215b595d5c3bd2920311d6d3a5fc5eb96d013852e1534a9"
+    },
+    {
+      "path": "textures/urban/concrete-color.webp",
+      "sha256": "cf4c741e85e47bac4e28c52c1b9d72c5a8ea7b53feeb75c270074091313caedc"
+    },
+    {
+      "path": "textures/urban/concrete-normal-mobile.webp",
+      "sha256": "a8654173c15c8582f90863373292fb187ee073264138cab4600891bb09041cb6"
+    },
+    {
+      "path": "textures/urban/concrete-normal.webp",
+      "sha256": "d5899128a1a1da3009e6b9509e737a8171b3c660c1ea0750568190cde02a06d5"
+    },
+    {
+      "path": "textures/urban/concrete-roughness-mobile.webp",
+      "sha256": "88b6d62debbadfda50f0d00e4f76435d77d750252e1843cf0f4c58d731cd76c6"
+    },
+    {
+      "path": "textures/urban/concrete-roughness.webp",
+      "sha256": "b5f2fd573da3ad21cdd21e34f2689741e14f48cd3e44f3eb4e32d875209c3eb3"
+    },
+    {
+      "path": "textures/urban/pavers-color-mobile.webp",
+      "sha256": "6d2260e0acc89f10211dead6eef3bc41992bb2336af2415a1d267561337731ac"
+    },
+    {
+      "path": "textures/urban/pavers-color.webp",
+      "sha256": "a2ab69ff0e462f4d1470797c5ca6849c1de8f29472c8b2e832069c94b360856f"
+    },
+    {
+      "path": "textures/urban/pavers-normal-mobile.webp",
+      "sha256": "0e562ce5dc84736bdc28796627c765012ac5ea2c95c2326ad5056370c739483c"
+    },
+    {
+      "path": "textures/urban/pavers-normal.webp",
+      "sha256": "3a9cfbd1c701950576ce4b457c443d6bb16c6d77d5ed5f5993519a9cb074cc0d"
+    },
+    {
+      "path": "textures/urban/pavers-roughness-mobile.webp",
+      "sha256": "e367e0bb42030f771029e3352c6d0ed84d6f531a83d0e030a9ac9a091bdf5842"
+    },
+    {
+      "path": "textures/urban/pavers-roughness.webp",
+      "sha256": "27a861e9ac642525aae7f8a54654052c2e458f11163ce9e9e619997dd3c05ad2"
+    }
+  ]
+}

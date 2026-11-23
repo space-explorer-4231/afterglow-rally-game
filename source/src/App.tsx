@@ -1,0 +1,61 @@
+import {useClubSoundtrack} from '@/hooks/useClubSoundtrack';
+import { Suspense, useEffect } from 'react';
+import { GameCanvas } from '@/components/canvas/GameCanvas';
+import { useMultiplayerRaceStart } from '@/hooks/useMultiplayerRaceStart';
+import { HUD } from '@/components/ui/HUD';
+import { TouchControlsOverlay } from '@/components/ui/TouchControlsOverlay';
+import { MenuOverlay } from '@/components/ui/MenuOverlay';
+import { TitleScreen } from '@/components/ui/TitleScreen';
+import { LoadingScreen } from '@/components/ui/LoadingScreen';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
+
+import { useGameStore } from '@/store/gameStore';
+import { useGamepadManager } from '@/hooks/useGamepadManager';
+import { useAppLifecycle } from '@/hooks/useAppLifecycle';
+import { useAndroidBackNavigation } from '@/hooks/useAndroidBackNavigation';
+import { clearAudioBufferCache } from '@/utils/audioCache';
+
+/**
+ * Root application component.
+ * Renders the 3D game canvas with HUD overlay, menu, title screen, and loading screen.
+ */
+function App() {
+  const gameState = useGameStore((s) => s.gameState);
+  const selectedLevelId = useGameStore((s) => s.selectedLevelId);
+  
+  // Continuously monitor gamepad connections & state at root level
+  useGamepadManager();
+  useClubSoundtrack();
+  useMultiplayerRaceStart();
+
+  // Monitor Android app lifecycle, tab backgrounding, auto-pause & touch input resets
+  useAppLifecycle();
+
+  // Monitor Android hardware back button and navigation edge swipe gesture
+  useAndroidBackNavigation();
+
+  // Reclaim audio buffers when switching tracks without penalizing in-level race restarts
+  useEffect(() => {
+    clearAudioBufferCache();
+  }, [selectedLevelId]);
+  
+  // Persistent 3D GameCanvas stays mounted across all menu and gameplay transitions
+  // to avoid creating and destroying WebGL contexts, eliminating context exhaustion crashes.
+
+  return (
+    <ErrorBoundary>
+      <div className="game-container">
+        <Suspense fallback={null}>
+          <GameCanvas />
+        </Suspense>
+        <HUD />
+        {gameState === 'playing' && <TouchControlsOverlay />}
+        <MenuOverlay />
+        <TitleScreen />
+        <LoadingScreen />
+      </div>
+    </ErrorBoundary>
+  );
+}
+
+export default App;
