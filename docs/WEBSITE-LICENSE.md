@@ -11,3 +11,5 @@ The Aeroline project page in `docs/index.html`, `docs/static/project.js` and `do
 This website license does not replace the game code's MIT license or third-party media licenses. Artwork and gameplay images depict the game and retain their existing separate rights and attribution. See `ASSET-LICENSING.md` and the repository asset credits.
 
 The page is a game portfolio, not an academic paper. There are no invented publication, conference or research claims. The original template's paper/BibTeX/PDF placeholders and third-party embeds are intentionally omitted.
+
+The expanded map explorer, explanatory room walkthrough, project timeline and FAQ use original Aeroline-specific content and JavaScript. Their interaction design was inspired by the user-provided reference https://supermimic.github.io/; no research claims, robot media or source code from that page were copied.
