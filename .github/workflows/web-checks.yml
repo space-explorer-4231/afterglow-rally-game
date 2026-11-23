@@ -2,7 +2,15 @@ name: Web source checks
 on:
   push:
     branches: [dev]
-    paths: ['source/**', 'scripts/restore-source-assets.mjs', '.github/workflows/web-checks.yml']
+    paths:
+      - 'source/**'
+      - 'source-assets/**'
+      - 'scripts/restore-source-assets.mjs'
+      - 'asset-manifest.json'
+      - 'game-*.tar.gz'
+      - 'unpack.cjs'
+      - '.gitattributes'
+      - '.github/workflows/web-checks.yml'
   pull_request:
     branches: [dev, main]
   workflow_dispatch:
